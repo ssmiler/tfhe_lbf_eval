@@ -1,5 +1,5 @@
 .inputs a b c d
-.outputs e f g h i CONST1
+.outputs e f g h CONST1
 .params 4 16        # number of plaintext divisions and max lincomb squared norm2 - optional boostrapping parameters
 .lincomb CONST1     # CONSTANT
 1
