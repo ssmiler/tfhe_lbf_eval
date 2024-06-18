@@ -98,7 +98,7 @@ A bootstrapping `b = 1` if `a == 2` and `b = 0` otherwise:
 3 bootstrapping:
   - `b = 1` if `a == 2` and `b = 0` otherwise
   - `c = 1` if `a == 0` and `c = 0` otherwise
-  - `d = 0` for `a == 0`, `d = 1` for `a == 1` and _does not count_ otherwise.
+  - `d = 0` for `a == 0`, `d = 1` for `a == 1` and _don't cares_ otherwise.
 
 ```
 .bootstrap a b c d
