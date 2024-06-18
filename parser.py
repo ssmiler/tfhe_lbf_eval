@@ -18,14 +18,12 @@ class LbfParser:
     def __init__(self,
                  inputs_callback=None,
                  outputs_callback=None,
-                 params_callback=None,
                  lincomb_callback=None,
                  const_callback=None,
                  bootstrap_callback=None,
                  end_callback=None):
         self.inputs_callback = self._get_callback(inputs_callback)
         self.outputs_callback = self._get_callback(outputs_callback)
-        self.params_callback = self._get_callback(params_callback)
         self.lincomb_callback = self._get_callback(lincomb_callback)
         self.const_callback = self._get_callback(const_callback)
         self.bootstrap_callback = self._get_callback(bootstrap_callback)
@@ -41,9 +39,6 @@ class LbfParser:
 
                 case[".outputs", *outs]:
                     self.outputs_callback(outs)  # TODO: support multi-line
-
-                case[".params", *params]:
-                    self.params_callback(params)
 
                 case[".lincomb", *inps, out]:
                     line, idx = self._strip_comments(lines[idx]), idx + 1
@@ -83,9 +78,6 @@ if __name__ == '__main__':
     def outputs_callback(*args):
         print(f"outputs_callback {args}")
 
-    def params_callback(*args):
-        print(f"params_callback {args}")
-
     def lincomb_callback(*args):
         print(f"lincomb_callback {args}")
 
@@ -101,7 +93,6 @@ if __name__ == '__main__':
     parser = LbfParser(
         inputs_callback=inputs_callback,
         outputs_callback=outputs_callback,
-        params_callback=params_callback,
         lincomb_callback=lincomb_callback,
         const_callback=const_callback,
         bootstrap_callback=bootstrap_callback,

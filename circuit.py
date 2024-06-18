@@ -46,7 +46,6 @@ class LbfCircuit:
         self.out_ids = list()       # node ids which are circuit output
         self.successors = dict()    # predecessors ids by node id
         self.predecessors = dict()  # successors ids by node id
-        self.data = dict()          # circuit key-value store
         self.node_by_id = dict()    # Node object by node id
 
     def _add_edge(self, u, v):
@@ -58,9 +57,6 @@ class LbfCircuit:
         self.nodes.append(node.name)
         self.predecessors[node.name] = list()
         self.successors[node.name] = list()
-
-    def add_kv(self, key: str, val: str):
-        self.data[key] = val
 
     def add_input(self, out: str):
         self._add_node(LbfCircuit.Input(out))
@@ -90,9 +86,6 @@ class LbfCircuit:
         self.out_ids.append(out)
 
     def finalize(self):
-        # # add Node object references for circuit outputs
-        # self.out_nodes = list(
-        #     map(lambda out: self.node_by_id[out], self.out_ids))
         pass
 
 
@@ -119,10 +112,6 @@ class LbfCircuitParser:
             for out in outs:
                 circuit.add_output(out)
 
-        def params_callback(params):
-            circuit.add_kv("fbs_size", params[0])
-            circuit.add_kv("norm2", params[1])
-
         def lincomb_callback(out, inps, coefs, const_coef):
             circuit.add_lincomb(out, inps, coefs, const_coef)
 
@@ -138,7 +127,6 @@ class LbfCircuitParser:
         parser = LbfParser(
             inputs_callback=inputs_callback,
             outputs_callback=outputs_callback,
-            params_callback=params_callback,
             lincomb_callback=lincomb_callback,
             const_callback=const_callback,
             bootstrap_callback=bootstrap_callback,
