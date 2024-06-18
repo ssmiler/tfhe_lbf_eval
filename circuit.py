@@ -42,7 +42,7 @@ class LbfCircuit:
             self.tables = tables
 
     def __init__(self):
-        self.nodes = list()         # node ids in topological order
+        self.node_ids = list()      # node ids in topological order
         self.out_ids = list()       # node ids which are circuit output
         self.successors = dict()    # predecessors ids by node id
         self.predecessors = dict()  # successors ids by node id
@@ -54,7 +54,7 @@ class LbfCircuit:
 
     def _add_node(self, node: Node):
         self.node_by_id[node.name] = node
-        self.nodes.append(node.name)
+        self.node_ids.append(node.name)
         self.predecessors[node.name] = list()
         self.successors[node.name] = list()
 
@@ -141,7 +141,7 @@ if __name__ == '__main__':
     circuit = LbfCircuitParser.parse_file("sample.lbf")
 
     print("LBF circuit inputs:")
-    for name in circuit.nodes:
+    for name in circuit.node_ids:
         node = circuit.node_by_id[name]
         match node:
             case LbfCircuit.Input(out=out):
@@ -149,8 +149,8 @@ if __name__ == '__main__':
             case LbfCircuit.Const(out=out, val=val):
                 print(f"\t{out} = const({val})")
 
-    print("LBF circuit nodes:")
-    for name in circuit.nodes:
+    print("LBF circuit node_ids:")
+    for name in circuit.node_ids:
         node = circuit.node_by_id[name]
         match node:
             case LbfCircuit.Lincomb(out=out,
