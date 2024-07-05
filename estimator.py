@@ -23,7 +23,8 @@ def find_min_fbs_params(circuit: LbfCircuit, strict_fbs_size):
                 else:
                     for table in tables:
                         min_fbs_size_local = max(
-                            min_fbs_size_local, len(table)//2 + 1)
+                            # min_fbs_size_local, len(table)//2 + 1)
+                            min_fbs_size_local, len(table)//2)
                         while min_fbs_size_local < len(table):
                             delta = len(table) - min_fbs_size_local
                             p1 = np.array(table[-delta:])
