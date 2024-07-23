@@ -1,23 +1,23 @@
 .inputs pi2 pi3 pi4 pi5 pi6 pi7 pi8 
-.outputs n17 n28 n32 n38 n49 n53 n58 n64 n69 n74 n79 n81 n88 n90 n91 n93 n95 n96 n97 n89 n106 n111 n114 CONST1 n116 n117 
+.outputs n17 n28 n32 n38 n50 n54 n59 n66 n71 n76 n81 n84 n91 n93 n94 n96 n98 n99 n100 n92 n109 n114 n117 CONST1 n120 n122 
 .lincomb CONST1
 1
 .lincomb pi5 pi6 in9
 1 2
-.bootstrap in9 n9 n14 n21 n101
+.bootstrap in9 n9 n14 n21 n104
 0001
 0110
-1101
+0010
 0100
-.lincomb n9,n14,n21,n101 n10
+.lincomb n9,n14,n21,n104 n10
 -1 1
 .lincomb pi2 pi3 in11
 1 2
-.bootstrap in11 n11 n99 n115
+.bootstrap in11 n11 n102 n119
 1000
 0001
 0110
-.lincomb pi4 n10 n11,n99,n115 in12
+.lincomb pi4 n10 n11,n102,n119 in12
 1 1 1
 .bootstrap in12 n12
 1000
@@ -25,10 +25,10 @@
 -1 1
 .lincomb pi3 pi5 in15
 1 2
-.bootstrap in15 n15 n85
+.bootstrap in15 n15 n88
 1000
 0100
-.lincomb n13 n9,n14,n21,n101 n15,n85 in16
+.lincomb n13 n9,n14,n21,n104 n15,n88 in16
 1 1 1
 .bootstrap in16 n16
 1000
@@ -41,15 +41,15 @@
 .lincomb pi5 pi6 n18 in19
 1 1 1
 .bootstrap in19 n19
-1110
+0001
 .lincomb pi3 n19 in20
 1 2
 .bootstrap in20 n20
-0010
-.lincomb pi3 n9,n14,n21,n101 in22
+1000
+.lincomb pi3 n9,n14,n21,n104 in22
 1 2
 .bootstrap in22 n22
-0001
+0100
 .lincomb n20 n22 in23
 1 2
 .bootstrap in23 n23
@@ -92,7 +92,7 @@
 1 2
 .bootstrap in33 n33
 0010
-.lincomb pi3 n9,n14,n21,n101 n33 in34
+.lincomb pi3 n9,n14,n21,n104 n33 in34
 1 1 1
 .bootstrap in34 n34
 1000
@@ -104,10 +104,10 @@
 1 2
 .bootstrap in36 n36
 1000
-.lincomb pi4 n9,n14,n21,n101 in37
+.lincomb pi4 n9,n14,n21,n104 in37
 1 2
 .bootstrap in37 n37
-0001
+0100
 .lincomb n36 n37 in38
 1 2
 .bootstrap in38 n38
@@ -118,285 +118,295 @@
 0001
 .lincomb pi7 pi8 in40
 1 2
-.bootstrap in40 n40 n107
+.bootstrap in40 n40 n110
 0001
 0100
-.lincomb pi6 n40,n107 in41
+.lincomb pi6 n40,n110 in41
 1 2
 .bootstrap in41 n41
-1011
-.lincomb pi2 pi5 n41 in42
+0100
+.lincomb n41 n42
+-1 1
+.lincomb pi2 pi5 n42 in43
 1 1 1
-.bootstrap in42 n42
-0111
-.lincomb n39 n42 in43
-1 2
 .bootstrap in43 n43
-1000
-.lincomb pi3 n43 in44
+0111
+.lincomb n39 n43 in44
 1 2
 .bootstrap in44 n44
-0100
-.lincomb pi4 n44 in45
+1000
+.lincomb pi3 n44 in45
 1 2
 .bootstrap in45 n45
-1000
-.lincomb pi5 n46
--1 1
-.lincomb pi2 pi6 n46 in47
-1 1 1
-.bootstrap in47 n47 n92
-1110
-1000
-.lincomb pi4 n47,n92 in48
+0100
+.lincomb pi4 n45 in46
 1 2
-.bootstrap in48 n48
+.bootstrap in46 n46
+1000
+.lincomb pi5 n47
+-1 1
+.lincomb pi2 pi6 n47 in48
+1 1 1
+.bootstrap in48 n48 n95
 0001
-.lincomb n45 n48 in49
+1000
+.lincomb pi4 n48,n95 in49
 1 2
 .bootstrap in49 n49
-1000
-.lincomb pi6 pi8 in50
+0100
+.lincomb n46 n49 in50
 1 2
 .bootstrap in50 n50
-0001
-.lincomb n9,n14,n21,n101 n50 in51
+1000
+.lincomb pi6 pi8 in51
 1 2
 .bootstrap in51 n51
-1000
-.lincomb n9,n14,n21,n101 pi4 n51 in52
-4 1 2
-.bootstrap in52 n52
-01011010
-.lincomb pi3 n52 in53
-1 2
-.bootstrap in53 n53
 0001
-.lincomb pi2 pi3 pi6 in54
-1 1 1
+.lincomb n9,n14,n21,n104 n51 in52
+1 2
+.bootstrap in52 n52
+1000
+.lincomb n9,n14,n21,n104 pi4 n52 in53
+4 1 2
+.bootstrap in53 n53
+10100101
+.lincomb pi3 n53 in54
+1 2
 .bootstrap in54 n54
 0001
-.lincomb pi6 pi5 n54 in55
-4 1 2
+.lincomb pi2 pi3 pi6 in55
+1 1 1
 .bootstrap in55 n55
-01011010
-.lincomb pi4 n55 in56
-1 2
+0001
+.lincomb pi6 pi5 n55 in56
+4 1 2
 .bootstrap in56 n56
-0010
-.lincomb pi4 pi5 pi6 in57
-1 1 1
-.bootstrap in57 n57
-0001
-.lincomb n56 n57 in58
+01011010
+.lincomb pi4 n56 in57
 1 2
+.bootstrap in57 n57
+0010
+.lincomb pi4 pi5 pi6 in58
+1 1 1
 .bootstrap in58 n58
-0111
-.lincomb pi3 pi4 n19 in59
-1 1 1
-.bootstrap in59 n59
-1110
-.lincomb pi2 n9,n14,n21,n101 n25 in60
-1 1 1
-.bootstrap in60 n60
 0001
-.lincomb n9,n14,n21,n101 n25 n33 in61
+.lincomb n57 n58 in59
+1 2
+.bootstrap in59 n59
+0111
+.lincomb n19 n60
+-1 1
+.lincomb pi3 pi4 n60 in61
 1 1 1
 .bootstrap in61 n61
-1000
-.lincomb n60 n61 in62
-1 2
+1110
+.lincomb pi2 n9,n14,n21,n104 n25 in62
+1 1 1
 .bootstrap in62 n62
-1000
-.lincomb pi4 n62 in63
-1 2
+0001
+.lincomb n9,n14,n21,n104 n25 n33 in63
+1 1 1
 .bootstrap in63 n63
-0100
-.lincomb n59 n63 in64
+1000
+.lincomb n62 n63 in64
 1 2
 .bootstrap in64 n64
+1000
+.lincomb pi4 n64 in65
+1 2
+.bootstrap in65 n65
+0100
+.lincomb n61 n65 in66
+1 2
+.bootstrap in66 n66
 0111
-.lincomb pi6 n65
+.lincomb pi6 n67
 -1 1
-.lincomb pi2 pi5 n65 in66
+.lincomb pi2 pi5 n67 in68
 1 1 1
-.bootstrap in66 n66 n94
+.bootstrap in68 n68 n97
 1110
 0111
-.lincomb n9,n14,n21,n101 n66,n94 in67
-1 2
-.bootstrap in67 n67
-0110
-.lincomb n9,n14,n21,n101 pi4 n67 in68
-4 1 2
-.bootstrap in68 n68
-10100101
-.lincomb pi3 n68 in69
+.lincomb n9,n14,n21,n104 n68,n97 in69
 1 2
 .bootstrap in69 n69
-0100
-.lincomb pi3 n9,n14,n21,n101 in70
-1 2
+0110
+.lincomb n9,n14,n21,n104 pi4 n69 in70
+4 1 2
 .bootstrap in70 n70
-1000
-.lincomb pi3 n66,n94 in71
+10100101
+.lincomb pi3 n70 in71
 1 2
 .bootstrap in71 n71
 0100
-.lincomb n70 n71 in72
+.lincomb pi3 n9,n14,n21,n104 in72
 1 2
 .bootstrap in72 n72
 1000
-.lincomb pi4 n72 in73
+.lincomb pi3 n68,n97 in73
 1 2
 .bootstrap in73 n73
-1000
-.lincomb n27 n73 in74
+0100
+.lincomb n72 n73 in74
 1 2
 .bootstrap in74 n74
 1000
-.lincomb pi5 n29 in75
+.lincomb pi4 n74 in75
 1 2
 .bootstrap in75 n75
 1000
-.lincomb pi3 n75 in76
+.lincomb n27 n75 in76
 1 2
 .bootstrap in76 n76
-0100
-.lincomb pi3 n9,n14,n21,n101 in77
+1000
+.lincomb pi5 n29 in77
 1 2
 .bootstrap in77 n77
-0010
-.lincomb pi4 n76 n77 in78
-1 1 1
-.bootstrap in78 n78
 1000
-.lincomb n37 n78 in79
+.lincomb pi3 n77 in78
+1 2
+.bootstrap in78 n78
+0100
+.lincomb pi3 n9,n14,n21,n104 in79
 1 2
 .bootstrap in79 n79
-1000
-.lincomb pi2 pi5 pi6 in80
+0010
+.lincomb pi4 n78 n79 in80
 1 1 1
 .bootstrap in80 n80
-0111
-.lincomb pi3 pi4 n80 in81
-1 1 1
+1000
+.lincomb n37 n80 in81
+1 2
 .bootstrap in81 n81
-1110
-.lincomb pi6 n11,n99,n115 in82
-1 2
+1000
+.lincomb pi2 pi5 pi6 in82
+1 1 1
 .bootstrap in82 n82
-0100
-.lincomb pi5 n82 in83
-1 2
-.bootstrap in83 n83
 1000
-.lincomb pi4 n83 in84
-1 2
+.lincomb n82 n83
+-1 1
+.lincomb pi3 pi4 n83 in84
+1 1 1
 .bootstrap in84 n84
-1000
-.lincomb pi6 n15,n85 in86
+1110
+.lincomb pi6 n11,n102,n119 in85
+1 2
+.bootstrap in85 n85
+0100
+.lincomb pi5 n85 in86
 1 2
 .bootstrap in86 n86
 1000
 .lincomb pi4 n86 in87
 1 2
 .bootstrap in87 n87
-0100
-.lincomb n84 n87 in88
+1000
+.lincomb pi6 n15,n88 in89
 1 2
-.bootstrap in88 n88
-0111
-.lincomb pi5 pi6 n13 in89
-1 1 1
 .bootstrap in89 n89
 1000
-.lincomb pi2 n89 in90
+.lincomb pi4 n89 in90
 1 2
 .bootstrap in90 n90
-0001
-.lincomb pi4 n80 in91
+0100
+.lincomb n87 n90 in91
 1 2
 .bootstrap in91 n91
-0100
-.lincomb pi4 n25 n47,n92 in93
+0111
+.lincomb pi5 pi6 n13 in92
 1 1 1
+.bootstrap in92 n92
+1000
+.lincomb pi2 n92 in93
+1 2
 .bootstrap in93 n93
 0001
-.lincomb pi4 n25 n66,n94 in95
-1 1 1
-.bootstrap in95 n95
+.lincomb pi4 n82 in94
+1 2
+.bootstrap in94 n94
 0001
-.lincomb pi3 pi4 n66,n94 in96
+.lincomb pi4 n25 n48,n95 in96
 1 1 1
 .bootstrap in96 n96
 0001
-.lincomb pi3 pi4 n47,n92 in97
+.lincomb pi4 n25 n68,n97 in98
 1 1 1
-.bootstrap in97 n97
-0001
-.lincomb pi6 pi7 in98
-1 2
 .bootstrap in98 n98
-1011
-.lincomb pi5 n98 n11,n99,n115 in100
+0001
+.lincomb pi3 pi4 n68,n97 in99
+1 1 1
+.bootstrap in99 n99
+0001
+.lincomb pi3 pi4 n48,n95 in100
 1 1 1
 .bootstrap in100 n100
 0001
-.lincomb pi2 n25 n9,n14,n21,n101 in102
-1 1 1
-.bootstrap in102 n102
-0001
-.lincomb pi4 n100 n102 in103
+.lincomb pi6 pi7 in101
+1 2
+.bootstrap in101 n101
+1011
+.lincomb pi5 n101 n11,n102,n119 in103
 1 1 1
 .bootstrap in103 n103
-1000
-.lincomb n9,n14,n21,n101 n11,n99,n115 in104
-1 2
-.bootstrap in104 n104
-0100
-.lincomb pi4 n104 in105
-1 2
+0001
+.lincomb pi2 n25 n9,n14,n21,n104 in105
+1 1 1
 .bootstrap in105 n105
-0100
-.lincomb n103 n105 in106
-1 2
+0001
+.lincomb pi4 n103 n105 in106
+1 1 1
 .bootstrap in106 n106
 1000
-.lincomb pi2 n9,n14,n21,n101 n40,n107 in108
-1 1 1
+.lincomb n9,n14,n21,n104 n11,n102,n119 in107
+1 2
+.bootstrap in107 n107
+0100
+.lincomb pi4 n107 in108
+1 2
 .bootstrap in108 n108
-0001
-.lincomb pi3 n108 in109
+0100
+.lincomb n106 n108 in109
 1 2
 .bootstrap in109 n109
-0100
-.lincomb pi3 n66,n94 in110
-1 2
-.bootstrap in110 n110
 1000
-.lincomb pi4 n109 n110 in111
+.lincomb pi2 n9,n14,n21,n104 n40,n110 in111
 1 1 1
 .bootstrap in111 n111
-1000
-.lincomb pi5 n41 n11,n99,n115 in112
-1 1 1
-.bootstrap in112 n112
 0001
-.lincomb pi4 n112 in113
+.lincomb pi3 n111 in112
+1 2
+.bootstrap in112 n112
+0100
+.lincomb pi3 n68,n97 in113
 1 2
 .bootstrap in113 n113
 1000
-.lincomb n105 n113 in114
-1 2
+.lincomb pi4 n112 n113 in114
+1 1 1
 .bootstrap in114 n114
 1000
-.lincomb pi4 n9,n14,n21,n101 n11,n99,n115 in116
+.lincomb pi5 n42 n11,n102,n119 in115
 1 1 1
+.bootstrap in115 n115
+0001
+.lincomb pi4 n115 in116
+1 2
 .bootstrap in116 n116
 1000
-.lincomb pi3 pi4 n47,n92 in117
-1 1 1
+.lincomb n108 n116 in117
+1 2
 .bootstrap in117 n117
+1000
+.lincomb n9,n14,n21,n104 n118
+-1 1
+.lincomb pi4 n118 n11,n102,n119 in120
+1 1 1
+.bootstrap in120 n120
+1000
+.lincomb n48,n95 n121
+-1 1
+.lincomb pi3 pi4 n121 in122
+1 1 1
+.bootstrap in122 n122
 1110
 .end
