@@ -2,7 +2,7 @@ use tfhe::shortint::{Ciphertext, ClientKey, MessageModulus};
 
 pub struct Client {
     client_key: ClientKey,
-    pt_mod_full: MessageModulus,
+    pub pt_mod_full: MessageModulus,
 }
 
 impl Client {

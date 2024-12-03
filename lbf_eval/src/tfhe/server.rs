@@ -1,7 +1,10 @@
 use super::test_vector::{TestVector, TestVectorType};
 use itertools::izip;
 use tfhe::{
-    core_crypto::prelude::{lwe_ciphertext_plaintext_add_assign, GlweCiphertext, Plaintext},
+    core_crypto::prelude::{
+        lwe_ciphertext_plaintext_add_assign, GlweCiphertext,
+        Plaintext,
+    },
     shortint::{
         parameters::Degree, server_key::LookupTableOwned, Ciphertext, MessageModulus, ServerKey,
     },
@@ -10,7 +13,7 @@ use tfhe::{
 pub struct Server {
     server_key: ServerKey,
     pub pt_mod: MessageModulus,
-    pt_mod_full: MessageModulus,
+    pub pt_mod_full: MessageModulus,
 }
 
 impl Server {
@@ -83,7 +86,7 @@ impl Server {
         }
     }
 
-    pub fn eval_bootstrap(&self, mut val: Ciphertext, tv: &TestVector) -> Ciphertext {
+    pub fn bootstrap(&self, mut val: Ciphertext, tv: &TestVector) -> Ciphertext {
         let acc = self.build_acc(tv);
 
         // add delta/2 to compensate for non-rotated accumulator
@@ -106,24 +109,15 @@ impl Server {
         res
     }
 
-    pub fn lincomb(&self, cts: &[&Ciphertext], coefs: &[i8], const_coef: i8) -> Ciphertext {
+    pub fn lincomb(&self, cts: &mut [Ciphertext], coefs: &[i8], const_coef: i8) -> Ciphertext {
         assert!(cts.len() == coefs.len());
         let res = self.server_key.unchecked_create_trivial(const_coef as u64);
-        let res = izip!(cts.into_iter(), coefs).fold(
-            res,
-            |mut acc, (ct, coef)| {
-                if *coef > 0 {
-                    let ct = self.server_key.unchecked_scalar_mul(ct, *coef as u8);
-                    self.server_key.unchecked_add_assign(&mut acc, &ct)
-                } else if *coef < 0 {
-                    let ct = self.server_key.unchecked_scalar_mul(ct, (-*coef) as u8);
-                    self.server_key.unchecked_sub_assign(&mut acc, &ct)
-                } else {
-                    eprintln!("Unexpected zero coefficient");
-                }
-                acc
-            },
-        );
+        let res = izip!(cts.into_iter(), coefs).fold(res, |mut acc, (ct, coef)| {
+            let coef = if *coef < 0 { self.pt_mod_full.0 as i8 + *coef } else { *coef } as u8;
+            self.server_key.unchecked_scalar_mul_assign(ct, coef);
+            self.server_key.unchecked_add_assign(&mut acc, &ct);
+            acc
+        });
         res
     }
 }
