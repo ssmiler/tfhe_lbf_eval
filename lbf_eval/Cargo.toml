@@ -1,0 +1,8 @@
+[package]
+name = "lbf_eval"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tfhe = { version = "0.10.0", features = ["shortint", "x86_64-unix"] }
+itertools = "0.13.0"
