@@ -1,29 +1,6 @@
-use std::collections::HashSet;
+use super::circuit::Circuit;
 
 use itybity::StrToBits;
-
-#[derive(Debug, Clone)]
-pub enum Node {
-    Input {
-        name: String,
-    },
-    Output {
-        name: String,
-    },
-    LinComb {
-        inputs: Vec<String>,
-        output: String,
-        coefs: Vec<i8>,
-        const_coef: i8,
-    },
-    Bootstrap {
-        input: String,
-        outputs: Vec<String>,
-        tables: Vec<Vec<bool>>,
-    },
-}
-
-type Circuit = Vec<Node>;
 
 pub type ParseError = String;
 
@@ -132,60 +109,6 @@ fn parse_lincomb(
     Ok((inputs, output, coefs, const_coef))
 }
 
-fn check_circuit(circuit: Circuit) -> Result<Circuit, ParseError> {
-    // traverse circuit and check if name exist or not defined twice
-    //  and other consistency checks
-    let mut visited_names: HashSet<String> = HashSet::new();
-
-    fn add_new_name(visited_names: &mut HashSet<String>, name: &String) -> Result<(), ParseError> {
-        if visited_names.contains(name) {
-            return Err(format!("Name {} already defined", name));
-        }
-        visited_names.insert(name.clone());
-        Ok(())
-    }
-
-    fn check_name_exists(visited_names: &HashSet<String>, name: &String) -> Result<(), ParseError> {
-        if !visited_names.contains(name) {
-            return Err(format!("Name {} does not exist", name));
-        }
-        Ok(())
-    }
-
-    for node in &circuit {
-        match node {
-            Node::Input { name } => {
-                add_new_name(&mut visited_names, name)?;
-            }
-            Node::LinComb { inputs, output, .. } => {
-                for input in inputs {
-                    check_name_exists(&visited_names, input)?;
-                }
-                add_new_name(&mut visited_names, output)?;
-            }
-            Node::Bootstrap { input, outputs, .. } => {
-                check_name_exists(&visited_names, input)?;
-                for output in outputs {
-                    add_new_name(&mut visited_names, output)?;
-                }
-            }
-            _ => {}
-        }
-    }
-
-    // check output once all nodes are visited
-    for node in &circuit {
-        match node {
-            Node::Output { name } => {
-                check_name_exists(&visited_names, name)?;
-            }
-            _ => {}
-        }
-    }
-
-    Ok(circuit)
-}
-
 pub fn parse_lbf(input: &str) -> Result<Circuit, ParseError> {
     let mut circuit = Circuit::new();
 
@@ -213,40 +136,31 @@ pub fn parse_lbf(input: &str) -> Result<Circuit, ParseError> {
         }
 
         if obj.starts_with("inputs") {
-            circuit.extend(obj["inputs".len()..].split_ascii_whitespace().map(|name| {
-                Node::Input {
-                    name: name.to_string(),
-                }
-            }));
+            obj["inputs".len()..]
+                .split_ascii_whitespace()
+                .for_each(|name| {
+                    circuit.add_input(name.to_string());
+                });
         } else if obj.starts_with("outputs") {
-            circuit.extend(obj["outputs".len()..].split_ascii_whitespace().map(|name| {
-                Node::Output {
-                    name: name.to_string(),
-                }
-            }));
+            obj["outputs".len()..]
+                .split_ascii_whitespace()
+                .for_each(|name| {
+                    circuit.add_output(name.to_string());
+                });
         } else if obj.starts_with("lincomb") {
             let lines: Vec<&str> = obj.lines().collect();
             let (inputs, output, coefs, const_coef) = parse_lincomb(lines)?;
-            circuit.push(Node::LinComb {
-                inputs,
-                output,
-                coefs,
-                const_coef,
-            });
+            circuit.add_lincomb(output, inputs, coefs, const_coef);
         } else if obj.starts_with("bootstrap") {
             let lines: Vec<&str> = obj.lines().collect();
             let (input, outputs, tables) = parse_bootstrap(lines)?;
-            circuit.push(Node::Bootstrap {
-                input,
-                outputs,
-                tables,
-            });
+            circuit.add_bootstrap(outputs, input, tables);
         } else if obj.starts_with("end") {
             break;
         }
     }
 
-    check_circuit(circuit)
+    circuit.check()
 }
 
 #[cfg(test)]

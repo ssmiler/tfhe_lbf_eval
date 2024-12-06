@@ -8,8 +8,7 @@ pub struct Client {
 impl Client {
     pub fn new(client_key: ClientKey) -> Client {
         let pt_mod_full = MessageModulus(
-            2 * client_key.parameters.message_modulus().0
-                * client_key.parameters.carry_modulus().0,
+            2 * client_key.parameters.message_modulus().0 * client_key.parameters.carry_modulus().0,
         );
         Client {
             client_key,

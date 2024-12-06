@@ -1,10 +1,7 @@
 use super::test_vector::{TestVector, TestVectorType};
 use itertools::izip;
 use tfhe::{
-    core_crypto::prelude::{
-        lwe_ciphertext_plaintext_add_assign, GlweCiphertext,
-        Plaintext,
-    },
+    core_crypto::prelude::{lwe_ciphertext_plaintext_add_assign, GlweCiphertext, Plaintext},
     shortint::{
         parameters::Degree, server_key::LookupTableOwned, Ciphertext, MessageModulus, ServerKey,
     },
@@ -109,12 +106,20 @@ impl Server {
         res
     }
 
-    pub fn lincomb(&self, cts: &mut [Ciphertext], coefs: &[i8], const_coef: i8) -> Ciphertext {
-        assert!(cts.len() == coefs.len());
+    pub fn lincomb<'a>(
+        &self,
+        cts: impl IntoIterator<Item = &'a Ciphertext>,
+        coefs: &[i8],
+        const_coef: i8,
+    ) -> Ciphertext {
         let res = self.server_key.unchecked_create_trivial(const_coef as u64);
         let res = izip!(cts.into_iter(), coefs).fold(res, |mut acc, (ct, coef)| {
-            let coef = if *coef < 0 { self.pt_mod_full.0 as i8 + *coef } else { *coef } as u8;
-            self.server_key.unchecked_scalar_mul_assign(ct, coef);
+            let coef = if *coef < 0 {
+                self.pt_mod_full.0 as i8 + *coef
+            } else {
+                *coef
+            } as u8;
+            let ct = self.server_key.unchecked_scalar_add(ct, coef);
             self.server_key.unchecked_add_assign(&mut acc, &ct);
             acc
         });

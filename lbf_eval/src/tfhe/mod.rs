@@ -1,10 +1,12 @@
-use client::Client;
-use server::Server;
 use tfhe::shortint::{gen_keys, ClassicPBSParameters};
 
 pub mod client;
 pub mod server;
 pub mod test_vector;
+
+pub type Client = client::Client;
+pub type Server = server::Server;
+pub type Ciphertext = tfhe::shortint::Ciphertext;
 
 pub fn gen_client_server(params: ClassicPBSParameters) -> (Client, Server) {
     let (client_key, server_key) = gen_keys(params);
@@ -29,7 +31,8 @@ mod tests {
             let ct1 = client.encrypt(b1);
             let ct2 = client.encrypt(b2);
 
-            let ct = server.lincomb(&mut [ct0, ct1, ct2], &[2, 1, -3], 3);
+            let cts = [&ct0, &ct1, &ct2];
+            let ct = server.lincomb(cts, &[2, 1, -3], 3);
 
             let val = client.decrypt(&ct);
             let exp_val = b0 as i8 * 2 + b1 as i8 * 1 + b2 as i8 * (-3) + 3;

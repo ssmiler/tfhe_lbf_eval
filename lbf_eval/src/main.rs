@@ -1,45 +1,83 @@
-use itertools::iproduct;
-use lbf_eval::tfhe::gen_client_server;
+use std::collections::HashMap;
+
+use itertools::Itertools;
+use lbf_eval::{
+    circuit::parser::parse_lbf,
+    executors::{clear::ClearExec, fbs::FbsExec},
+    tfhe::gen_client_server,
+};
 use tfhe::shortint::prelude::*;
 
 fn main() {
-    let (client, server) = gen_client_server(PARAM_MESSAGE_1_CARRY_1_KS_PBS);
+    let s = r#".inputs a b c d
+    .outputs e f g \
+        h CONST1
+    .lincomb CONST1     # CONSTANT
+    1
+    .lincomb a b \
+     n1     # n1 = 2.a + b, n1 in {0, 1, 2, 3}, sq. norm2 = 2^2 + 1^2 = 5
+    2 1
+    .lincomb a b n2     # n2 = a - b + 1, n2 in {0, 1, 2}, sq. norm2 = 1^2 + 1^2 = 2
+    1 -1 \
+    1
+    .bootstrap n1 e          # AND(a, b)
+    000   \
+    1
+    .bootstrap n2 f          # XOR(a, b)
+    101
+    .bootstrap n2 g h        # 2-output bootstraping
+    001                 # AND(a, NOT(b))
+    0001                # XNOR(a, b)
+    .end
+    "#;
 
-    let tv = server
-        .new_test_vector(vec![true, false, true, false, true])
-        .unwrap();
-    println!("TV {:?}", tv);
+    let circuit = parse_lbf(s).unwrap();
+    println!("Circuit: {:?}", circuit);
 
-    for (b0, b1, b2) in iproduct!([0, 1], [0, 1], [0, 1]) {
-        let ct0 = client.encrypt(b0);
-        let ct1 = client.encrypt(b1);
-        let ct2 = client.encrypt(b2);
+    let mut inputs = HashMap::<String, bool>::default();
+    inputs.insert("a".to_string(), true);
+    inputs.insert("b".to_string(), false);
+    inputs.insert("c".to_string(), true);
+    inputs.insert("d".to_string(), true);
 
-        let ct = server.lincomb(&mut [ct0, ct1, ct2], &[2, 1, 1], 0);
-        let ct_msg = client.decrypt(&ct);
-
-        let ct_res = server.bootstrap(ct, &tv);
-
-        let output = client.decrypt(&ct_res);
+    println!("Inputs: {:?}", inputs);
+    {
+        println!("Clear execution...");
+        let clear_exec = ClearExec::new();
+        let outputs = clear_exec.eval(&circuit, &inputs).unwrap();
 
         println!(
-            "OK {} {} {} {} {} {}",
-            b0, b1, b2, ct_msg, output, ct_res.message_modulus.0
+            "Outputs: {}",
+            outputs
+                .keys()
+                .sorted()
+                .map(|name| format!("{} = {}", name, outputs.get(name).unwrap()))
+                .join(" ")
         );
     }
 
-    // for msg in 0..16 {
-    //     let ct = client.encrypt(msg);
-    //     let ct_msg = client.decrypt(&ct);
+    {
+        println!("FBS execution...");
+        let (client, server) = gen_client_server(PARAM_MESSAGE_1_CARRY_1_KS_PBS);
+        let executor = FbsExec::new(server);
 
-    //     let ct_res = server.eval_bootstrap(ct, &tv);
+        let inputs = inputs
+            .iter()
+            .map(|(name, val)| (name.clone(), client.encrypt(*val as u8)))
+            .collect();
+        let outputs = executor.eval(&circuit, inputs).unwrap();
+        let outputs: HashMap<String, bool> = outputs
+            .into_iter()
+            .map(|(name, ct)| (name, client.decrypt(&ct) != 0))
+            .collect();
 
-    //     let output = client.decrypt(&ct_res);
-
-    //     println!(
-    //         "OK {} {} {} {}",
-    //         msg, ct_msg, output, ct_res.message_modulus.0
-    //     );
-    //     // break;
-    // }
+        println!(
+            "Outputs: {}",
+            outputs
+                .keys()
+                .sorted()
+                .map(|name| format!("{} = {}", name, outputs.get(name).unwrap()))
+                .join(" ")
+        );
+    }
 }
