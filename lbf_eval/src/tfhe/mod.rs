@@ -18,13 +18,25 @@ pub fn gen_client_server(params: ClassicPBSParameters) -> (Client, Server) {
 mod tests {
     use itertools::iproduct;
     use test_vector::TestVectorType;
-    use tfhe::shortint::prelude::PARAM_MESSAGE_1_CARRY_1_KS_PBS;
+    const PARAM_TEST: ClassicPBSParameters =
+        tfhe::shortint::prelude::PARAM_MESSAGE_1_CARRY_1_KS_PBS;
 
     use super::*;
 
     #[test]
+    fn encrypt_decrypt() {
+        let (client, _) = gen_client_server(PARAM_TEST);
+
+        for msg in 0..2 * client.pt_mod_full.0 {
+            let ct = client.encrypt(msg as u8);
+            let msg_dec = client.decrypt(&ct);
+            assert_eq!((msg % client.pt_mod_full.0) as u8, msg_dec);
+        }
+    }
+
+    #[test]
     fn lincomb() {
-        let (client, server) = gen_client_server(PARAM_MESSAGE_1_CARRY_1_KS_PBS);
+        let (client, server) = gen_client_server(PARAM_TEST);
 
         for (b0, b1, b2) in iproduct!([0, 1], [0, 1], [0, 1]) {
             let ct0 = client.encrypt(b0);
@@ -42,13 +54,14 @@ mod tests {
             } else {
                 exp_val
             } as u8;
+
             assert_eq!(exp_val, val);
         }
     }
 
     #[test]
     fn bootstrap() {
-        let (client, server) = gen_client_server(PARAM_MESSAGE_1_CARRY_1_KS_PBS);
+        let (client, server) = gen_client_server(PARAM_TEST);
 
         let tv = server
             .new_test_vector(vec![true, false, true, false, false])

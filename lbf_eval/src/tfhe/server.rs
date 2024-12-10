@@ -119,7 +119,7 @@ impl Server {
             } else {
                 *coef
             } as u8;
-            let ct = self.server_key.unchecked_scalar_add(ct, coef);
+            let ct = self.server_key.unchecked_scalar_mul(ct, coef);
             self.server_key.unchecked_add_assign(&mut acc, &ct);
             acc
         });
