@@ -7,3 +7,5 @@ edition = "2021"
 tfhe = { version = "0.10.0", features = ["shortint", "x86_64-unix"] }
 itertools = "0.13.0"
 itybity = "0.2.1"
+clap = { version = "4.5.23", features = ["derive"] }
+rand = "0.8.5"

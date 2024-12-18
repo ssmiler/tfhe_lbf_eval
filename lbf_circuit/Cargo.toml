@@ -1,7 +1,0 @@
-[package]
-name = "lbf_circuit"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-itybity = "0.2.1"
