@@ -5,7 +5,8 @@ edition = "2021"
 
 [dependencies]
 tfhe = { version = "0.10.0", features = ["shortint", "x86_64-unix"] }
-itertools = "0.13.0"
+itertools = "0.14.0"
 itybity = "0.2.1"
 clap = { version = "4.5.23", features = ["derive"] }
 rand = "0.8.5"
+dagrs = "0.2.0"

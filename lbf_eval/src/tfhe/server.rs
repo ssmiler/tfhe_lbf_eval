@@ -112,6 +112,11 @@ impl Server {
         coefs: &[i8],
         const_coef: i8,
     ) -> Ciphertext {
+        // buffer special case
+        if const_coef == 0 && coefs == [1] {
+            return cts.into_iter().next().unwrap().clone();
+        }
+
         let res = self.server_key.unchecked_create_trivial(const_coef as u64);
         let res = izip!(cts.into_iter(), coefs).fold(res, |mut acc, (ct, coef)| {
             let coef = if *coef < 0 {
@@ -119,7 +124,13 @@ impl Server {
             } else {
                 *coef
             } as u8;
-            let ct = self.server_key.unchecked_scalar_mul(ct, coef);
+
+            // do not multiply if coefficient is zero
+            let ct = if coef == 1 {
+                ct.clone()
+            } else {
+                self.server_key.unchecked_scalar_mul(ct, coef)
+            };
             self.server_key.unchecked_add_assign(&mut acc, &ct);
             acc
         });

@@ -19,15 +19,14 @@ impl ClearExec {
         let mut node_val = HashMap::<String, u8>::new();
         let mut outputs = HashMap::<String, bool>::new();
 
-        for name in &circuit.inputs {
-            let val = *inputs
-                .get(name)
-                .ok_or(format!("Cannot find input {}", name))?;
-            node_val.insert(name.clone(), val as u8);
-        }
-
         for node in &circuit.nodes {
             match node {
+                Node::Input { name } => {
+                    let val = *inputs
+                        .get(name)
+                        .ok_or(format!("Cannot find input {}", name))?;
+                    node_val.insert(name.clone(), val as u8);
+                }
                 Node::LinComb {
                     inputs,
                     output,

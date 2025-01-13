@@ -1,7 +1,12 @@
 use std::collections::HashSet;
 
+use clap::builder::Str;
+
 #[derive(Debug, Clone)]
 pub enum Node {
+    Input {
+        name: String,
+    },
     LinComb {
         inputs: Vec<String>,
         output: String,
@@ -18,17 +23,18 @@ pub enum Node {
 #[derive(Debug, Default)]
 pub struct Circuit {
     pub inputs: Vec<String>,
-    pub nodes: Vec<Node>,
+    pub nodes: Vec<Node>, // first nodes are inputs
     pub outputs: Vec<String>,
 }
 
 impl Circuit {
     pub fn new() -> Circuit {
-        Circuit::default() 
+        Circuit::default()
     }
 
     pub fn add_input(&mut self, name: String) {
-        self.inputs.push(name);
+        self.inputs.push(name.clone());
+        self.nodes.push(Node::Input { name });
     }
 
     pub fn add_output(&mut self, name: String) {
@@ -61,7 +67,8 @@ impl Circuit {
     pub fn check(self) -> Result<Circuit, String> {
         // traverse circuit and check if name exist or not defined twice
         //  and other consistency checks
-        let mut visited_names: HashSet<String> = HashSet::new();
+        let mut visited_names = HashSet::<String>::new();
+        let mut used_nodes = HashSet::<String>::new();
 
         fn add_new_name(visited_names: &mut HashSet<String>, name: &String) -> Result<(), String> {
             if visited_names.contains(name) {
@@ -78,20 +85,21 @@ impl Circuit {
             Ok(())
         }
 
-        for name in &self.inputs {
-            add_new_name(&mut visited_names, name)?;
-        }
-
         for node in &self.nodes {
             match node {
+                Node::Input { name } => {
+                    add_new_name(&mut visited_names, name)?;
+                }
                 Node::LinComb { inputs, output, .. } => {
                     for input in inputs {
                         check_name_exists(&visited_names, input)?;
+                        used_nodes.insert(input.clone());
                     }
                     add_new_name(&mut visited_names, output)?;
                 }
                 Node::Bootstrap { input, outputs, .. } => {
                     check_name_exists(&visited_names, input)?;
+                    used_nodes.insert(input.clone());
                     for output in outputs {
                         add_new_name(&mut visited_names, output)?;
                     }
@@ -102,6 +110,12 @@ impl Circuit {
         // check output once all nodes are visited
         for name in &self.outputs {
             check_name_exists(&visited_names, name)?;
+            used_nodes.insert(name.clone());
+        }
+
+        if visited_names.len() > used_nodes.len() {
+            println!("AAA {:?}", visited_names.difference(&used_nodes));
+            return Err("Circuit has dangling nodes".to_owned());
         }
 
         Ok(self)

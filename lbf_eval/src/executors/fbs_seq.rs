@@ -6,17 +6,25 @@ use crate::{
 };
 use std::collections::HashMap;
 
-pub struct FbsExec {
-    server: Server,
-}
+use super::fbs_exec::FbsExec;
 
-impl FbsExec {
-    pub fn new(server: Server) -> FbsExec {
-        FbsExec { server }
+#[derive(Default)]
+pub struct FbsExecSeq;
+
+impl FbsExecSeq {
+    pub fn new() -> Self {
+        Self
     }
 
-    pub fn eval(
+    pub fn new_boxed() -> Box<Self> {
+        Box::new(Self)
+    }
+}
+
+impl FbsExec for FbsExecSeq {
+    fn eval(
         &self,
+        server: Server,
         circuit: &Circuit,
         inputs: HashMap<String, Ciphertext>,
     ) -> Result<HashMap<String, Ciphertext>, String> {
@@ -29,6 +37,7 @@ impl FbsExec {
 
         for node in &circuit.nodes {
             match node {
+                Node::Input { .. } => {}
                 Node::LinComb {
                     inputs,
                     output,
@@ -36,7 +45,7 @@ impl FbsExec {
                     const_coef,
                 } => {
                     let cts = inputs.iter().map(|name| ct_store.get(name));
-                    let ct = self.server.lincomb(cts, coefs, *const_coef);
+                    let ct = server.lincomb(cts, coefs, *const_coef);
                     ct_store.add(output, ct)
                 }
                 Node::Bootstrap {
@@ -46,9 +55,9 @@ impl FbsExec {
                 } => {
                     for (out, table) in izip!(outputs, tables) {
                         let inp = ct_store.get(input);
-                        let ct = self.server.bootstrap(
+                        let ct = server.bootstrap(
                             inp.clone(),
-                            &self.server.new_test_vector(table.clone()).unwrap(),
+                            &server.new_test_vector(table.clone()).unwrap(),
                         );
                         ct_store.add(out, ct);
                     }

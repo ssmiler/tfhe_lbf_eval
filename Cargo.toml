@@ -2,3 +2,4 @@
 members = [
     "lbf_eval",
 ]
+resolver = "2"
