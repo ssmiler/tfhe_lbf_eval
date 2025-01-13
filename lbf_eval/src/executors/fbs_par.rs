@@ -1,7 +1,7 @@
 use std::{collections::HashMap, sync::Arc};
 
 use crate::{
-    circuit::{circuit::Node, Circuit},
+    lbf_circuit::{circuit::Node, Circuit},
     tfhe::{Ciphertext, Server},
 };
 
@@ -65,7 +65,7 @@ struct OutputAction {
 }
 
 impl Action for OutputAction {
-    fn run(&self, input: Input, env: Arc<EnvVar>) -> Result<Output, RunningError> {
+    fn run(&self, input: Input, _env: Arc<EnvVar>) -> Result<Output, RunningError> {
         let outputs: HashMap<String, Ciphertext> = self
             .outputs
             .iter()

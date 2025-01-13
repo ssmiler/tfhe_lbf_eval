@@ -118,7 +118,7 @@ impl Server {
         }
 
         let res = self.server_key.unchecked_create_trivial(const_coef as u64);
-        let res = izip!(cts.into_iter(), coefs).fold(res, |mut acc, (ct, coef)| {
+        izip!(cts.into_iter(), coefs).fold(res, |mut acc, (ct, coef)| {
             let coef = if *coef < 0 {
                 self.pt_mod_full.0 as i8 + *coef
             } else {
@@ -133,7 +133,6 @@ impl Server {
             };
             self.server_key.unchecked_add_assign(&mut acc, &ct);
             acc
-        });
-        res
+        })
     }
 }

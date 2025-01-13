@@ -47,7 +47,7 @@ mod tests {
             let ct = server.lincomb(cts, &[2, 1, -3], 3);
 
             let val = client.decrypt(&ct);
-            let exp_val = b0 as i8 * 2 + b1 as i8 * 1 + b2 as i8 * (-3) + 3;
+            let exp_val = b0 as i8 * 2 + b1 as i8 + b2 as i8 * (-3) + 3;
             let exp_val = exp_val % client.pt_mod_full.0 as i8;
             let exp_val = if exp_val < 0 {
                 client.pt_mod_full.0 as i8 + exp_val

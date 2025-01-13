@@ -23,7 +23,7 @@ impl Client {
     }
 
     pub fn decrypt(&self, ct: &Ciphertext) -> u8 {
-        let msg = self.client_key.decrypt_message_and_carry(&ct);
+        let msg = self.client_key.decrypt_message_and_carry(ct);
         assert!((msg as usize) < self.pt_mod_full.0);
         msg as u8
     }

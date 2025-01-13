@@ -1,7 +1,7 @@
 use itertools::izip;
 
 use crate::{
-    circuit::{circuit::Node, Circuit},
+    lbf_circuit::{circuit::Node, Circuit},
     tfhe::{Ciphertext, Server},
 };
 use std::collections::HashMap;
@@ -66,7 +66,7 @@ impl FbsExec for FbsExecSeq {
         }
 
         for name in &circuit.outputs {
-            let val = ct_store.get(&name);
+            let val = ct_store.get(name);
             outputs.insert(name.clone(), val.clone());
         }
 
@@ -81,13 +81,12 @@ struct CiphertextStore {
 }
 
 impl CiphertextStore {
-    fn add(&mut self, name: &String, ct: Ciphertext) {
+    fn add(&mut self, name: &str, ct: Ciphertext) {
         let idx = self.arena.len();
         self.arena.push(ct);
-        match self.ct_idx.insert(name.clone(), idx) {
-            Some(_) => unreachable!(),
-            None => (),
-        };
+        if self.ct_idx.insert(name.to_string(), idx).is_some() {
+            unreachable!()
+        }
     }
 
     fn get(&self, name: &String) -> &Ciphertext {

@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 use crate::{
-    circuit::Circuit,
+    lbf_circuit::Circuit,
     tfhe::{Ciphertext, Server},
 };
 

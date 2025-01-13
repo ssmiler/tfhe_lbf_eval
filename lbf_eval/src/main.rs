@@ -3,11 +3,11 @@ use std::{collections::HashMap, fs, path::PathBuf};
 use clap::Parser;
 use itertools::Itertools;
 use lbf_eval::{
-    circuit::parser::parse_lbf,
     executors::{
-        self, clear::ClearExec, fbs_exec::FbsExec, fbs_par::FbsExecPar, fbs_seq::FbsExecSeq,
+        clear::ClearExec, fbs_exec::FbsExec, fbs_par::FbsExecPar, fbs_seq::FbsExecSeq,
         stats::CircuitStats,
     },
+    lbf_circuit::parser::parse_lbf,
     tfhe::gen_client_server,
 };
 use rand::{RngCore, SeedableRng};
@@ -38,7 +38,7 @@ fn build_random_inputs(inputs: &[String], seed: u64) -> HashMap<String, bool> {
         .collect()
 }
 
-fn vals_to_string(names: &Vec<String>, vals: &HashMap<String, bool>) -> String {
+fn vals_to_string(names: &[String], vals: &HashMap<String, bool>) -> String {
     names
         .iter()
         .map(|name| format!("{} = {}", name, *vals.get(name).unwrap() as u8))

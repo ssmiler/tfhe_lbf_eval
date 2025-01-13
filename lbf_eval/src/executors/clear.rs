@@ -2,8 +2,9 @@ use std::collections::HashMap;
 
 use itertools::izip;
 
-use crate::circuit::{circuit::Node, Circuit};
+use crate::lbf_circuit::{circuit::Node, Circuit};
 
+#[derive(Default)]
 pub struct ClearExec;
 
 impl ClearExec {

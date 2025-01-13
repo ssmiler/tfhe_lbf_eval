@@ -1,8 +1,4 @@
-use std::{collections::HashMap, os::linux::raw::stat};
-
-use itertools::izip;
-
-use crate::circuit::{circuit::Node, Circuit};
+use crate::lbf_circuit::{circuit::Node, Circuit};
 
 #[derive(Default, Debug)]
 pub struct CircuitStats {
@@ -19,21 +15,21 @@ impl CircuitStats {
 
         for node in &circuit.nodes {
             match node {
-                Node::Input { name } => {
+                Node::Input { name: _ } => {
                     stats.nb_input += 1;
                 }
                 Node::LinComb {
-                    inputs,
-                    output,
-                    coefs,
-                    const_coef,
+                    inputs: _,
+                    output: _,
+                    coefs: _,
+                    const_coef: _,
                 } => {
                     stats.nb_lincomb += 1;
                 }
                 Node::Bootstrap {
-                    input,
+                    input: _,
                     outputs,
-                    tables,
+                    tables: _,
                 } => {
                     stats.nb_bootstrap += 1;
                     stats.nb_bootstrap_indiv += outputs.len();

@@ -4,6 +4,7 @@ use itybity::StrToBits;
 
 pub type ParseError = String;
 
+#[allow(clippy::type_complexity)]
 fn parse_bootstrap(
     lines: Vec<&str>,
 ) -> Result<
@@ -134,19 +135,14 @@ pub fn parse_lbf(input: &str) -> Result<Circuit, ParseError> {
         if obj.is_empty() {
             continue;
         }
-
-        if obj.starts_with("inputs") {
-            obj["inputs".len()..]
-                .split_ascii_whitespace()
-                .for_each(|name| {
-                    circuit.add_input(name.to_string());
-                });
-        } else if obj.starts_with("outputs") {
-            obj["outputs".len()..]
-                .split_ascii_whitespace()
-                .for_each(|name| {
-                    circuit.add_output(name.to_string());
-                });
+        if let Some(inputs) = obj.strip_prefix("inputs") {
+            inputs.split_ascii_whitespace().for_each(|name| {
+                circuit.add_input(name.to_string());
+            });
+        } else if let Some(outputs) = obj.strip_prefix("outputs") {
+            outputs.split_ascii_whitespace().for_each(|name| {
+                circuit.add_output(name.to_string());
+            });
         } else if obj.starts_with("lincomb") {
             let lines: Vec<&str> = obj.lines().collect();
             let (inputs, output, coefs, const_coef) = parse_lincomb(lines)?;
