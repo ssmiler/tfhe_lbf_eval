@@ -78,7 +78,7 @@ fn main() {
     let executor: Box<dyn FbsExec> = if cli.threads == 1 {
         FbsExecSeq::new_boxed()
     } else {
-        FbsExecPar::new_boxed()
+        FbsExecPar::new_boxed(cli.threads)
     };
 
     let start = Instant::now();

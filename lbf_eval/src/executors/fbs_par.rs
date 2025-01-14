@@ -1,173 +1,137 @@
 use std::{collections::HashMap, sync::Arc};
 
+use ::futures::future::try_join_all;
+use itertools::izip;
+use tokio::{
+    runtime::{Builder, Runtime},
+    sync::broadcast::{channel, Receiver, Sender},
+};
+
 use crate::{
-    lbf_circuit::{circuit::Node, Circuit},
+    lbf_circuit::{circuit, Circuit},
     tfhe::{Ciphertext, Server},
 };
 
-use dagrs::{log, Action, Dag, DefaultTask, EnvVar, Input, LogLevel, Output, RunningError, Task};
-
 use super::fbs_exec::FbsExec;
 
-#[derive(Default)]
-pub struct FbsExecPar;
-
-struct InputAction {
-    name: String,
+enum NodeExec {
+    Input {
+        ct: Ciphertext,
+        output: Sender<Ciphertext>,
+    },
+    LinComb {
+        server: Arc<Server>,
+        output: Sender<Ciphertext>,
+        inputs: Vec<Receiver<Ciphertext>>,
+        coefs: Vec<i8>,
+        const_coef: i8,
+    },
+    Bootstrap {
+        server: Arc<Server>,
+        output: Sender<Ciphertext>,
+        input: Receiver<Ciphertext>,
+        table: Vec<bool>,
+    },
 }
 
-impl Action for InputAction {
-    fn run(&self, _input: Input, env: Arc<EnvVar>) -> Result<Output, RunningError> {
-        let val = env
-            .get::<Ciphertext>(&self.name)
-            .ok_or(RunningError::new("Cannot find input".into()))?;
-        Ok(Output::new(val))
+impl NodeExec {
+    pub fn new_input(ct: Ciphertext) -> NodeExec {
+        let (output, _) = channel::<Ciphertext>(1);
+        NodeExec::Input { ct, output }
+    }
+
+    pub fn new_lincomb(
+        server: Arc<Server>,
+        inputs: Vec<Receiver<Ciphertext>>,
+        coefs: Vec<i8>,
+        const_coef: i8,
+    ) -> Self {
+        let (output, _) = channel::<Ciphertext>(1);
+        NodeExec::LinComb {
+            server,
+            output,
+            inputs,
+            coefs,
+            const_coef,
+        }
+    }
+    pub fn new_bootstrap(
+        server: Arc<Server>,
+        input: Receiver<Ciphertext>,
+        table: Vec<bool>,
+    ) -> Self {
+        let (output, _) = channel::<Ciphertext>(1);
+        NodeExec::Bootstrap {
+            server,
+            output,
+            input,
+            table,
+        }
     }
 }
 
-struct LinCombAction {
-    coefs: Vec<i8>,
-    const_coef: i8,
-}
+impl NodeExec {
+    fn get_output(&self) -> Receiver<Ciphertext> {
+        match self {
+            NodeExec::Input { output, .. }
+            | NodeExec::LinComb { output, .. }
+            | NodeExec::Bootstrap { output, .. } => output.subscribe(),
+        }
+    }
+    async fn run(self) -> Result<usize, String> {
+        match self {
+            NodeExec::Input { ct, output } => output.send(ct).map_err(|e| e.to_string()),
+            NodeExec::LinComb {
+                server,
+                output,
+                mut inputs,
+                coefs,
+                const_coef,
+            } => {
+                let inp_vals = try_join_all(inputs.iter_mut().map(|input| input.recv()))
+                    .await
+                    .map_err(|e| e.to_string())?;
 
-impl Action for LinCombAction {
-    fn run(&self, input: Input, env: Arc<EnvVar>) -> Result<Output, RunningError> {
-        let server = env.get::<Arc<Server>>("TFHE_SERVER").unwrap();
-        let inp_vals = input.get_iter().map(|e| e.get::<Ciphertext>().unwrap());
-        let val = server.lincomb(inp_vals, &self.coefs, self.const_coef);
-        Ok(Output::new(val))
+                let val = server.lincomb(&inp_vals, &coefs, const_coef);
+                output.send(val).map_err(|e| e.to_string())
+            }
+            NodeExec::Bootstrap {
+                server,
+                output,
+                mut input,
+                table,
+            } => {
+                let inp = input.recv().await.map_err(|e| e.to_string())?;
+                let val = server.bootstrap(inp, &server.new_test_vector(table.clone()).unwrap());
+
+                output.send(val).map_err(|e| e.to_string())
+            }
+        }
     }
 }
 
-struct BootstrapAction {
-    table: Vec<bool>,
+pub struct FbsExecPar {
+    rt: Runtime,
 }
 
-impl Action for BootstrapAction {
-    fn run(&self, input: Input, env: Arc<EnvVar>) -> Result<Output, RunningError> {
-        let server = env.get::<Arc<Server>>("TFHE_SERVER").unwrap();
-        let inp = input
-            .get_iter()
-            .next()
-            .unwrap()
-            .get::<Ciphertext>()
-            .unwrap();
-        let val = server.bootstrap(
-            inp.clone(),
-            &server.new_test_vector(self.table.clone()).unwrap(),
-        );
-        Ok(Output::new(val))
-    }
-}
-
-struct OutputAction {
-    outputs: Vec<String>,
-}
-
-impl Action for OutputAction {
-    fn run(&self, input: Input, _env: Arc<EnvVar>) -> Result<Output, RunningError> {
-        let outputs: HashMap<String, Ciphertext> = self
-            .outputs
-            .iter()
-            .zip(input.get_iter())
-            .map(|(name, val)| (name.clone(), val.get::<Ciphertext>().unwrap().clone()))
-            .collect();
-
-        Ok(Output::new(outputs))
+impl Default for FbsExecPar {
+    fn default() -> Self {
+        Self::new(1)
     }
 }
 
 impl FbsExecPar {
-    pub fn new() -> Self {
-        Self
-    }
-
-    pub fn new_boxed() -> Box<Self> {
-        Box::new(Self)
-    }
-
-    fn build_dag(&self, circuit: &Circuit) -> Dag {
-        let mut name2id = HashMap::<&str, usize>::new();
-        let mut tasks = Vec::<DefaultTask>::new();
-
-        for node in &circuit.nodes {
-            match node {
-                Node::Input { name } => {
-                    let task = DefaultTask::new(
-                        InputAction {
-                            name: name.to_owned(),
-                        },
-                        name,
-                    );
-                    name2id.insert(name, task.id());
-
-                    tasks.push(task);
-                }
-                Node::LinComb {
-                    coefs,
-                    const_coef,
-                    output,
-                    inputs,
-                } => {
-                    let mut task = DefaultTask::new(
-                        LinCombAction {
-                            coefs: coefs.clone(),
-                            const_coef: *const_coef,
-                        },
-                        output,
-                    );
-                    name2id.insert(output, task.id());
-
-                    // add predecessor relations
-                    let predecessors: Vec<_> = inputs
-                        .iter()
-                        .map(|e| *name2id.get(e.as_str()).unwrap())
-                        .collect();
-                    task.set_predecessors_by_id(predecessors.as_slice());
-
-                    tasks.push(task);
-                }
-                Node::Bootstrap {
-                    input,
-                    outputs,
-                    tables,
-                } => {
-                    for (output, table) in outputs.iter().zip(tables) {
-                        let mut task = DefaultTask::new(
-                            BootstrapAction {
-                                table: table.clone(),
-                            },
-                            output,
-                        );
-                        name2id.insert(output, task.id());
-
-                        // add predecessor relations
-                        task.set_predecessors_by_id(&[*name2id.get(input.as_str()).unwrap()]);
-
-                        tasks.push(task);
-                    }
-                }
-            }
+    pub fn new(nb_threads: usize) -> Self {
+        Self {
+            rt: Builder::new_multi_thread()
+                .worker_threads(nb_threads)
+                .build()
+                .unwrap(),
         }
+    }
 
-        let mut output_task = DefaultTask::new(
-            OutputAction {
-                outputs: circuit.outputs.clone(),
-            },
-            "BUILD_OUTPUT_MAP",
-        );
-
-        // add predecessor relations
-        let predecessors: Vec<_> = circuit
-            .outputs
-            .iter()
-            .map(|e| *name2id.get(e.as_str()).unwrap())
-            .collect();
-        output_task.set_predecessors_by_id(predecessors.as_slice());
-
-        tasks.push(output_task);
-
-        Dag::with_tasks(tasks)
+    pub fn new_boxed(nb_threads: usize) -> Box<Self> {
+        Box::new(Self::new(nb_threads))
     }
 }
 
@@ -176,23 +140,65 @@ impl FbsExec for FbsExecPar {
         &self,
         server: Server,
         circuit: &Circuit,
-        inputs: HashMap<String, Ciphertext>,
+        mut inputs: HashMap<String, Ciphertext>,
     ) -> Result<HashMap<String, Ciphertext>, String> {
-        log::init_logger(LogLevel::Info, None);
+        let mut nodes: HashMap<String, NodeExec> = Default::default();
+        let server = Arc::new(server);
 
-        let mut dag = self.build_dag(circuit);
+        for node in &circuit.nodes {
+            match node.clone() {
+                circuit::Node::Input { name } => {
+                    let ct = inputs
+                        .remove(&name)
+                        .ok_or(format!("Cannot find input {}", name))?;
+                    let node = NodeExec::new_input(ct);
+                    nodes.insert(name, node);
+                }
+                circuit::Node::LinComb {
+                    inputs,
+                    output,
+                    coefs,
+                    const_coef,
+                } => {
+                    let inputs = inputs
+                        .into_iter()
+                        .map(|name| nodes.get(&name).unwrap().get_output())
+                        .collect();
+                    let node = NodeExec::new_lincomb(server.clone(), inputs, coefs, const_coef);
+                    nodes.insert(output, node);
+                }
+                circuit::Node::Bootstrap {
+                    input,
+                    outputs,
+                    tables,
+                } => {
+                    for (output, table) in izip!(outputs, tables) {
+                        let input = nodes.get(&input).unwrap().get_output();
+                        let node = NodeExec::new_bootstrap(server.clone(), input, table);
+                        nodes.insert(output, node);
+                    }
+                }
+            }
+        }
 
-        // Set a global environment variable for this dag.
-        let mut env = EnvVar::new();
-        env.set("TFHE_SERVER", Arc::new(server));
-        inputs
-            .into_iter()
-            .for_each(|(name, val)| env.set(&name, val));
-        dag.set_env(env);
+        let output_recv: Vec<_> = circuit
+            .outputs
+            .iter()
+            .map(|name| nodes.get(name).unwrap().get_output())
+            .collect();
 
-        dag.start().map_err(|e| e.to_string())?;
+        // spawn and wait for all tasks to finish
+        let handles = nodes.into_values().map(|task| self.rt.spawn(task.run()));
+        self.rt
+            .block_on(try_join_all(handles))
+            .map_err(|e| e.to_string())?;
 
-        dag.get_result::<HashMap<String, Ciphertext>>()
-            .ok_or("Error".to_owned())
+        let mut outputs: HashMap<String, Ciphertext> = Default::default();
+        for (name, mut recv) in izip!(circuit.outputs.clone(), output_recv) {
+            let val = recv.blocking_recv().map_err(|e| e.to_string())?;
+            outputs.insert(name, val);
+        }
+
+        Ok(outputs)
     }
 }
