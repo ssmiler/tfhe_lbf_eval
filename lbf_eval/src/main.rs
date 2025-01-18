@@ -12,7 +12,7 @@ use lbf_eval::{
 };
 use rand::{RngCore, SeedableRng};
 use std::time::Instant;
-use tfhe::shortint::prelude::*;
+use tfhe::shortint::parameters::*;
 
 #[derive(Parser)]
 #[command(name = "LBF executor", about = "Execute lbf file", long_about = None)]
@@ -72,7 +72,7 @@ fn main() {
     println!("FBS execution...");
 
     let start = Instant::now();
-    let (client, server) = gen_client_server(PARAM_MESSAGE_1_CARRY_1_KS_PBS);
+    let (client, server) = gen_client_server(PARAM_MESSAGE_2_CARRY_0_KS_PBS);
     let duration_keygen = start.elapsed();
 
     let executor: Box<dyn FbsExec> = if cli.threads == 1 {
