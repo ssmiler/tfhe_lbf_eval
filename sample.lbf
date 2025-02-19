@@ -12,5 +12,5 @@
 101
 .bootstrap n2 g h        # 2-output bootstraping
 001                 # AND(a, NOT(b))
-0001                # XNOR(a, b)
+010                 # XNOR(a, b)
 .end
