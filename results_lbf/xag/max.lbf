@@ -1,0 +1,11010 @@
+.inputs pi1 pi2 pi3 pi4 pi5 pi6 pi7 pi8 pi9 pi10 pi11 pi12 pi13 pi14 pi15 pi16 pi17 pi18 pi19 pi20 pi21 pi22 pi23 pi24 pi25 pi26 pi27 pi28 pi29 pi30 pi31 pi32 pi33 pi34 pi35 pi36 pi37 pi38 pi39 pi40 pi41 pi42 pi43 pi44 pi45 pi46 pi47 pi48 pi49 pi50 pi51 pi52 pi53 pi54 pi55 pi56 pi57 pi58 pi59 pi60 pi61 pi62 pi63 pi64 pi65 pi66 pi67 pi68 pi69 pi70 pi71 pi72 pi73 pi74 pi75 pi76 pi77 pi78 pi79 pi80 pi81 pi82 pi83 pi84 pi85 pi86 pi87 pi88 pi89 pi90 pi91 pi92 pi93 pi94 pi95 pi96 pi97 pi98 pi99 pi100 pi101 pi102 pi103 pi104 pi105 pi106 pi107 pi108 pi109 pi110 pi111 pi112 pi113 pi114 pi115 pi116 pi117 pi118 pi119 pi120 pi121 pi122 pi123 pi124 pi125 pi126 pi127 pi128 pi129 pi130 pi131 pi132 pi133 pi134 pi135 pi136 pi137 pi138 pi139 pi140 pi141 pi142 pi143 pi144 pi145 pi146 pi147 pi148 pi149 pi150 pi151 pi152 pi153 pi154 pi155 pi156 pi157 pi158 pi159 pi160 pi161 pi162 pi163 pi164 pi165 pi166 pi167 pi168 pi169 pi170 pi171 pi172 pi173 pi174 pi175 pi176 pi177 pi178 pi179 pi180 pi181 pi182 pi183 pi184 pi185 pi186 pi187 pi188 pi189 pi190 pi191 pi192 pi193 pi194 pi195 pi196 pi197 pi198 pi199 pi200 pi201 pi202 pi203 pi204 pi205 pi206 pi207 pi208 pi209 pi210 pi211 pi212 pi213 pi214 pi215 pi216 pi217 pi218 pi219 pi220 pi221 pi222 pi223 pi224 pi225 pi226 pi227 pi228 pi229 pi230 pi231 pi232 pi233 pi234 pi235 pi236 pi237 pi238 pi239 pi240 pi241 pi242 pi243 pi244 pi245 pi246 pi247 pi248 pi249 pi250 pi251 pi252 pi253 pi254 pi255 pi256 pi257 pi258 pi259 pi260 pi261 pi262 pi263 pi264 pi265 pi266 pi267 pi268 pi269 pi270 pi271 pi272 pi273 pi274 pi275 pi276 pi277 pi278 pi279 pi280 pi281 pi282 pi283 pi284 pi285 pi286 pi287 pi288 pi289 pi290 pi291 pi292 pi293 pi294 pi295 pi296 pi297 pi298 pi299 pi300 pi301 pi302 pi303 pi304 pi305 pi306 pi307 pi308 pi309 pi310 pi311 pi312 pi313 pi314 pi315 pi316 pi317 pi318 pi319 pi320 pi321 pi322 pi323 pi324 pi325 pi326 pi327 pi328 pi329 pi330 pi331 pi332 pi333 pi334 pi335 pi336 pi337 pi338 pi339 pi340 pi341 pi342 pi343 pi344 pi345 pi346 pi347 pi348 pi349 pi350 pi351 pi352 pi353 pi354 pi355 pi356 pi357 pi358 pi359 pi360 pi361 pi362 pi363 pi364 pi365 pi366 pi367 pi368 pi369 pi370 pi371 pi372 pi373 pi374 pi375 pi376 pi377 pi378 pi379 pi380 pi381 pi382 pi383 pi384 pi385 pi386 pi387 pi388 pi389 pi390 pi391 pi392 pi393 pi394 pi395 pi396 pi397 pi398 pi399 pi400 pi401 pi402 pi403 pi404 pi405 pi406 pi407 pi408 pi409 pi410 pi411 pi412 pi413 pi414 pi415 pi416 pi417 pi418 pi419 pi420 pi421 pi422 pi423 pi424 pi425 pi426 pi427 pi428 pi429 pi430 pi431 pi432 pi433 pi434 pi435 pi436 pi437 pi438 pi439 pi440 pi441 pi442 pi443 pi444 pi445 pi446 pi447 pi448 pi449 pi450 pi451 pi452 pi453 pi454 pi455 pi456 pi457 pi458 pi459 pi460 pi461 pi462 pi463 pi464 pi465 pi466 pi467 pi468 pi469 pi470 pi471 pi472 pi473 pi474 pi475 pi476 pi477 pi478 pi479 pi480 pi481 pi482 pi483 pi484 pi485 pi486 pi487 pi488 pi489 pi490 pi491 pi492 pi493 pi494 pi495 pi496 pi497 pi498 pi499 pi500 pi501 pi502 pi503 pi504 pi505 pi506 pi507 pi508 pi509 pi510 pi511 pi512 
+.outputs n2666 n2668 n2670 n2672 n2674 n2676 n2678 n2680 n2682 n2684 n2686 n2688 n2690 n2692 n2694 n2696 n2698 n2700 n2702 n2704 n2706 n2708 n2710 n2712 n2714 n2716 n2718 n2720 n2722 n2724 n2726 n2728 n2730 n2732 n2734 n2736 n2738 n2740 n2742 n2744 n2746 n2748 n2750 n2752 n2754 n2756 n2758 n2760 n2762 n2764 n2766 n2768 n2770 n2772 n2774 n2776 n2778 n2780 n2782 n2784 n2786 n2788 n2790 n2792 n2794 n2796 n2798 n2800 n2802 n2804 n2806 n2808 n2810 n2812 n2814 n2816 n2818 n2820 n2822 n2824 n2826 n2828 n2830 n2832 n2834 n2836 n2838 n2840 n2842 n2844 n2846 n2848 n2850 n2852 n2854 n2856 n2858 n2860 n2862 n2864 n2866 n2868 n2870 n2872 n2874 n2876 n2878 n2880 n2882 n2884 n2886 n2888 n2890 n2892 n2894 n2896 n2898 n2900 n2902 n2904 n2906 n2908 n2910 n2912 n2914 n2916 n2918 n515,n2919 n2922 n2663 
+.lincomb pi40 pi40_neg
+-1 1
+.lincomb pi42 pi42_neg
+-1 1
+.lincomb pi43 pi43_neg
+-1 1
+.lincomb pi44 pi44_neg
+-1 1
+.lincomb pi46 pi46_neg
+-1 1
+.lincomb pi47 pi47_neg
+-1 1
+.lincomb pi48 pi48_neg
+-1 1
+.lincomb pi49 pi49_neg
+-1 1
+.lincomb pi62 pi62_neg
+-1 1
+.lincomb pi63 pi63_neg
+-1 1
+.lincomb pi70 pi70_neg
+-1 1
+.lincomb pi71 pi71_neg
+-1 1
+.lincomb pi72 pi72_neg
+-1 1
+.lincomb pi74 pi74_neg
+-1 1
+.lincomb pi76 pi76_neg
+-1 1
+.lincomb pi78 pi78_neg
+-1 1
+.lincomb pi80 pi80_neg
+-1 1
+.lincomb pi81 pi81_neg
+-1 1
+.lincomb pi125 pi125_neg
+-1 1
+.lincomb pi126 pi126_neg
+-1 1
+.lincomb pi127 pi127_neg
+-1 1
+.lincomb pi129 pi129_neg
+-1 1
+.lincomb pi169 pi169_neg
+-1 1
+.lincomb pi173 pi173_neg
+-1 1
+.lincomb pi188 pi188_neg
+-1 1
+.lincomb pi189 pi189_neg
+-1 1
+.lincomb pi192 pi192_neg
+-1 1
+.lincomb pi197 pi197_neg
+-1 1
+.lincomb pi201 pi201_neg
+-1 1
+.lincomb pi203 pi203_neg
+-1 1
+.lincomb pi205 pi205_neg
+-1 1
+.lincomb pi207 pi207_neg
+-1 1
+.lincomb pi252 pi252_neg
+-1 1
+.lincomb pi298 pi298_neg
+-1 1
+.lincomb pi299 pi299_neg
+-1 1
+.lincomb pi300 pi300_neg
+-1 1
+.lincomb pi302 pi302_neg
+-1 1
+.lincomb pi303 pi303_neg
+-1 1
+.lincomb pi304 pi304_neg
+-1 1
+.lincomb pi306 pi306_neg
+-1 1
+.lincomb pi316 pi316_neg
+-1 1
+.lincomb pi320 pi320_neg
+-1 1
+.lincomb pi326 pi326_neg
+-1 1
+.lincomb pi327 pi327_neg
+-1 1
+.lincomb pi381 pi381_neg
+-1 1
+.lincomb pi382 pi382_neg
+-1 1
+.lincomb pi383 pi383_neg
+-1 1
+.lincomb pi385 pi385_neg
+-1 1
+.lincomb pi424 pi424_neg
+-1 1
+.lincomb pi425 pi425_neg
+-1 1
+.lincomb pi429 pi429_neg
+-1 1
+.lincomb pi433 pi433_neg
+-1 1
+.lincomb pi435 pi435_neg
+-1 1
+.lincomb pi436 pi436_neg
+-1 1
+.lincomb pi445 pi445_neg
+-1 1
+.lincomb pi446 pi446_neg
+-1 1
+.lincomb pi447 pi447_neg
+-1 1
+.lincomb pi449 pi449_neg
+-1 1
+.lincomb pi452 pi452_neg
+-1 1
+.lincomb pi453 pi453_neg
+-1 1
+.lincomb pi456 pi456_neg
+-1 1
+.lincomb pi508 pi508_neg
+-1 1
+.lincomb pi384 pi512 n513_int
+2 1
+.bootstrap n513_int n513 n517
+0001
+0101
+.lincomb n513,n517 n517_neg
+-1 1
+.lincomb pi128 pi256 n514_int
+2 1
+.bootstrap n514_int n514 n1083
+0001
+0101
+.lincomb n514,n1083 n1083_neg
+-1 1
+.lincomb n513,n517 n514,n1083 n515_int
+2 1
+.bootstrap n515_int n515 n2919
+0101
+0001
+.lincomb n515,n2919 n515_neg
+-1 1
+.lincomb pi511 pi383 n516_int
+2 1
+.bootstrap n516_int n516
+0101
+.lincomb n516 n516_neg
+-1 1
+.lincomb pi510 pi382 n518_int
+2 1
+.bootstrap n518_int n518
+0101
+.lincomb n518 n518_neg
+-1 1
+.lincomb pi381_neg pi509 n519_int
+2 1
+.bootstrap n519_int n519
+0001
+.lincomb n519 n519_neg
+-1 1
+.lincomb pi509 pi381 n520_int
+2 1
+.bootstrap n520_int n520
+0101
+.lincomb n519 n520 n521_int
+2 1
+.bootstrap n521_int n521
+0101
+.lincomb n521 pi510 n522_int
+2 1
+.bootstrap n522_int n522
+0101
+.lincomb n522 n522_neg
+-1 1
+.lincomb n518_neg n522_neg n523_int
+2 1
+.bootstrap n523_int n523
+0001
+.lincomb n523 pi510 n524_int
+2 1
+.bootstrap n524_int n524
+0101
+.lincomb n524 pi511 n525_int
+2 1
+.bootstrap n525_int n525
+0101
+.lincomb n516_neg n525 n526_int
+2 1
+.bootstrap n526_int n526
+0001
+.lincomb n526 pi511 n527_int
+2 1
+.bootstrap n527_int n527
+0101
+.lincomb n527 pi512 n528_int
+2 1
+.bootstrap n528_int n528
+0101
+.lincomb n528 pi512 n529_int
+2 1
+.bootstrap n529_int n529
+0101
+.lincomb pi382_neg pi510 n530_int
+2 1
+.bootstrap n530_int n530
+0001
+.lincomb n530 n530_neg
+-1 1
+.lincomb pi383_neg pi511 n531_int
+2 1
+.bootstrap n531_int n531
+0001
+.lincomb n531 n531_neg
+-1 1
+.lincomb n530_neg n531_neg n532_int
+2 1
+.bootstrap n532_int n532
+0001
+.lincomb pi380 pi508_neg n533_int
+2 1
+.bootstrap n533_int n533
+0001
+.lincomb n533 n533_neg
+-1 1
+.lincomb pi508 pi380 n534_int
+2 1
+.bootstrap n534_int n534
+0101
+.lincomb n533 n534 n535_int
+2 1
+.bootstrap n535_int n535
+0101
+.lincomb n535 n535_neg
+-1 1
+.lincomb n519_neg n535_neg n536_int
+2 1
+.bootstrap n536_int n536
+0001
+.lincomb n532 n536 n537_int
+2 1
+.bootstrap n537_int n537
+0001
+.lincomb pi507 pi379 n538_int
+2 1
+.bootstrap n538_int n538
+0101
+.lincomb n538 n538_neg
+-1 1
+.lincomb pi506 pi378 n539_int
+2 1
+.bootstrap n539_int n539
+0101
+.lincomb n539 n539_neg
+-1 1
+.lincomb pi505 pi377 n540_int
+2 1
+.bootstrap n540_int n540
+0101
+.lincomb n540 n540_neg
+-1 1
+.lincomb pi504 pi376 n541_int
+2 1
+.bootstrap n541_int n541
+0101
+.lincomb n541 n541_neg
+-1 1
+.lincomb pi503 pi375 n542_int
+2 1
+.bootstrap n542_int n542
+0101
+.lincomb n542 n542_neg
+-1 1
+.lincomb pi502 pi374 n543_int
+2 1
+.bootstrap n543_int n543
+0101
+.lincomb n543 n543_neg
+-1 1
+.lincomb pi501 pi373 n544_int
+2 1
+.bootstrap n544_int n544
+0101
+.lincomb n544 n544_neg
+-1 1
+.lincomb pi500 pi372 n545_int
+2 1
+.bootstrap n545_int n545
+0101
+.lincomb n545 n545_neg
+-1 1
+.lincomb pi499 pi371 n546_int
+2 1
+.bootstrap n546_int n546
+0101
+.lincomb n546 n546_neg
+-1 1
+.lincomb pi498 pi370 n547_int
+2 1
+.bootstrap n547_int n547
+0101
+.lincomb n547 n547_neg
+-1 1
+.lincomb pi497 pi369 n548_int
+2 1
+.bootstrap n548_int n548
+0101
+.lincomb n548 n548_neg
+-1 1
+.lincomb pi496 pi368 n549_int
+2 1
+.bootstrap n549_int n549
+0101
+.lincomb n549 n549_neg
+-1 1
+.lincomb pi495 pi367 n550_int
+2 1
+.bootstrap n550_int n550
+0101
+.lincomb n550 n550_neg
+-1 1
+.lincomb pi494 pi366 n551_int
+2 1
+.bootstrap n551_int n551
+0101
+.lincomb n551 n551_neg
+-1 1
+.lincomb pi493 pi365 n552_int
+2 1
+.bootstrap n552_int n552
+0101
+.lincomb n552 n552_neg
+-1 1
+.lincomb pi492 pi364 n553_int
+2 1
+.bootstrap n553_int n553
+0101
+.lincomb n553 n553_neg
+-1 1
+.lincomb pi491 pi363 n554_int
+2 1
+.bootstrap n554_int n554
+0101
+.lincomb n554 n554_neg
+-1 1
+.lincomb pi490 pi362 n555_int
+2 1
+.bootstrap n555_int n555
+0101
+.lincomb n555 n555_neg
+-1 1
+.lincomb pi489 pi361 n556_int
+2 1
+.bootstrap n556_int n556
+0101
+.lincomb n556 n556_neg
+-1 1
+.lincomb pi488 pi360 n557_int
+2 1
+.bootstrap n557_int n557
+0101
+.lincomb n557 n557_neg
+-1 1
+.lincomb pi487 pi359 n558_int
+2 1
+.bootstrap n558_int n558
+0101
+.lincomb n558 n558_neg
+-1 1
+.lincomb pi486 pi358 n559_int
+2 1
+.bootstrap n559_int n559
+0101
+.lincomb n559 n559_neg
+-1 1
+.lincomb pi485 pi357 n560_int
+2 1
+.bootstrap n560_int n560
+0101
+.lincomb n560 n560_neg
+-1 1
+.lincomb pi484 pi356 n561_int
+2 1
+.bootstrap n561_int n561
+0101
+.lincomb n561 n561_neg
+-1 1
+.lincomb pi483 pi355 n562_int
+2 1
+.bootstrap n562_int n562
+0101
+.lincomb n562 n562_neg
+-1 1
+.lincomb pi482 pi354 n563_int
+2 1
+.bootstrap n563_int n563
+0101
+.lincomb n563 n563_neg
+-1 1
+.lincomb pi481 pi353 n564_int
+2 1
+.bootstrap n564_int n564
+0101
+.lincomb n564 n564_neg
+-1 1
+.lincomb pi480 pi352 n565_int
+2 1
+.bootstrap n565_int n565
+0101
+.lincomb n565 n565_neg
+-1 1
+.lincomb pi479 pi351 n566_int
+2 1
+.bootstrap n566_int n566
+0101
+.lincomb n566 n566_neg
+-1 1
+.lincomb pi478 pi350 n567_int
+2 1
+.bootstrap n567_int n567
+0101
+.lincomb n567 n567_neg
+-1 1
+.lincomb pi477 pi349 n568_int
+2 1
+.bootstrap n568_int n568
+0101
+.lincomb n568 n568_neg
+-1 1
+.lincomb pi476 pi348 n569_int
+2 1
+.bootstrap n569_int n569
+0101
+.lincomb n569 n569_neg
+-1 1
+.lincomb pi475 pi347 n570_int
+2 1
+.bootstrap n570_int n570
+0101
+.lincomb n570 n570_neg
+-1 1
+.lincomb pi474 pi346 n571_int
+2 1
+.bootstrap n571_int n571
+0101
+.lincomb n571 n571_neg
+-1 1
+.lincomb pi473 pi345 n572_int
+2 1
+.bootstrap n572_int n572
+0101
+.lincomb n572 n572_neg
+-1 1
+.lincomb pi472 pi344 n573_int
+2 1
+.bootstrap n573_int n573
+0101
+.lincomb n573 n573_neg
+-1 1
+.lincomb pi471 pi343 n574_int
+2 1
+.bootstrap n574_int n574
+0101
+.lincomb n574 n574_neg
+-1 1
+.lincomb pi470 pi342 n575_int
+2 1
+.bootstrap n575_int n575
+0101
+.lincomb n575 n575_neg
+-1 1
+.lincomb pi469 pi341 n576_int
+2 1
+.bootstrap n576_int n576
+0101
+.lincomb n576 n576_neg
+-1 1
+.lincomb pi468 pi340 n577_int
+2 1
+.bootstrap n577_int n577
+0101
+.lincomb n577 n577_neg
+-1 1
+.lincomb pi467 pi339 n578_int
+2 1
+.bootstrap n578_int n578
+0101
+.lincomb n578 n578_neg
+-1 1
+.lincomb pi466 pi338 n579_int
+2 1
+.bootstrap n579_int n579
+0101
+.lincomb n579 n579_neg
+-1 1
+.lincomb pi465 pi337 n580_int
+2 1
+.bootstrap n580_int n580
+0101
+.lincomb n580 n580_neg
+-1 1
+.lincomb pi464 pi336 n581_int
+2 1
+.bootstrap n581_int n581
+0101
+.lincomb n581 n581_neg
+-1 1
+.lincomb pi463 pi335 n582_int
+2 1
+.bootstrap n582_int n582
+0101
+.lincomb n582 n582_neg
+-1 1
+.lincomb pi462 pi334 n583_int
+2 1
+.bootstrap n583_int n583
+0101
+.lincomb n583 n583_neg
+-1 1
+.lincomb pi461 pi333 n584_int
+2 1
+.bootstrap n584_int n584
+0101
+.lincomb n584 n584_neg
+-1 1
+.lincomb pi460 pi332 n585_int
+2 1
+.bootstrap n585_int n585
+0101
+.lincomb n585 n585_neg
+-1 1
+.lincomb pi459 pi331 n586_int
+2 1
+.bootstrap n586_int n586
+0101
+.lincomb n586 n586_neg
+-1 1
+.lincomb pi458 pi330 n587_int
+2 1
+.bootstrap n587_int n587
+0101
+.lincomb n587 n587_neg
+-1 1
+.lincomb pi457 pi329 n588_int
+2 1
+.bootstrap n588_int n588
+0101
+.lincomb n588 n588_neg
+-1 1
+.lincomb pi328 pi456_neg n589_int
+2 1
+.bootstrap n589_int n589
+0001
+.lincomb n589 n589_neg
+-1 1
+.lincomb pi456 pi328 n590_int
+2 1
+.bootstrap n590_int n590
+0101
+.lincomb n589 n590 n591_int
+2 1
+.bootstrap n591_int n591
+0101
+.lincomb n591 pi457 n592_int
+2 1
+.bootstrap n592_int n592
+0101
+.lincomb n592 pi457 n593_int
+2 1
+.bootstrap n593_int n593
+0101
+.lincomb n593 n593_neg
+-1 1
+.lincomb pi326_neg pi454 n594_int
+2 1
+.bootstrap n594_int n594
+0001
+.lincomb n594 n594_neg
+-1 1
+.lincomb pi327_neg pi455 n595_int
+2 1
+.bootstrap n595_int n595
+0001
+.lincomb n595 n595_neg
+-1 1
+.lincomb n594_neg n595_neg n596_int
+2 1
+.bootstrap n596_int n596
+0001
+.lincomb pi324 pi452_neg n597_int
+2 1
+.bootstrap n597_int n597
+0001
+.lincomb n597 n597_neg
+-1 1
+.lincomb pi452 pi324 n598_int
+2 1
+.bootstrap n598_int n598
+0101
+.lincomb n597 n598 n599_int
+2 1
+.bootstrap n599_int n599
+0101
+.lincomb n599 n599_neg
+-1 1
+.lincomb pi325 pi453_neg n600_int
+2 1
+.bootstrap n600_int n600
+0001
+.lincomb pi453 pi325 n601_int
+2 1
+.bootstrap n601_int n601
+0101
+.lincomb n600 n601 n602_int
+2 1
+.bootstrap n602_int n602
+0101
+.lincomb n602 n602_neg
+-1 1
+.lincomb n599_neg n602_neg n603_int
+2 1
+.bootstrap n603_int n603
+0001
+.lincomb n596 n603 n604_int
+2 1
+.bootstrap n604_int n604
+0001
+.lincomb pi451 pi323 n605_int
+2 1
+.bootstrap n605_int n605
+0101
+.lincomb n605 n605_neg
+-1 1
+.lincomb pi450 pi322 n606_int
+2 1
+.bootstrap n606_int n606
+0101
+.lincomb n606 n606_neg
+-1 1
+.lincomb pi321 pi449_neg n607_int
+2 1
+.bootstrap n607_int n607
+0001
+.lincomb n607 n607_neg
+-1 1
+.lincomb pi449 pi321 n608_int
+2 1
+.bootstrap n608_int n608
+0101
+.lincomb n607 n608 n609_int
+2 1
+.bootstrap n609_int n609
+0101
+.lincomb n609 pi450 n610_int
+2 1
+.bootstrap n610_int n610
+0101
+.lincomb n610 pi450 n611_int
+2 1
+.bootstrap n611_int n611
+0101
+.lincomb n611 n611_neg
+-1 1
+.lincomb pi443 pi315 n612_int
+2 1
+.bootstrap n612_int n612
+0101
+.lincomb n612 n612_neg
+-1 1
+.lincomb pi442 pi314 n613_int
+2 1
+.bootstrap n613_int n613
+0101
+.lincomb n613 n613_neg
+-1 1
+.lincomb pi441 pi313 n614_int
+2 1
+.bootstrap n614_int n614
+0101
+.lincomb n614 n614_neg
+-1 1
+.lincomb pi440 pi312 n615_int
+2 1
+.bootstrap n615_int n615
+0101
+.lincomb n615 n615_neg
+-1 1
+.lincomb pi439 pi311 n616_int
+2 1
+.bootstrap n616_int n616
+0101
+.lincomb n616 n616_neg
+-1 1
+.lincomb pi438 pi310 n617_int
+2 1
+.bootstrap n617_int n617
+0101
+.lincomb n617 n617_neg
+-1 1
+.lincomb pi437 pi309 n618_int
+2 1
+.bootstrap n618_int n618
+0101
+.lincomb n618 n618_neg
+-1 1
+.lincomb pi308 pi436_neg n619_int
+2 1
+.bootstrap n619_int n619
+0001
+.lincomb n619 n619_neg
+-1 1
+.lincomb pi436 pi308 n620_int
+2 1
+.bootstrap n620_int n620
+0101
+.lincomb n619 n620 n621_int
+2 1
+.bootstrap n621_int n621
+0101
+.lincomb n621 pi437 n622_int
+2 1
+.bootstrap n622_int n622
+0101
+.lincomb n622 pi437 n623_int
+2 1
+.bootstrap n623_int n623
+0101
+.lincomb n623 n623_neg
+-1 1
+.lincomb pi298_neg pi426 n624_int
+2 1
+.bootstrap n624_int n624
+0001
+.lincomb n624 n624_neg
+-1 1
+.lincomb pi299_neg pi427 n625_int
+2 1
+.bootstrap n625_int n625
+0001
+.lincomb n625 n625_neg
+-1 1
+.lincomb n624_neg n625_neg n626_int
+2 1
+.bootstrap n626_int n626
+0001
+.lincomb pi296 pi424_neg n627_int
+2 1
+.bootstrap n627_int n627
+0001
+.lincomb n627 n627_neg
+-1 1
+.lincomb pi424 pi296 n628_int
+2 1
+.bootstrap n628_int n628
+0101
+.lincomb n627 n628 n629_int
+2 1
+.bootstrap n629_int n629
+0101
+.lincomb n629 n629_neg
+-1 1
+.lincomb pi297 pi425_neg n630_int
+2 1
+.bootstrap n630_int n630
+0001
+.lincomb pi425 pi297 n631_int
+2 1
+.bootstrap n631_int n631
+0101
+.lincomb n630 n631 n632_int
+2 1
+.bootstrap n632_int n632
+0101
+.lincomb n632 n632_neg
+-1 1
+.lincomb n629_neg n632_neg n633_int
+2 1
+.bootstrap n633_int n633
+0001
+.lincomb n626 n633 n634_int
+2 1
+.bootstrap n634_int n634
+0001
+.lincomb pi423 pi295 n635_int
+2 1
+.bootstrap n635_int n635
+0101
+.lincomb n635 n635_neg
+-1 1
+.lincomb pi422 pi294 n636_int
+2 1
+.bootstrap n636_int n636
+0101
+.lincomb n636 n636_neg
+-1 1
+.lincomb pi421 pi293 n637_int
+2 1
+.bootstrap n637_int n637
+0101
+.lincomb n637 n637_neg
+-1 1
+.lincomb pi420 pi292 n638_int
+2 1
+.bootstrap n638_int n638
+0101
+.lincomb n638 n638_neg
+-1 1
+.lincomb pi419 pi291 n639_int
+2 1
+.bootstrap n639_int n639
+0101
+.lincomb n639 n639_neg
+-1 1
+.lincomb pi418 pi290 n640_int
+2 1
+.bootstrap n640_int n640
+0101
+.lincomb n640 n640_neg
+-1 1
+.lincomb pi417 pi289 n641_int
+2 1
+.bootstrap n641_int n641
+0101
+.lincomb n641 n641_neg
+-1 1
+.lincomb pi416 pi288 n642_int
+2 1
+.bootstrap n642_int n642
+0101
+.lincomb n642 n642_neg
+-1 1
+.lincomb pi415 pi287 n643_int
+2 1
+.bootstrap n643_int n643
+0101
+.lincomb n643 n643_neg
+-1 1
+.lincomb pi414 pi286 n644_int
+2 1
+.bootstrap n644_int n644
+0101
+.lincomb n644 n644_neg
+-1 1
+.lincomb pi413 pi285 n645_int
+2 1
+.bootstrap n645_int n645
+0101
+.lincomb n645 n645_neg
+-1 1
+.lincomb pi412 pi284 n646_int
+2 1
+.bootstrap n646_int n646
+0101
+.lincomb n646 n646_neg
+-1 1
+.lincomb pi411 pi283 n647_int
+2 1
+.bootstrap n647_int n647
+0101
+.lincomb n647 n647_neg
+-1 1
+.lincomb pi410 pi282 n648_int
+2 1
+.bootstrap n648_int n648
+0101
+.lincomb n648 n648_neg
+-1 1
+.lincomb pi409 pi281 n649_int
+2 1
+.bootstrap n649_int n649
+0101
+.lincomb n649 n649_neg
+-1 1
+.lincomb pi408 pi280 n650_int
+2 1
+.bootstrap n650_int n650
+0101
+.lincomb n650 n650_neg
+-1 1
+.lincomb pi407 pi279 n651_int
+2 1
+.bootstrap n651_int n651
+0101
+.lincomb n651 n651_neg
+-1 1
+.lincomb pi406 pi278 n652_int
+2 1
+.bootstrap n652_int n652
+0101
+.lincomb n652 n652_neg
+-1 1
+.lincomb pi405 pi277 n653_int
+2 1
+.bootstrap n653_int n653
+0101
+.lincomb n653 n653_neg
+-1 1
+.lincomb pi404 pi276 n654_int
+2 1
+.bootstrap n654_int n654
+0101
+.lincomb n654 n654_neg
+-1 1
+.lincomb pi403 pi275 n655_int
+2 1
+.bootstrap n655_int n655
+0101
+.lincomb n655 n655_neg
+-1 1
+.lincomb pi402 pi274 n656_int
+2 1
+.bootstrap n656_int n656
+0101
+.lincomb n656 n656_neg
+-1 1
+.lincomb pi401 pi273 n657_int
+2 1
+.bootstrap n657_int n657
+0101
+.lincomb n657 n657_neg
+-1 1
+.lincomb pi400 pi272 n658_int
+2 1
+.bootstrap n658_int n658
+0101
+.lincomb n658 n658_neg
+-1 1
+.lincomb pi399 pi271 n659_int
+2 1
+.bootstrap n659_int n659
+0101
+.lincomb n659 n659_neg
+-1 1
+.lincomb pi398 pi270 n660_int
+2 1
+.bootstrap n660_int n660
+0101
+.lincomb n660 n660_neg
+-1 1
+.lincomb pi397 pi269 n661_int
+2 1
+.bootstrap n661_int n661
+0101
+.lincomb n661 n661_neg
+-1 1
+.lincomb pi396 pi268 n662_int
+2 1
+.bootstrap n662_int n662
+0101
+.lincomb n662 n662_neg
+-1 1
+.lincomb pi395 pi267 n663_int
+2 1
+.bootstrap n663_int n663
+0101
+.lincomb n663 n663_neg
+-1 1
+.lincomb pi394 pi266 n664_int
+2 1
+.bootstrap n664_int n664
+0101
+.lincomb n664 n664_neg
+-1 1
+.lincomb pi393 pi265 n665_int
+2 1
+.bootstrap n665_int n665
+0101
+.lincomb n665 n665_neg
+-1 1
+.lincomb pi392 pi264 n666_int
+2 1
+.bootstrap n666_int n666
+0101
+.lincomb n666 n666_neg
+-1 1
+.lincomb pi391 pi263 n667_int
+2 1
+.bootstrap n667_int n667
+0101
+.lincomb n667 n667_neg
+-1 1
+.lincomb pi390 pi262 n668_int
+2 1
+.bootstrap n668_int n668
+0101
+.lincomb n668 n668_neg
+-1 1
+.lincomb pi389 pi261 n669_int
+2 1
+.bootstrap n669_int n669
+0101
+.lincomb n669 n669_neg
+-1 1
+.lincomb pi388 pi260 n670_int
+2 1
+.bootstrap n670_int n670
+0101
+.lincomb n670 n670_neg
+-1 1
+.lincomb pi387 pi259 n671_int
+2 1
+.bootstrap n671_int n671
+0101
+.lincomb n671 n671_neg
+-1 1
+.lincomb pi386 pi258 n672_int
+2 1
+.bootstrap n672_int n672
+0101
+.lincomb n672 n672_neg
+-1 1
+.lincomb pi257 pi385_neg n673_int
+2 1
+.bootstrap n673_int n673
+0001
+.lincomb n673 pi386 n674_int
+2 1
+.bootstrap n674_int n674
+0101
+.lincomb n674 n674_neg
+-1 1
+.lincomb n672_neg n674_neg n675_int
+2 1
+.bootstrap n675_int n675
+0001
+.lincomb n675 pi386 n676_int
+2 1
+.bootstrap n676_int n676
+0101
+.lincomb n676 pi387 n677_int
+2 1
+.bootstrap n677_int n677
+0101
+.lincomb n671_neg n677 n678_int
+2 1
+.bootstrap n678_int n678
+0001
+.lincomb n678 pi387 n679_int
+2 1
+.bootstrap n679_int n679
+0101
+.lincomb n679 pi388 n680_int
+2 1
+.bootstrap n680_int n680
+0101
+.lincomb n680 n680_neg
+-1 1
+.lincomb n670_neg n680_neg n681_int
+2 1
+.bootstrap n681_int n681
+0001
+.lincomb n681 pi260 n682_int
+2 1
+.bootstrap n682_int n682
+0101
+.lincomb n682 pi389 n683_int
+2 1
+.bootstrap n683_int n683
+0101
+.lincomb n669_neg n683 n684_int
+2 1
+.bootstrap n684_int n684
+0001
+.lincomb n684 pi261 n685_int
+2 1
+.bootstrap n685_int n685
+0101
+.lincomb n685 pi390 n686_int
+2 1
+.bootstrap n686_int n686
+0101
+.lincomb n686 n686_neg
+-1 1
+.lincomb n668_neg n686_neg n687_int
+2 1
+.bootstrap n687_int n687
+0001
+.lincomb n687 pi390 n688_int
+2 1
+.bootstrap n688_int n688
+0101
+.lincomb n688 pi391 n689_int
+2 1
+.bootstrap n689_int n689
+0101
+.lincomb n667_neg n689 n690_int
+2 1
+.bootstrap n690_int n690
+0001
+.lincomb n690 pi391 n691_int
+2 1
+.bootstrap n691_int n691
+0101
+.lincomb n691 pi392 n692_int
+2 1
+.bootstrap n692_int n692
+0101
+.lincomb n666_neg n692 n693_int
+2 1
+.bootstrap n693_int n693
+0001
+.lincomb n693 pi392 n694_int
+2 1
+.bootstrap n694_int n694
+0101
+.lincomb n694 pi393 n695_int
+2 1
+.bootstrap n695_int n695
+0101
+.lincomb n665_neg n695 n696_int
+2 1
+.bootstrap n696_int n696
+0001
+.lincomb n696 pi393 n697_int
+2 1
+.bootstrap n697_int n697
+0101
+.lincomb n697 pi394 n698_int
+2 1
+.bootstrap n698_int n698
+0101
+.lincomb n664_neg n698 n699_int
+2 1
+.bootstrap n699_int n699
+0001
+.lincomb n699 pi394 n700_int
+2 1
+.bootstrap n700_int n700
+0101
+.lincomb n700 pi395 n701_int
+2 1
+.bootstrap n701_int n701
+0101
+.lincomb n701 n701_neg
+-1 1
+.lincomb n663_neg n701_neg n702_int
+2 1
+.bootstrap n702_int n702
+0001
+.lincomb n702 pi267 n703_int
+2 1
+.bootstrap n703_int n703
+0101
+.lincomb n703 pi396 n704_int
+2 1
+.bootstrap n704_int n704
+0101
+.lincomb n662_neg n704 n705_int
+2 1
+.bootstrap n705_int n705
+0001
+.lincomb n705 pi268 n706_int
+2 1
+.bootstrap n706_int n706
+0101
+.lincomb n706 pi397 n707_int
+2 1
+.bootstrap n707_int n707
+0101
+.lincomb n661_neg n707 n708_int
+2 1
+.bootstrap n708_int n708
+0001
+.lincomb n708 pi269 n709_int
+2 1
+.bootstrap n709_int n709
+0101
+.lincomb n709 pi398 n710_int
+2 1
+.bootstrap n710_int n710
+0101
+.lincomb n660_neg n710 n711_int
+2 1
+.bootstrap n711_int n711
+0001
+.lincomb n711 pi270 n712_int
+2 1
+.bootstrap n712_int n712
+0101
+.lincomb n712 pi399 n713_int
+2 1
+.bootstrap n713_int n713
+0101
+.lincomb n659_neg n713 n714_int
+2 1
+.bootstrap n714_int n714
+0001
+.lincomb n714 pi271 n715_int
+2 1
+.bootstrap n715_int n715
+0101
+.lincomb n715 pi400 n716_int
+2 1
+.bootstrap n716_int n716
+0101
+.lincomb n658_neg n716 n717_int
+2 1
+.bootstrap n717_int n717
+0001
+.lincomb n717 pi272 n718_int
+2 1
+.bootstrap n718_int n718
+0101
+.lincomb n718 pi401 n719_int
+2 1
+.bootstrap n719_int n719
+0101
+.lincomb n657_neg n719 n720_int
+2 1
+.bootstrap n720_int n720
+0001
+.lincomb n720 pi273 n721_int
+2 1
+.bootstrap n721_int n721
+0101
+.lincomb n721 pi402 n722_int
+2 1
+.bootstrap n722_int n722
+0101
+.lincomb n656_neg n722 n723_int
+2 1
+.bootstrap n723_int n723
+0001
+.lincomb n723 pi274 n724_int
+2 1
+.bootstrap n724_int n724
+0101
+.lincomb n724 pi403 n725_int
+2 1
+.bootstrap n725_int n725
+0101
+.lincomb n725 n725_neg
+-1 1
+.lincomb n655_neg n725_neg n726_int
+2 1
+.bootstrap n726_int n726
+0001
+.lincomb n726 pi403 n727_int
+2 1
+.bootstrap n727_int n727
+0101
+.lincomb n727 pi404 n728_int
+2 1
+.bootstrap n728_int n728
+0101
+.lincomb n728 n728_neg
+-1 1
+.lincomb n654_neg n728_neg n729_int
+2 1
+.bootstrap n729_int n729
+0001
+.lincomb n729 pi276 n730_int
+2 1
+.bootstrap n730_int n730
+0101
+.lincomb n730 pi405 n731_int
+2 1
+.bootstrap n731_int n731
+0101
+.lincomb n653_neg n731 n732_int
+2 1
+.bootstrap n732_int n732
+0001
+.lincomb n732 pi277 n733_int
+2 1
+.bootstrap n733_int n733
+0101
+.lincomb n733 pi406 n734_int
+2 1
+.bootstrap n734_int n734
+0101
+.lincomb n734 n734_neg
+-1 1
+.lincomb n652_neg n734_neg n735_int
+2 1
+.bootstrap n735_int n735
+0001
+.lincomb n735 pi406 n736_int
+2 1
+.bootstrap n736_int n736
+0101
+.lincomb n736 pi407 n737_int
+2 1
+.bootstrap n737_int n737
+0101
+.lincomb n651_neg n737 n738_int
+2 1
+.bootstrap n738_int n738
+0001
+.lincomb n738 pi407 n739_int
+2 1
+.bootstrap n739_int n739
+0101
+.lincomb n739 pi408 n740_int
+2 1
+.bootstrap n740_int n740
+0101
+.lincomb n650_neg n740 n741_int
+2 1
+.bootstrap n741_int n741
+0001
+.lincomb n741 pi408 n742_int
+2 1
+.bootstrap n742_int n742
+0101
+.lincomb n742 pi409 n743_int
+2 1
+.bootstrap n743_int n743
+0101
+.lincomb n649_neg n743 n744_int
+2 1
+.bootstrap n744_int n744
+0001
+.lincomb n744 pi409 n745_int
+2 1
+.bootstrap n745_int n745
+0101
+.lincomb n745 pi410 n746_int
+2 1
+.bootstrap n746_int n746
+0101
+.lincomb n746 n746_neg
+-1 1
+.lincomb n648_neg n746_neg n747_int
+2 1
+.bootstrap n747_int n747
+0001
+.lincomb n747 pi282 n748_int
+2 1
+.bootstrap n748_int n748
+0101
+.lincomb n748 pi411 n749_int
+2 1
+.bootstrap n749_int n749
+0101
+.lincomb n647_neg n749 n750_int
+2 1
+.bootstrap n750_int n750
+0001
+.lincomb n750 pi283 n751_int
+2 1
+.bootstrap n751_int n751
+0101
+.lincomb n751 pi412 n752_int
+2 1
+.bootstrap n752_int n752
+0101
+.lincomb n752 n752_neg
+-1 1
+.lincomb n646_neg n752_neg n753_int
+2 1
+.bootstrap n753_int n753
+0001
+.lincomb n753 pi412 n754_int
+2 1
+.bootstrap n754_int n754
+0101
+.lincomb n754 pi413 n755_int
+2 1
+.bootstrap n755_int n755
+0101
+.lincomb n645_neg n755 n756_int
+2 1
+.bootstrap n756_int n756
+0001
+.lincomb n756 pi413 n757_int
+2 1
+.bootstrap n757_int n757
+0101
+.lincomb n757 pi414 n758_int
+2 1
+.bootstrap n758_int n758
+0101
+.lincomb n758 n758_neg
+-1 1
+.lincomb n644_neg n758_neg n759_int
+2 1
+.bootstrap n759_int n759
+0001
+.lincomb n759 pi286 n760_int
+2 1
+.bootstrap n760_int n760
+0101
+.lincomb n760 pi415 n761_int
+2 1
+.bootstrap n761_int n761
+0101
+.lincomb n643_neg n761 n762_int
+2 1
+.bootstrap n762_int n762
+0001
+.lincomb n762 pi287 n763_int
+2 1
+.bootstrap n763_int n763
+0101
+.lincomb n763 pi416 n764_int
+2 1
+.bootstrap n764_int n764
+0101
+.lincomb n764 n764_neg
+-1 1
+.lincomb n642_neg n764_neg n765_int
+2 1
+.bootstrap n765_int n765
+0001
+.lincomb n765 pi416 n766_int
+2 1
+.bootstrap n766_int n766
+0101
+.lincomb n766 pi417 n767_int
+2 1
+.bootstrap n767_int n767
+0101
+.lincomb n641_neg n767 n768_int
+2 1
+.bootstrap n768_int n768
+0001
+.lincomb n768 pi417 n769_int
+2 1
+.bootstrap n769_int n769
+0101
+.lincomb n769 pi418 n770_int
+2 1
+.bootstrap n770_int n770
+0101
+.lincomb n640_neg n770 n771_int
+2 1
+.bootstrap n771_int n771
+0001
+.lincomb n771 pi418 n772_int
+2 1
+.bootstrap n772_int n772
+0101
+.lincomb n772 pi419 n773_int
+2 1
+.bootstrap n773_int n773
+0101
+.lincomb n773 n773_neg
+-1 1
+.lincomb n639_neg n773_neg n774_int
+2 1
+.bootstrap n774_int n774
+0001
+.lincomb n774 pi291 n775_int
+2 1
+.bootstrap n775_int n775
+0101
+.lincomb n775 pi420 n776_int
+2 1
+.bootstrap n776_int n776
+0101
+.lincomb n638_neg n776 n777_int
+2 1
+.bootstrap n777_int n777
+0001
+.lincomb n777 pi292 n778_int
+2 1
+.bootstrap n778_int n778
+0101
+.lincomb n778 pi421 n779_int
+2 1
+.bootstrap n779_int n779
+0101
+.lincomb n637_neg n779 n780_int
+2 1
+.bootstrap n780_int n780
+0001
+.lincomb n780 pi293 n781_int
+2 1
+.bootstrap n781_int n781
+0101
+.lincomb n781 pi422 n782_int
+2 1
+.bootstrap n782_int n782
+0101
+.lincomb n636_neg n782 n783_int
+2 1
+.bootstrap n783_int n783
+0001
+.lincomb n783 pi294 n784_int
+2 1
+.bootstrap n784_int n784
+0101
+.lincomb n784 pi423 n785_int
+2 1
+.bootstrap n785_int n785
+0101
+.lincomb n785 n785_neg
+-1 1
+.lincomb n635_neg n785_neg n786_int
+2 1
+.bootstrap n786_int n786
+0001
+.lincomb n786 pi423 n787_int
+2 1
+.bootstrap n787_int n787
+0101
+.lincomb n627_neg n787 n788_int
+2 1
+.bootstrap n788_int n788
+0001
+.lincomb n788 n788_neg
+-1 1
+.lincomb n634 n788_neg n789_int
+2 1
+.bootstrap n789_int n789
+0001
+.lincomb n789 n789_neg
+-1 1
+.lincomb pi427 pi299 n790_int
+2 1
+.bootstrap n790_int n790
+0101
+.lincomb n790 n790_neg
+-1 1
+.lincomb pi426 pi298 n791_int
+2 1
+.bootstrap n791_int n791
+0101
+.lincomb n791 n791_neg
+-1 1
+.lincomb n630 pi426 n792_int
+2 1
+.bootstrap n792_int n792
+0101
+.lincomb n792 n792_neg
+-1 1
+.lincomb n791_neg n792_neg n793_int
+2 1
+.bootstrap n793_int n793
+0001
+.lincomb n793 pi426 n794_int
+2 1
+.bootstrap n794_int n794
+0101
+.lincomb n794 pi427 n795_int
+2 1
+.bootstrap n795_int n795
+0101
+.lincomb n790_neg n795 n796_int
+2 1
+.bootstrap n796_int n796
+0001
+.lincomb n796 pi427 n797_int
+2 1
+.bootstrap n797_int n797
+0101
+.lincomb pi300_neg pi428 n798_int
+2 1
+.bootstrap n798_int n798
+0001
+.lincomb n798 n798_neg
+-1 1
+.lincomb pi428 pi300 n799_int
+2 1
+.bootstrap n799_int n799
+0101
+.lincomb n798 n799 n800_int
+2 1
+.bootstrap n800_int n800
+0101
+.lincomb n800 n800_neg
+-1 1
+.lincomb n797 n800_neg n801_int
+2 1
+.bootstrap n801_int n801
+0001
+.lincomb n789_neg n801 n802_int
+2 1
+.bootstrap n802_int n802
+0001
+.lincomb n802 n802_neg
+-1 1
+.lincomb pi303_neg pi431 n803_int
+2 1
+.bootstrap n803_int n803
+0001
+.lincomb n803 n803_neg
+-1 1
+.lincomb pi302_neg pi430 n804_int
+2 1
+.bootstrap n804_int n804
+0001
+.lincomb n804 n804_neg
+-1 1
+.lincomb n803_neg n804_neg n805_int
+2 1
+.bootstrap n805_int n805
+0001
+.lincomb pi301 pi429_neg n806_int
+2 1
+.bootstrap n806_int n806
+0001
+.lincomb pi429 pi301 n807_int
+2 1
+.bootstrap n807_int n807
+0101
+.lincomb n806 n807 n808_int
+2 1
+.bootstrap n808_int n808
+0101
+.lincomb n808 n808_neg
+-1 1
+.lincomb n798_neg n808_neg n809_int
+2 1
+.bootstrap n809_int n809
+0001
+.lincomb n805 n809 n810_int
+2 1
+.bootstrap n810_int n810
+0001
+.lincomb n802_neg n810 n811_int
+2 1
+.bootstrap n811_int n811
+0001
+.lincomb n811 n811_neg
+-1 1
+.lincomb pi431 pi303 n812_int
+2 1
+.bootstrap n812_int n812
+0101
+.lincomb n812 n812_neg
+-1 1
+.lincomb pi430 pi302 n813_int
+2 1
+.bootstrap n813_int n813
+0101
+.lincomb n813 n813_neg
+-1 1
+.lincomb n806 pi430 n814_int
+2 1
+.bootstrap n814_int n814
+0101
+.lincomb n814 n814_neg
+-1 1
+.lincomb n813_neg n814_neg n815_int
+2 1
+.bootstrap n815_int n815
+0001
+.lincomb n815 pi430 n816_int
+2 1
+.bootstrap n816_int n816
+0101
+.lincomb n816 pi431 n817_int
+2 1
+.bootstrap n817_int n817
+0101
+.lincomb n812_neg n817 n818_int
+2 1
+.bootstrap n818_int n818
+0001
+.lincomb n818 pi431 n819_int
+2 1
+.bootstrap n819_int n819
+0101
+.lincomb pi304_neg pi432 n820_int
+2 1
+.bootstrap n820_int n820
+0001
+.lincomb n820 n820_neg
+-1 1
+.lincomb pi432 pi304 n821_int
+2 1
+.bootstrap n821_int n821
+0101
+.lincomb n820 n821 n822_int
+2 1
+.bootstrap n822_int n822
+0101
+.lincomb n822 n822_neg
+-1 1
+.lincomb n819 n822_neg n823_int
+2 1
+.bootstrap n823_int n823
+0001
+.lincomb n811_neg n823 n824_int
+2 1
+.bootstrap n824_int n824
+0001
+.lincomb n824 n824_neg
+-1 1
+.lincomb pi305 pi433_neg n825_int
+2 1
+.bootstrap n825_int n825
+0001
+.lincomb n825 n825_neg
+-1 1
+.lincomb pi433 pi305 n826_int
+2 1
+.bootstrap n826_int n826
+0101
+.lincomb n825 n826 n827_int
+2 1
+.bootstrap n827_int n827
+0101
+.lincomb n827 n827_neg
+-1 1
+.lincomb n820_neg n827_neg n828_int
+2 1
+.bootstrap n828_int n828
+0001
+.lincomb n824_neg n828 n829_int
+2 1
+.bootstrap n829_int n829
+0001
+.lincomb n829 n829_neg
+-1 1
+.lincomb pi306_neg pi434 n830_int
+2 1
+.bootstrap n830_int n830
+0001
+.lincomb n830 n830_neg
+-1 1
+.lincomb pi434 pi306 n831_int
+2 1
+.bootstrap n831_int n831
+0101
+.lincomb n830 n831 n832_int
+2 1
+.bootstrap n832_int n832
+0101
+.lincomb n832 n832_neg
+-1 1
+.lincomb n825_neg n832_neg n833_int
+2 1
+.bootstrap n833_int n833
+0001
+.lincomb n829_neg n833 n834_int
+2 1
+.bootstrap n834_int n834
+0001
+.lincomb n834 n834_neg
+-1 1
+.lincomb pi307 pi435_neg n835_int
+2 1
+.bootstrap n835_int n835
+0001
+.lincomb n835 n835_neg
+-1 1
+.lincomb pi435 pi307 n836_int
+2 1
+.bootstrap n836_int n836
+0101
+.lincomb n835 n836 n837_int
+2 1
+.bootstrap n837_int n837
+0101
+.lincomb n837 n837_neg
+-1 1
+.lincomb n830_neg n837_neg n838_int
+2 1
+.bootstrap n838_int n838
+0001
+.lincomb n834_neg n838 n839_int
+2 1
+.bootstrap n839_int n839
+0001
+.lincomb n839 n839_neg
+-1 1
+.lincomb n619_neg n835_neg n840_int
+2 1
+.bootstrap n840_int n840
+0001
+.lincomb n839_neg n840 n841_int
+2 1
+.bootstrap n841_int n841
+0001
+.lincomb n841 pi437 n842_int
+2 1
+.bootstrap n842_int n842
+0101
+.lincomb n842 pi437 n843_int
+2 1
+.bootstrap n843_int n843
+0101
+.lincomb n843 n843_neg
+-1 1
+.lincomb n623_neg n843_neg n844_int
+2 1
+.bootstrap n844_int n844
+0001
+.lincomb n844 pi437 n845_int
+2 1
+.bootstrap n845_int n845
+0101
+.lincomb n618_neg n845 n846_int
+2 1
+.bootstrap n846_int n846
+0001
+.lincomb n846 pi309 n847_int
+2 1
+.bootstrap n847_int n847
+0101
+.lincomb n847 pi438 n848_int
+2 1
+.bootstrap n848_int n848
+0101
+.lincomb n848 n848_neg
+-1 1
+.lincomb n617_neg n848_neg n849_int
+2 1
+.bootstrap n849_int n849
+0001
+.lincomb n849 pi438 n850_int
+2 1
+.bootstrap n850_int n850
+0101
+.lincomb n850 pi439 n851_int
+2 1
+.bootstrap n851_int n851
+0101
+.lincomb n616_neg n851 n852_int
+2 1
+.bootstrap n852_int n852
+0001
+.lincomb n852 pi439 n853_int
+2 1
+.bootstrap n853_int n853
+0101
+.lincomb n853 pi440 n854_int
+2 1
+.bootstrap n854_int n854
+0101
+.lincomb n615_neg n854 n855_int
+2 1
+.bootstrap n855_int n855
+0001
+.lincomb n855 pi440 n856_int
+2 1
+.bootstrap n856_int n856
+0101
+.lincomb n856 pi441 n857_int
+2 1
+.bootstrap n857_int n857
+0101
+.lincomb n614_neg n857 n858_int
+2 1
+.bootstrap n858_int n858
+0001
+.lincomb n858 pi441 n859_int
+2 1
+.bootstrap n859_int n859
+0101
+.lincomb n859 pi442 n860_int
+2 1
+.bootstrap n860_int n860
+0101
+.lincomb n860 n860_neg
+-1 1
+.lincomb n613_neg n860_neg n861_int
+2 1
+.bootstrap n861_int n861
+0001
+.lincomb n861 pi314 n862_int
+2 1
+.bootstrap n862_int n862
+0101
+.lincomb n862 pi443 n863_int
+2 1
+.bootstrap n863_int n863
+0101
+.lincomb n612_neg n863 n864_int
+2 1
+.bootstrap n864_int n864
+0001
+.lincomb n864 pi315 n865_int
+2 1
+.bootstrap n865_int n865
+0101
+.lincomb n865 n865_neg
+-1 1
+.lincomb pi316_neg pi444 n866_int
+2 1
+.bootstrap n866_int n866
+0001
+.lincomb n866 n866_neg
+-1 1
+.lincomb pi444 pi316 n867_int
+2 1
+.bootstrap n867_int n867
+0101
+.lincomb n866 n867 n868_int
+2 1
+.bootstrap n868_int n868
+0101
+.lincomb n868 n868_neg
+-1 1
+.lincomb n865_neg n868_neg n869_int
+2 1
+.bootstrap n869_int n869
+0001
+.lincomb n869 n869_neg
+-1 1
+.lincomb pi317 pi445_neg n870_int
+2 1
+.bootstrap n870_int n870
+0001
+.lincomb n870 n870_neg
+-1 1
+.lincomb pi445 pi317 n871_int
+2 1
+.bootstrap n871_int n871
+0101
+.lincomb n870 n871 n872_int
+2 1
+.bootstrap n872_int n872
+0101
+.lincomb n872 n872_neg
+-1 1
+.lincomb n866_neg n872_neg n873_int
+2 1
+.bootstrap n873_int n873
+0001
+.lincomb pi319 pi447_neg n874_int
+2 1
+.bootstrap n874_int n874
+0001
+.lincomb pi447 pi319 n875_int
+2 1
+.bootstrap n875_int n875
+0101
+.lincomb n874 n875 n876_int
+2 1
+.bootstrap n876_int n876
+0101
+.lincomb n876 n876_neg
+-1 1
+.lincomb pi318 pi446_neg n877_int
+2 1
+.bootstrap n877_int n877
+0001
+.lincomb n877 n877_neg
+-1 1
+.lincomb pi446 pi318 n878_int
+2 1
+.bootstrap n878_int n878
+0101
+.lincomb n877 n878 n879_int
+2 1
+.bootstrap n879_int n879
+0101
+.lincomb n879 n879_neg
+-1 1
+.lincomb n876_neg n879_neg n880_int
+2 1
+.bootstrap n880_int n880
+0001
+.lincomb pi320_neg pi448 n881_int
+2 1
+.bootstrap n881_int n881
+0001
+.lincomb n881 n881_neg
+-1 1
+.lincomb n880 n881_neg n882_int
+2 1
+.bootstrap n882_int n882
+0001
+.lincomb n873 n882 n883_int
+2 1
+.bootstrap n883_int n883
+0001
+.lincomb n869_neg n883 n884_int
+2 1
+.bootstrap n884_int n884
+0001
+.lincomb n884 n884_neg
+-1 1
+.lincomb n870_neg n877_neg n885_int
+2 1
+.bootstrap n885_int n885
+0001
+.lincomb n885 n885_neg
+-1 1
+.lincomb n882 n885_neg n886_int
+2 1
+.bootstrap n886_int n886
+0001
+.lincomb n886 n886_neg
+-1 1
+.lincomb pi448 pi320 n887_int
+2 1
+.bootstrap n887_int n887
+0101
+.lincomb n887 n887_neg
+-1 1
+.lincomb n874 pi448 n888_int
+2 1
+.bootstrap n888_int n888
+0101
+.lincomb n887_neg n888 n889_int
+2 1
+.bootstrap n889_int n889
+0001
+.lincomb n889 pi320 n890_int
+2 1
+.bootstrap n890_int n890
+0101
+.lincomb n890 n890_neg
+-1 1
+.lincomb n607_neg n890_neg n891_int
+2 1
+.bootstrap n891_int n891
+0001
+.lincomb n886_neg n891 n892_int
+2 1
+.bootstrap n892_int n892
+0001
+.lincomb n884_neg n892 n893_int
+2 1
+.bootstrap n893_int n893
+0001
+.lincomb n893 pi450 n894_int
+2 1
+.bootstrap n894_int n894
+0101
+.lincomb n894 pi450 n895_int
+2 1
+.bootstrap n895_int n895
+0101
+.lincomb n895 n895_neg
+-1 1
+.lincomb n611_neg n895_neg n896_int
+2 1
+.bootstrap n896_int n896
+0001
+.lincomb n896 pi450 n897_int
+2 1
+.bootstrap n897_int n897
+0101
+.lincomb n606_neg n897 n898_int
+2 1
+.bootstrap n898_int n898
+0001
+.lincomb n898 pi322 n899_int
+2 1
+.bootstrap n899_int n899
+0101
+.lincomb n899 pi451 n900_int
+2 1
+.bootstrap n900_int n900
+0101
+.lincomb n900 n900_neg
+-1 1
+.lincomb n605_neg n900_neg n901_int
+2 1
+.bootstrap n901_int n901
+0001
+.lincomb n901 pi451 n902_int
+2 1
+.bootstrap n902_int n902
+0101
+.lincomb n597_neg n902 n903_int
+2 1
+.bootstrap n903_int n903
+0001
+.lincomb n903 n903_neg
+-1 1
+.lincomb n604 n903_neg n904_int
+2 1
+.bootstrap n904_int n904
+0001
+.lincomb n904 n904_neg
+-1 1
+.lincomb pi455 pi327 n905_int
+2 1
+.bootstrap n905_int n905
+0101
+.lincomb n905 n905_neg
+-1 1
+.lincomb pi454 pi326 n906_int
+2 1
+.bootstrap n906_int n906
+0101
+.lincomb n906 n906_neg
+-1 1
+.lincomb n600 pi454 n907_int
+2 1
+.bootstrap n907_int n907
+0101
+.lincomb n907 n907_neg
+-1 1
+.lincomb n906_neg n907_neg n908_int
+2 1
+.bootstrap n908_int n908
+0001
+.lincomb n908 pi454 n909_int
+2 1
+.bootstrap n909_int n909
+0101
+.lincomb n909 pi455 n910_int
+2 1
+.bootstrap n910_int n910
+0101
+.lincomb n905_neg n910 n911_int
+2 1
+.bootstrap n911_int n911
+0001
+.lincomb n911 pi455 n912_int
+2 1
+.bootstrap n912_int n912
+0101
+.lincomb n589_neg n912 n913_int
+2 1
+.bootstrap n913_int n913
+0001
+.lincomb n904_neg n913 n914_int
+2 1
+.bootstrap n914_int n914
+0001
+.lincomb n914 pi457 n915_int
+2 1
+.bootstrap n915_int n915
+0101
+.lincomb n915 pi457 n916_int
+2 1
+.bootstrap n916_int n916
+0101
+.lincomb n916 n916_neg
+-1 1
+.lincomb n593_neg n916_neg n917_int
+2 1
+.bootstrap n917_int n917
+0001
+.lincomb n917 pi457 n918_int
+2 1
+.bootstrap n918_int n918
+0101
+.lincomb n588_neg n918 n919_int
+2 1
+.bootstrap n919_int n919
+0001
+.lincomb n919 pi329 n920_int
+2 1
+.bootstrap n920_int n920
+0101
+.lincomb n920 pi458 n921_int
+2 1
+.bootstrap n921_int n921
+0101
+.lincomb n921 n921_neg
+-1 1
+.lincomb n587_neg n921_neg n922_int
+2 1
+.bootstrap n922_int n922
+0001
+.lincomb n922 pi458 n923_int
+2 1
+.bootstrap n923_int n923
+0101
+.lincomb n923 pi459 n924_int
+2 1
+.bootstrap n924_int n924
+0101
+.lincomb n924 n924_neg
+-1 1
+.lincomb n586_neg n924_neg n925_int
+2 1
+.bootstrap n925_int n925
+0001
+.lincomb n925 pi331 n926_int
+2 1
+.bootstrap n926_int n926
+0101
+.lincomb n926 pi460 n927_int
+2 1
+.bootstrap n927_int n927
+0101
+.lincomb n585_neg n927 n928_int
+2 1
+.bootstrap n928_int n928
+0001
+.lincomb n928 pi332 n929_int
+2 1
+.bootstrap n929_int n929
+0101
+.lincomb n929 pi461 n930_int
+2 1
+.bootstrap n930_int n930
+0101
+.lincomb n930 n930_neg
+-1 1
+.lincomb n584_neg n930_neg n931_int
+2 1
+.bootstrap n931_int n931
+0001
+.lincomb n931 pi461 n932_int
+2 1
+.bootstrap n932_int n932
+0101
+.lincomb n932 pi462 n933_int
+2 1
+.bootstrap n933_int n933
+0101
+.lincomb n933 n933_neg
+-1 1
+.lincomb n583_neg n933_neg n934_int
+2 1
+.bootstrap n934_int n934
+0001
+.lincomb n934 pi334 n935_int
+2 1
+.bootstrap n935_int n935
+0101
+.lincomb n935 pi463 n936_int
+2 1
+.bootstrap n936_int n936
+0101
+.lincomb n582_neg n936 n937_int
+2 1
+.bootstrap n937_int n937
+0001
+.lincomb n937 pi335 n938_int
+2 1
+.bootstrap n938_int n938
+0101
+.lincomb n938 pi464 n939_int
+2 1
+.bootstrap n939_int n939
+0101
+.lincomb n939 n939_neg
+-1 1
+.lincomb n581_neg n939_neg n940_int
+2 1
+.bootstrap n940_int n940
+0001
+.lincomb n940 pi464 n941_int
+2 1
+.bootstrap n941_int n941
+0101
+.lincomb n941 pi465 n942_int
+2 1
+.bootstrap n942_int n942
+0101
+.lincomb n580_neg n942 n943_int
+2 1
+.bootstrap n943_int n943
+0001
+.lincomb n943 pi465 n944_int
+2 1
+.bootstrap n944_int n944
+0101
+.lincomb n944 pi466 n945_int
+2 1
+.bootstrap n945_int n945
+0101
+.lincomb n945 n945_neg
+-1 1
+.lincomb n579_neg n945_neg n946_int
+2 1
+.bootstrap n946_int n946
+0001
+.lincomb n946 pi338 n947_int
+2 1
+.bootstrap n947_int n947
+0101
+.lincomb n947 pi467 n948_int
+2 1
+.bootstrap n948_int n948
+0101
+.lincomb n578_neg n948 n949_int
+2 1
+.bootstrap n949_int n949
+0001
+.lincomb n949 pi339 n950_int
+2 1
+.bootstrap n950_int n950
+0101
+.lincomb n950 pi468 n951_int
+2 1
+.bootstrap n951_int n951
+0101
+.lincomb n951 n951_neg
+-1 1
+.lincomb n577_neg n951_neg n952_int
+2 1
+.bootstrap n952_int n952
+0001
+.lincomb n952 pi468 n953_int
+2 1
+.bootstrap n953_int n953
+0101
+.lincomb n953 pi469 n954_int
+2 1
+.bootstrap n954_int n954
+0101
+.lincomb n576_neg n954 n955_int
+2 1
+.bootstrap n955_int n955
+0001
+.lincomb n955 pi469 n956_int
+2 1
+.bootstrap n956_int n956
+0101
+.lincomb n956 pi470 n957_int
+2 1
+.bootstrap n957_int n957
+0101
+.lincomb n575_neg n957 n958_int
+2 1
+.bootstrap n958_int n958
+0001
+.lincomb n958 pi470 n959_int
+2 1
+.bootstrap n959_int n959
+0101
+.lincomb n959 pi471 n960_int
+2 1
+.bootstrap n960_int n960
+0101
+.lincomb n960 n960_neg
+-1 1
+.lincomb n574_neg n960_neg n961_int
+2 1
+.bootstrap n961_int n961
+0001
+.lincomb n961 pi343 n962_int
+2 1
+.bootstrap n962_int n962
+0101
+.lincomb n962 pi472 n963_int
+2 1
+.bootstrap n963_int n963
+0101
+.lincomb n573_neg n963 n964_int
+2 1
+.bootstrap n964_int n964
+0001
+.lincomb n964 pi344 n965_int
+2 1
+.bootstrap n965_int n965
+0101
+.lincomb n965 pi473 n966_int
+2 1
+.bootstrap n966_int n966
+0101
+.lincomb n572_neg n966 n967_int
+2 1
+.bootstrap n967_int n967
+0001
+.lincomb n967 pi345 n968_int
+2 1
+.bootstrap n968_int n968
+0101
+.lincomb n968 pi474 n969_int
+2 1
+.bootstrap n969_int n969
+0101
+.lincomb n571_neg n969 n970_int
+2 1
+.bootstrap n970_int n970
+0001
+.lincomb n970 pi346 n971_int
+2 1
+.bootstrap n971_int n971
+0101
+.lincomb n971 pi475 n972_int
+2 1
+.bootstrap n972_int n972
+0101
+.lincomb n972 n972_neg
+-1 1
+.lincomb n570_neg n972_neg n973_int
+2 1
+.bootstrap n973_int n973
+0001
+.lincomb n973 pi475 n974_int
+2 1
+.bootstrap n974_int n974
+0101
+.lincomb n974 pi476 n975_int
+2 1
+.bootstrap n975_int n975
+0101
+.lincomb n975 n975_neg
+-1 1
+.lincomb n569_neg n975_neg n976_int
+2 1
+.bootstrap n976_int n976
+0001
+.lincomb n976 pi348 n977_int
+2 1
+.bootstrap n977_int n977
+0101
+.lincomb n977 pi477 n978_int
+2 1
+.bootstrap n978_int n978
+0101
+.lincomb n568_neg n978 n979_int
+2 1
+.bootstrap n979_int n979
+0001
+.lincomb n979 pi349 n980_int
+2 1
+.bootstrap n980_int n980
+0101
+.lincomb n980 pi478 n981_int
+2 1
+.bootstrap n981_int n981
+0101
+.lincomb n981 n981_neg
+-1 1
+.lincomb n567_neg n981_neg n982_int
+2 1
+.bootstrap n982_int n982
+0001
+.lincomb n982 pi478 n983_int
+2 1
+.bootstrap n983_int n983
+0101
+.lincomb n983 pi479 n984_int
+2 1
+.bootstrap n984_int n984
+0101
+.lincomb n566_neg n984 n985_int
+2 1
+.bootstrap n985_int n985
+0001
+.lincomb n985 pi479 n986_int
+2 1
+.bootstrap n986_int n986
+0101
+.lincomb n986 pi480 n987_int
+2 1
+.bootstrap n987_int n987
+0101
+.lincomb n565_neg n987 n988_int
+2 1
+.bootstrap n988_int n988
+0001
+.lincomb n988 pi480 n989_int
+2 1
+.bootstrap n989_int n989
+0101
+.lincomb n989 pi481 n990_int
+2 1
+.bootstrap n990_int n990
+0101
+.lincomb n564_neg n990 n991_int
+2 1
+.bootstrap n991_int n991
+0001
+.lincomb n991 pi481 n992_int
+2 1
+.bootstrap n992_int n992
+0101
+.lincomb n992 pi482 n993_int
+2 1
+.bootstrap n993_int n993
+0101
+.lincomb n993 n993_neg
+-1 1
+.lincomb n563_neg n993_neg n994_int
+2 1
+.bootstrap n994_int n994
+0001
+.lincomb n994 pi354 n995_int
+2 1
+.bootstrap n995_int n995
+0101
+.lincomb n995 pi483 n996_int
+2 1
+.bootstrap n996_int n996
+0101
+.lincomb n562_neg n996 n997_int
+2 1
+.bootstrap n997_int n997
+0001
+.lincomb n997 pi355 n998_int
+2 1
+.bootstrap n998_int n998
+0101
+.lincomb n998 pi484 n999_int
+2 1
+.bootstrap n999_int n999
+0101
+.lincomb n999 n999_neg
+-1 1
+.lincomb n561_neg n999_neg n1000_int
+2 1
+.bootstrap n1000_int n1000
+0001
+.lincomb n1000 pi484 n1001_int
+2 1
+.bootstrap n1001_int n1001
+0101
+.lincomb n1001 pi485 n1002_int
+2 1
+.bootstrap n1002_int n1002
+0101
+.lincomb n560_neg n1002 n1003_int
+2 1
+.bootstrap n1003_int n1003
+0001
+.lincomb n1003 pi485 n1004_int
+2 1
+.bootstrap n1004_int n1004
+0101
+.lincomb n1004 pi486 n1005_int
+2 1
+.bootstrap n1005_int n1005
+0101
+.lincomb n559_neg n1005 n1006_int
+2 1
+.bootstrap n1006_int n1006
+0001
+.lincomb n1006 pi486 n1007_int
+2 1
+.bootstrap n1007_int n1007
+0101
+.lincomb n1007 pi487 n1008_int
+2 1
+.bootstrap n1008_int n1008
+0101
+.lincomb n1008 n1008_neg
+-1 1
+.lincomb n558_neg n1008_neg n1009_int
+2 1
+.bootstrap n1009_int n1009
+0001
+.lincomb n1009 pi359 n1010_int
+2 1
+.bootstrap n1010_int n1010
+0101
+.lincomb n1010 pi488 n1011_int
+2 1
+.bootstrap n1011_int n1011
+0101
+.lincomb n557_neg n1011 n1012_int
+2 1
+.bootstrap n1012_int n1012
+0001
+.lincomb n1012 pi360 n1013_int
+2 1
+.bootstrap n1013_int n1013
+0101
+.lincomb n1013 pi489 n1014_int
+2 1
+.bootstrap n1014_int n1014
+0101
+.lincomb n556_neg n1014 n1015_int
+2 1
+.bootstrap n1015_int n1015
+0001
+.lincomb n1015 pi361 n1016_int
+2 1
+.bootstrap n1016_int n1016
+0101
+.lincomb n1016 pi490 n1017_int
+2 1
+.bootstrap n1017_int n1017
+0101
+.lincomb n555_neg n1017 n1018_int
+2 1
+.bootstrap n1018_int n1018
+0001
+.lincomb n1018 pi362 n1019_int
+2 1
+.bootstrap n1019_int n1019
+0101
+.lincomb n1019 pi491 n1020_int
+2 1
+.bootstrap n1020_int n1020
+0101
+.lincomb n554_neg n1020 n1021_int
+2 1
+.bootstrap n1021_int n1021
+0001
+.lincomb n1021 pi363 n1022_int
+2 1
+.bootstrap n1022_int n1022
+0101
+.lincomb n1022 pi492 n1023_int
+2 1
+.bootstrap n1023_int n1023
+0101
+.lincomb n553_neg n1023 n1024_int
+2 1
+.bootstrap n1024_int n1024
+0001
+.lincomb n1024 pi364 n1025_int
+2 1
+.bootstrap n1025_int n1025
+0101
+.lincomb n1025 pi493 n1026_int
+2 1
+.bootstrap n1026_int n1026
+0101
+.lincomb n1026 n1026_neg
+-1 1
+.lincomb n552_neg n1026_neg n1027_int
+2 1
+.bootstrap n1027_int n1027
+0001
+.lincomb n1027 pi493 n1028_int
+2 1
+.bootstrap n1028_int n1028
+0101
+.lincomb n1028 pi494 n1029_int
+2 1
+.bootstrap n1029_int n1029
+0101
+.lincomb n1029 n1029_neg
+-1 1
+.lincomb n551_neg n1029_neg n1030_int
+2 1
+.bootstrap n1030_int n1030
+0001
+.lincomb n1030 pi366 n1031_int
+2 1
+.bootstrap n1031_int n1031
+0101
+.lincomb n1031 pi495 n1032_int
+2 1
+.bootstrap n1032_int n1032
+0101
+.lincomb n550_neg n1032 n1033_int
+2 1
+.bootstrap n1033_int n1033
+0001
+.lincomb n1033 pi367 n1034_int
+2 1
+.bootstrap n1034_int n1034
+0101
+.lincomb n1034 pi496 n1035_int
+2 1
+.bootstrap n1035_int n1035
+0101
+.lincomb n1035 n1035_neg
+-1 1
+.lincomb n549_neg n1035_neg n1036_int
+2 1
+.bootstrap n1036_int n1036
+0001
+.lincomb n1036 pi496 n1037_int
+2 1
+.bootstrap n1037_int n1037
+0101
+.lincomb n1037 pi497 n1038_int
+2 1
+.bootstrap n1038_int n1038
+0101
+.lincomb n548_neg n1038 n1039_int
+2 1
+.bootstrap n1039_int n1039
+0001
+.lincomb n1039 pi497 n1040_int
+2 1
+.bootstrap n1040_int n1040
+0101
+.lincomb n1040 pi498 n1041_int
+2 1
+.bootstrap n1041_int n1041
+0101
+.lincomb n547_neg n1041 n1042_int
+2 1
+.bootstrap n1042_int n1042
+0001
+.lincomb n1042 pi498 n1043_int
+2 1
+.bootstrap n1043_int n1043
+0101
+.lincomb n1043 pi499 n1044_int
+2 1
+.bootstrap n1044_int n1044
+0101
+.lincomb n546_neg n1044 n1045_int
+2 1
+.bootstrap n1045_int n1045
+0001
+.lincomb n1045 pi499 n1046_int
+2 1
+.bootstrap n1046_int n1046
+0101
+.lincomb n1046 pi500 n1047_int
+2 1
+.bootstrap n1047_int n1047
+0101
+.lincomb n1047 n1047_neg
+-1 1
+.lincomb n545_neg n1047_neg n1048_int
+2 1
+.bootstrap n1048_int n1048
+0001
+.lincomb n1048 pi372 n1049_int
+2 1
+.bootstrap n1049_int n1049
+0101
+.lincomb n1049 pi501 n1050_int
+2 1
+.bootstrap n1050_int n1050
+0101
+.lincomb n544_neg n1050 n1051_int
+2 1
+.bootstrap n1051_int n1051
+0001
+.lincomb n1051 pi373 n1052_int
+2 1
+.bootstrap n1052_int n1052
+0101
+.lincomb n1052 pi502 n1053_int
+2 1
+.bootstrap n1053_int n1053
+0101
+.lincomb n1053 n1053_neg
+-1 1
+.lincomb n543_neg n1053_neg n1054_int
+2 1
+.bootstrap n1054_int n1054
+0001
+.lincomb n1054 pi502 n1055_int
+2 1
+.bootstrap n1055_int n1055
+0101
+.lincomb n1055 pi503 n1056_int
+2 1
+.bootstrap n1056_int n1056
+0101
+.lincomb n1056 n1056_neg
+-1 1
+.lincomb n542_neg n1056_neg n1057_int
+2 1
+.bootstrap n1057_int n1057
+0001
+.lincomb n1057 pi375 n1058_int
+2 1
+.bootstrap n1058_int n1058
+0101
+.lincomb n1058 pi504 n1059_int
+2 1
+.bootstrap n1059_int n1059
+0101
+.lincomb n541_neg n1059 n1060_int
+2 1
+.bootstrap n1060_int n1060
+0001
+.lincomb n1060 pi376 n1061_int
+2 1
+.bootstrap n1061_int n1061
+0101
+.lincomb n1061 pi505 n1062_int
+2 1
+.bootstrap n1062_int n1062
+0101
+.lincomb n1062 n1062_neg
+-1 1
+.lincomb n540_neg n1062_neg n1063_int
+2 1
+.bootstrap n1063_int n1063
+0001
+.lincomb n1063 pi505 n1064_int
+2 1
+.bootstrap n1064_int n1064
+0101
+.lincomb n1064 pi506 n1065_int
+2 1
+.bootstrap n1065_int n1065
+0101
+.lincomb n539_neg n1065 n1066_int
+2 1
+.bootstrap n1066_int n1066
+0001
+.lincomb n1066 pi506 n1067_int
+2 1
+.bootstrap n1067_int n1067
+0101
+.lincomb n1067 pi507 n1068_int
+2 1
+.bootstrap n1068_int n1068
+0101
+.lincomb n538_neg n1068 n1069_int
+2 1
+.bootstrap n1069_int n1069
+0001
+.lincomb n1069 pi507 n1070_int
+2 1
+.bootstrap n1070_int n1070
+0101
+.lincomb n533_neg n1070 n1071_int
+2 1
+.bootstrap n1071_int n1071
+0001
+.lincomb n1071 n1071_neg
+-1 1
+.lincomb n537 n1071_neg n1072_int
+2 1
+.bootstrap n1072_int n1072
+0001
+.lincomb n1072 pi512 n1073_int
+2 1
+.bootstrap n1073_int n1073
+0101
+.lincomb n1073 pi512 n1074_int
+2 1
+.bootstrap n1074_int n1074
+0101
+.lincomb n1074 n1074_neg
+-1 1
+.lincomb n529 n1074_neg n1075_int
+2 1
+.bootstrap n1075_int n1075
+0001
+.lincomb n1075 pi512 n1076_int
+2 1
+.bootstrap n1076_int n1076
+0101
+.lincomb n517_neg n1076 n1077_int
+2 1
+.bootstrap n1077_int n1077
+0001
+.lincomb n1077 pi384 n1078_int
+2 1
+.bootstrap n1078_int n1078
+0101
+.lincomb n516 n1078 n1079_int
+2 1
+.bootstrap n1079_int n1079
+0001
+.lincomb n1079 pi383 n1080_int
+2 1
+.bootstrap n1080_int n1080
+0101
+.lincomb n1080 n513,n517 n1081_int
+2 1
+.bootstrap n1081_int n1081
+0101
+.lincomb pi255 pi127 n1082_int
+2 1
+.bootstrap n1082_int n1082
+0101
+.lincomb n1082 n1082_neg
+-1 1
+.lincomb pi254 pi126 n1084_int
+2 1
+.bootstrap n1084_int n1084
+0101
+.lincomb n1084 n1084_neg
+-1 1
+.lincomb pi125_neg pi253 n1085_int
+2 1
+.bootstrap n1085_int n1085
+0001
+.lincomb n1085 n1085_neg
+-1 1
+.lincomb pi253 pi125 n1086_int
+2 1
+.bootstrap n1086_int n1086
+0101
+.lincomb n1085 n1086 n1087_int
+2 1
+.bootstrap n1087_int n1087
+0101
+.lincomb n1087 pi254 n1088_int
+2 1
+.bootstrap n1088_int n1088
+0101
+.lincomb n1088 n1088_neg
+-1 1
+.lincomb n1084_neg n1088_neg n1089_int
+2 1
+.bootstrap n1089_int n1089
+0001
+.lincomb n1089 pi254 n1090_int
+2 1
+.bootstrap n1090_int n1090
+0101
+.lincomb n1090 pi255 n1091_int
+2 1
+.bootstrap n1091_int n1091
+0101
+.lincomb n1082_neg n1091 n1092_int
+2 1
+.bootstrap n1092_int n1092
+0001
+.lincomb n1092 pi255 n1093_int
+2 1
+.bootstrap n1093_int n1093
+0101
+.lincomb n1093 pi256 n1094_int
+2 1
+.bootstrap n1094_int n1094
+0101
+.lincomb n1094 pi256 n1095_int
+2 1
+.bootstrap n1095_int n1095
+0101
+.lincomb pi126_neg pi254 n1096_int
+2 1
+.bootstrap n1096_int n1096
+0001
+.lincomb n1096 n1096_neg
+-1 1
+.lincomb pi127_neg pi255 n1097_int
+2 1
+.bootstrap n1097_int n1097
+0001
+.lincomb n1097 n1097_neg
+-1 1
+.lincomb n1096_neg n1097_neg n1098_int
+2 1
+.bootstrap n1098_int n1098
+0001
+.lincomb pi124 pi252_neg n1099_int
+2 1
+.bootstrap n1099_int n1099
+0001
+.lincomb n1099 n1099_neg
+-1 1
+.lincomb pi252 pi124 n1100_int
+2 1
+.bootstrap n1100_int n1100
+0101
+.lincomb n1099 n1100 n1101_int
+2 1
+.bootstrap n1101_int n1101
+0101
+.lincomb n1101 n1101_neg
+-1 1
+.lincomb n1085_neg n1101_neg n1102_int
+2 1
+.bootstrap n1102_int n1102
+0001
+.lincomb n1098 n1102 n1103_int
+2 1
+.bootstrap n1103_int n1103
+0001
+.lincomb pi251 pi123 n1104_int
+2 1
+.bootstrap n1104_int n1104
+0101
+.lincomb n1104 n1104_neg
+-1 1
+.lincomb pi250 pi122 n1105_int
+2 1
+.bootstrap n1105_int n1105
+0101
+.lincomb n1105 n1105_neg
+-1 1
+.lincomb pi249 pi121 n1106_int
+2 1
+.bootstrap n1106_int n1106
+0101
+.lincomb n1106 n1106_neg
+-1 1
+.lincomb pi248 pi120 n1107_int
+2 1
+.bootstrap n1107_int n1107
+0101
+.lincomb n1107 n1107_neg
+-1 1
+.lincomb pi247 pi119 n1108_int
+2 1
+.bootstrap n1108_int n1108
+0101
+.lincomb n1108 n1108_neg
+-1 1
+.lincomb pi246 pi118 n1109_int
+2 1
+.bootstrap n1109_int n1109
+0101
+.lincomb n1109 n1109_neg
+-1 1
+.lincomb pi245 pi117 n1110_int
+2 1
+.bootstrap n1110_int n1110
+0101
+.lincomb n1110 n1110_neg
+-1 1
+.lincomb pi244 pi116 n1111_int
+2 1
+.bootstrap n1111_int n1111
+0101
+.lincomb n1111 n1111_neg
+-1 1
+.lincomb pi243 pi115 n1112_int
+2 1
+.bootstrap n1112_int n1112
+0101
+.lincomb n1112 n1112_neg
+-1 1
+.lincomb pi242 pi114 n1113_int
+2 1
+.bootstrap n1113_int n1113
+0101
+.lincomb n1113 n1113_neg
+-1 1
+.lincomb pi241 pi113 n1114_int
+2 1
+.bootstrap n1114_int n1114
+0101
+.lincomb n1114 n1114_neg
+-1 1
+.lincomb pi240 pi112 n1115_int
+2 1
+.bootstrap n1115_int n1115
+0101
+.lincomb n1115 n1115_neg
+-1 1
+.lincomb pi239 pi111 n1116_int
+2 1
+.bootstrap n1116_int n1116
+0101
+.lincomb n1116 n1116_neg
+-1 1
+.lincomb pi238 pi110 n1117_int
+2 1
+.bootstrap n1117_int n1117
+0101
+.lincomb n1117 n1117_neg
+-1 1
+.lincomb pi237 pi109 n1118_int
+2 1
+.bootstrap n1118_int n1118
+0101
+.lincomb n1118 n1118_neg
+-1 1
+.lincomb pi236 pi108 n1119_int
+2 1
+.bootstrap n1119_int n1119
+0101
+.lincomb n1119 n1119_neg
+-1 1
+.lincomb pi235 pi107 n1120_int
+2 1
+.bootstrap n1120_int n1120
+0101
+.lincomb n1120 n1120_neg
+-1 1
+.lincomb pi234 pi106 n1121_int
+2 1
+.bootstrap n1121_int n1121
+0101
+.lincomb n1121 n1121_neg
+-1 1
+.lincomb pi233 pi105 n1122_int
+2 1
+.bootstrap n1122_int n1122
+0101
+.lincomb n1122 n1122_neg
+-1 1
+.lincomb pi232 pi104 n1123_int
+2 1
+.bootstrap n1123_int n1123
+0101
+.lincomb n1123 n1123_neg
+-1 1
+.lincomb pi231 pi103 n1124_int
+2 1
+.bootstrap n1124_int n1124
+0101
+.lincomb n1124 n1124_neg
+-1 1
+.lincomb pi230 pi102 n1125_int
+2 1
+.bootstrap n1125_int n1125
+0101
+.lincomb n1125 n1125_neg
+-1 1
+.lincomb pi229 pi101 n1126_int
+2 1
+.bootstrap n1126_int n1126
+0101
+.lincomb n1126 n1126_neg
+-1 1
+.lincomb pi228 pi100 n1127_int
+2 1
+.bootstrap n1127_int n1127
+0101
+.lincomb n1127 n1127_neg
+-1 1
+.lincomb pi227 pi99 n1128_int
+2 1
+.bootstrap n1128_int n1128
+0101
+.lincomb n1128 n1128_neg
+-1 1
+.lincomb pi226 pi98 n1129_int
+2 1
+.bootstrap n1129_int n1129
+0101
+.lincomb n1129 n1129_neg
+-1 1
+.lincomb pi225 pi97 n1130_int
+2 1
+.bootstrap n1130_int n1130
+0101
+.lincomb n1130 n1130_neg
+-1 1
+.lincomb pi224 pi96 n1131_int
+2 1
+.bootstrap n1131_int n1131
+0101
+.lincomb n1131 n1131_neg
+-1 1
+.lincomb pi223 pi95 n1132_int
+2 1
+.bootstrap n1132_int n1132
+0101
+.lincomb n1132 n1132_neg
+-1 1
+.lincomb pi222 pi94 n1133_int
+2 1
+.bootstrap n1133_int n1133
+0101
+.lincomb n1133 n1133_neg
+-1 1
+.lincomb pi221 pi93 n1134_int
+2 1
+.bootstrap n1134_int n1134
+0101
+.lincomb n1134 n1134_neg
+-1 1
+.lincomb pi220 pi92 n1135_int
+2 1
+.bootstrap n1135_int n1135
+0101
+.lincomb n1135 n1135_neg
+-1 1
+.lincomb pi219 pi91 n1136_int
+2 1
+.bootstrap n1136_int n1136
+0101
+.lincomb n1136 n1136_neg
+-1 1
+.lincomb pi218 pi90 n1137_int
+2 1
+.bootstrap n1137_int n1137
+0101
+.lincomb n1137 n1137_neg
+-1 1
+.lincomb pi217 pi89 n1138_int
+2 1
+.bootstrap n1138_int n1138
+0101
+.lincomb n1138 n1138_neg
+-1 1
+.lincomb pi216 pi88 n1139_int
+2 1
+.bootstrap n1139_int n1139
+0101
+.lincomb n1139 n1139_neg
+-1 1
+.lincomb pi215 pi87 n1140_int
+2 1
+.bootstrap n1140_int n1140
+0101
+.lincomb n1140 n1140_neg
+-1 1
+.lincomb pi214 pi86 n1141_int
+2 1
+.bootstrap n1141_int n1141
+0101
+.lincomb n1141 n1141_neg
+-1 1
+.lincomb pi213 pi85 n1142_int
+2 1
+.bootstrap n1142_int n1142
+0101
+.lincomb n1142 n1142_neg
+-1 1
+.lincomb pi212 pi84 n1143_int
+2 1
+.bootstrap n1143_int n1143
+0101
+.lincomb n1143 n1143_neg
+-1 1
+.lincomb pi211 pi83 n1144_int
+2 1
+.bootstrap n1144_int n1144
+0101
+.lincomb n1144 n1144_neg
+-1 1
+.lincomb pi210 pi82 n1145_int
+2 1
+.bootstrap n1145_int n1145
+0101
+.lincomb n1145 n1145_neg
+-1 1
+.lincomb pi81_neg pi209 n1146_int
+2 1
+.bootstrap n1146_int n1146
+0001
+.lincomb n1146 n1146_neg
+-1 1
+.lincomb pi209 pi81 n1147_int
+2 1
+.bootstrap n1147_int n1147
+0101
+.lincomb n1146 n1147 n1148_int
+2 1
+.bootstrap n1148_int n1148
+0101
+.lincomb n1148 pi210 n1149_int
+2 1
+.bootstrap n1149_int n1149
+0101
+.lincomb n1149 pi210 n1150_int
+2 1
+.bootstrap n1150_int n1150
+0101
+.lincomb n1150 n1150_neg
+-1 1
+.lincomb pi71_neg pi199 n1151_int
+2 1
+.bootstrap n1151_int n1151
+0001
+.lincomb n1151 n1151_neg
+-1 1
+.lincomb pi70_neg pi198 n1152_int
+2 1
+.bootstrap n1152_int n1152
+0001
+.lincomb n1152 n1152_neg
+-1 1
+.lincomb n1151_neg n1152_neg n1153_int
+2 1
+.bootstrap n1153_int n1153
+0001
+.lincomb pi69 pi197_neg n1154_int
+2 1
+.bootstrap n1154_int n1154
+0001
+.lincomb pi197 pi69 n1155_int
+2 1
+.bootstrap n1155_int n1155
+0101
+.lincomb n1154 n1155 n1156_int
+2 1
+.bootstrap n1156_int n1156
+0101
+.lincomb n1156 n1156_neg
+-1 1
+.lincomb n1153 n1156_neg n1157_int
+2 1
+.bootstrap n1157_int n1157
+0001
+.lincomb pi196 pi68 n1158_int
+2 1
+.bootstrap n1158_int n1158
+0101
+.lincomb n1158 n1158_neg
+-1 1
+.lincomb pi195 pi67 n1159_int
+2 1
+.bootstrap n1159_int n1159
+0101
+.lincomb n1159 n1159_neg
+-1 1
+.lincomb pi194 pi66 n1160_int
+2 1
+.bootstrap n1160_int n1160
+0101
+.lincomb n1160 n1160_neg
+-1 1
+.lincomb pi193 pi65 n1161_int
+2 1
+.bootstrap n1161_int n1161
+0101
+.lincomb n1161 n1161_neg
+-1 1
+.lincomb pi64 pi192_neg n1162_int
+2 1
+.bootstrap n1162_int n1162
+0001
+.lincomb n1162 n1162_neg
+-1 1
+.lincomb pi192 pi64 n1163_int
+2 1
+.bootstrap n1163_int n1163
+0101
+.lincomb n1162 n1163 n1164_int
+2 1
+.bootstrap n1164_int n1164
+0101
+.lincomb n1164 pi193 n1165_int
+2 1
+.bootstrap n1165_int n1165
+0101
+.lincomb n1165 pi193 n1166_int
+2 1
+.bootstrap n1166_int n1166
+0101
+.lincomb n1166 n1166_neg
+-1 1
+.lincomb pi63_neg pi191 n1167_int
+2 1
+.bootstrap n1167_int n1167
+0001
+.lincomb n1167 n1167_neg
+-1 1
+.lincomb pi62_neg pi190 n1168_int
+2 1
+.bootstrap n1168_int n1168
+0001
+.lincomb n1168 n1168_neg
+-1 1
+.lincomb n1167_neg n1168_neg n1169_int
+2 1
+.bootstrap n1169_int n1169
+0001
+.lincomb pi60 pi188_neg n1170_int
+2 1
+.bootstrap n1170_int n1170
+0001
+.lincomb n1170 n1170_neg
+-1 1
+.lincomb pi188 pi60 n1171_int
+2 1
+.bootstrap n1171_int n1171
+0101
+.lincomb n1170 n1171 n1172_int
+2 1
+.bootstrap n1172_int n1172
+0101
+.lincomb n1172 n1172_neg
+-1 1
+.lincomb pi61 pi189_neg n1173_int
+2 1
+.bootstrap n1173_int n1173
+0001
+.lincomb pi189 pi61 n1174_int
+2 1
+.bootstrap n1174_int n1174
+0101
+.lincomb n1173 n1174 n1175_int
+2 1
+.bootstrap n1175_int n1175
+0101
+.lincomb n1175 n1175_neg
+-1 1
+.lincomb n1172_neg n1175_neg n1176_int
+2 1
+.bootstrap n1176_int n1176
+0001
+.lincomb n1169 n1176 n1177_int
+2 1
+.bootstrap n1177_int n1177
+0001
+.lincomb pi187 pi59 n1178_int
+2 1
+.bootstrap n1178_int n1178
+0101
+.lincomb n1178 n1178_neg
+-1 1
+.lincomb pi186 pi58 n1179_int
+2 1
+.bootstrap n1179_int n1179
+0101
+.lincomb n1179 n1179_neg
+-1 1
+.lincomb pi185 pi57 n1180_int
+2 1
+.bootstrap n1180_int n1180
+0101
+.lincomb n1180 n1180_neg
+-1 1
+.lincomb pi184 pi56 n1181_int
+2 1
+.bootstrap n1181_int n1181
+0101
+.lincomb n1181 n1181_neg
+-1 1
+.lincomb pi183 pi55 n1182_int
+2 1
+.bootstrap n1182_int n1182
+0101
+.lincomb n1182 n1182_neg
+-1 1
+.lincomb pi182 pi54 n1183_int
+2 1
+.bootstrap n1183_int n1183
+0101
+.lincomb n1183 n1183_neg
+-1 1
+.lincomb pi181 pi53 n1184_int
+2 1
+.bootstrap n1184_int n1184
+0101
+.lincomb n1184 n1184_neg
+-1 1
+.lincomb pi180 pi52 n1185_int
+2 1
+.bootstrap n1185_int n1185
+0101
+.lincomb n1185 n1185_neg
+-1 1
+.lincomb pi179 pi51 n1186_int
+2 1
+.bootstrap n1186_int n1186
+0101
+.lincomb n1186 n1186_neg
+-1 1
+.lincomb pi178 pi50 n1187_int
+2 1
+.bootstrap n1187_int n1187
+0101
+.lincomb n1187 n1187_neg
+-1 1
+.lincomb pi49_neg pi177 n1188_int
+2 1
+.bootstrap n1188_int n1188
+0001
+.lincomb n1188 n1188_neg
+-1 1
+.lincomb pi177 pi49 n1189_int
+2 1
+.bootstrap n1189_int n1189
+0101
+.lincomb n1188 n1189 n1190_int
+2 1
+.bootstrap n1190_int n1190
+0101
+.lincomb n1190 pi178 n1191_int
+2 1
+.bootstrap n1191_int n1191
+0101
+.lincomb n1191 pi178 n1192_int
+2 1
+.bootstrap n1192_int n1192
+0101
+.lincomb n1192 n1192_neg
+-1 1
+.lincomb pi167 pi39 n1193_int
+2 1
+.bootstrap n1193_int n1193
+0101
+.lincomb n1193 n1193_neg
+-1 1
+.lincomb pi166 pi38 n1194_int
+2 1
+.bootstrap n1194_int n1194
+0101
+.lincomb n1194 n1194_neg
+-1 1
+.lincomb pi165 pi37 n1195_int
+2 1
+.bootstrap n1195_int n1195
+0101
+.lincomb n1195 n1195_neg
+-1 1
+.lincomb pi164 pi36 n1196_int
+2 1
+.bootstrap n1196_int n1196
+0101
+.lincomb n1196 n1196_neg
+-1 1
+.lincomb pi163 pi35 n1197_int
+2 1
+.bootstrap n1197_int n1197
+0101
+.lincomb n1197 n1197_neg
+-1 1
+.lincomb pi162 pi34 n1198_int
+2 1
+.bootstrap n1198_int n1198
+0101
+.lincomb n1198 n1198_neg
+-1 1
+.lincomb pi161 pi33 n1199_int
+2 1
+.bootstrap n1199_int n1199
+0101
+.lincomb n1199 n1199_neg
+-1 1
+.lincomb pi160 pi32 n1200_int
+2 1
+.bootstrap n1200_int n1200
+0101
+.lincomb n1200 n1200_neg
+-1 1
+.lincomb pi159 pi31 n1201_int
+2 1
+.bootstrap n1201_int n1201
+0101
+.lincomb n1201 n1201_neg
+-1 1
+.lincomb pi158 pi30 n1202_int
+2 1
+.bootstrap n1202_int n1202
+0101
+.lincomb n1202 n1202_neg
+-1 1
+.lincomb pi157 pi29 n1203_int
+2 1
+.bootstrap n1203_int n1203
+0101
+.lincomb n1203 n1203_neg
+-1 1
+.lincomb pi156 pi28 n1204_int
+2 1
+.bootstrap n1204_int n1204
+0101
+.lincomb n1204 n1204_neg
+-1 1
+.lincomb pi155 pi27 n1205_int
+2 1
+.bootstrap n1205_int n1205
+0101
+.lincomb n1205 n1205_neg
+-1 1
+.lincomb pi154 pi26 n1206_int
+2 1
+.bootstrap n1206_int n1206
+0101
+.lincomb n1206 n1206_neg
+-1 1
+.lincomb pi153 pi25 n1207_int
+2 1
+.bootstrap n1207_int n1207
+0101
+.lincomb n1207 n1207_neg
+-1 1
+.lincomb pi152 pi24 n1208_int
+2 1
+.bootstrap n1208_int n1208
+0101
+.lincomb n1208 n1208_neg
+-1 1
+.lincomb pi151 pi23 n1209_int
+2 1
+.bootstrap n1209_int n1209
+0101
+.lincomb n1209 n1209_neg
+-1 1
+.lincomb pi150 pi22 n1210_int
+2 1
+.bootstrap n1210_int n1210
+0101
+.lincomb n1210 n1210_neg
+-1 1
+.lincomb pi149 pi21 n1211_int
+2 1
+.bootstrap n1211_int n1211
+0101
+.lincomb n1211 n1211_neg
+-1 1
+.lincomb pi148 pi20 n1212_int
+2 1
+.bootstrap n1212_int n1212
+0101
+.lincomb n1212 n1212_neg
+-1 1
+.lincomb pi147 pi19 n1213_int
+2 1
+.bootstrap n1213_int n1213
+0101
+.lincomb n1213 n1213_neg
+-1 1
+.lincomb pi146 pi18 n1214_int
+2 1
+.bootstrap n1214_int n1214
+0101
+.lincomb n1214 n1214_neg
+-1 1
+.lincomb pi145 pi17 n1215_int
+2 1
+.bootstrap n1215_int n1215
+0101
+.lincomb n1215 n1215_neg
+-1 1
+.lincomb pi144 pi16 n1216_int
+2 1
+.bootstrap n1216_int n1216
+0101
+.lincomb n1216 n1216_neg
+-1 1
+.lincomb pi143 pi15 n1217_int
+2 1
+.bootstrap n1217_int n1217
+0101
+.lincomb n1217 n1217_neg
+-1 1
+.lincomb pi142 pi14 n1218_int
+2 1
+.bootstrap n1218_int n1218
+0101
+.lincomb n1218 n1218_neg
+-1 1
+.lincomb pi141 pi13 n1219_int
+2 1
+.bootstrap n1219_int n1219
+0101
+.lincomb n1219 n1219_neg
+-1 1
+.lincomb pi140 pi12 n1220_int
+2 1
+.bootstrap n1220_int n1220
+0101
+.lincomb n1220 n1220_neg
+-1 1
+.lincomb pi139 pi11 n1221_int
+2 1
+.bootstrap n1221_int n1221
+0101
+.lincomb n1221 n1221_neg
+-1 1
+.lincomb pi138 pi10 n1222_int
+2 1
+.bootstrap n1222_int n1222
+0101
+.lincomb n1222 n1222_neg
+-1 1
+.lincomb pi137 pi9 n1223_int
+2 1
+.bootstrap n1223_int n1223
+0101
+.lincomb n1223 n1223_neg
+-1 1
+.lincomb pi136 pi8 n1224_int
+2 1
+.bootstrap n1224_int n1224
+0101
+.lincomb n1224 n1224_neg
+-1 1
+.lincomb pi135 pi7 n1225_int
+2 1
+.bootstrap n1225_int n1225
+0101
+.lincomb n1225 n1225_neg
+-1 1
+.lincomb pi134 pi6 n1226_int
+2 1
+.bootstrap n1226_int n1226
+0101
+.lincomb n1226 n1226_neg
+-1 1
+.lincomb pi133 pi5 n1227_int
+2 1
+.bootstrap n1227_int n1227
+0101
+.lincomb n1227 n1227_neg
+-1 1
+.lincomb pi132 pi4 n1228_int
+2 1
+.bootstrap n1228_int n1228
+0101
+.lincomb n1228 n1228_neg
+-1 1
+.lincomb pi131 pi3 n1229_int
+2 1
+.bootstrap n1229_int n1229
+0101
+.lincomb n1229 n1229_neg
+-1 1
+.lincomb pi130 pi2 n1230_int
+2 1
+.bootstrap n1230_int n1230
+0101
+.lincomb n1230 n1230_neg
+-1 1
+.lincomb pi1 pi129_neg n1231_int
+2 1
+.bootstrap n1231_int n1231
+0001
+.lincomb n1231 pi130 n1232_int
+2 1
+.bootstrap n1232_int n1232
+0101
+.lincomb n1232 n1232_neg
+-1 1
+.lincomb n1230_neg n1232_neg n1233_int
+2 1
+.bootstrap n1233_int n1233
+0001
+.lincomb n1233 pi130 n1234_int
+2 1
+.bootstrap n1234_int n1234
+0101
+.lincomb n1234 pi131 n1235_int
+2 1
+.bootstrap n1235_int n1235
+0101
+.lincomb n1229_neg n1235 n1236_int
+2 1
+.bootstrap n1236_int n1236
+0001
+.lincomb n1236 pi131 n1237_int
+2 1
+.bootstrap n1237_int n1237
+0101
+.lincomb n1237 pi132 n1238_int
+2 1
+.bootstrap n1238_int n1238
+0101
+.lincomb n1228_neg n1238 n1239_int
+2 1
+.bootstrap n1239_int n1239
+0001
+.lincomb n1239 pi132 n1240_int
+2 1
+.bootstrap n1240_int n1240
+0101
+.lincomb n1240 pi133 n1241_int
+2 1
+.bootstrap n1241_int n1241
+0101
+.lincomb n1241 n1241_neg
+-1 1
+.lincomb n1227_neg n1241_neg n1242_int
+2 1
+.bootstrap n1242_int n1242
+0001
+.lincomb n1242 pi5 n1243_int
+2 1
+.bootstrap n1243_int n1243
+0101
+.lincomb n1243 pi134 n1244_int
+2 1
+.bootstrap n1244_int n1244
+0101
+.lincomb n1226_neg n1244 n1245_int
+2 1
+.bootstrap n1245_int n1245
+0001
+.lincomb n1245 pi6 n1246_int
+2 1
+.bootstrap n1246_int n1246
+0101
+.lincomb n1246 pi135 n1247_int
+2 1
+.bootstrap n1247_int n1247
+0101
+.lincomb n1247 n1247_neg
+-1 1
+.lincomb n1225_neg n1247_neg n1248_int
+2 1
+.bootstrap n1248_int n1248
+0001
+.lincomb n1248 pi135 n1249_int
+2 1
+.bootstrap n1249_int n1249
+0101
+.lincomb n1249 pi136 n1250_int
+2 1
+.bootstrap n1250_int n1250
+0101
+.lincomb n1250 n1250_neg
+-1 1
+.lincomb n1224_neg n1250_neg n1251_int
+2 1
+.bootstrap n1251_int n1251
+0001
+.lincomb n1251 pi8 n1252_int
+2 1
+.bootstrap n1252_int n1252
+0101
+.lincomb n1252 pi137 n1253_int
+2 1
+.bootstrap n1253_int n1253
+0101
+.lincomb n1223_neg n1253 n1254_int
+2 1
+.bootstrap n1254_int n1254
+0001
+.lincomb n1254 pi9 n1255_int
+2 1
+.bootstrap n1255_int n1255
+0101
+.lincomb n1255 pi138 n1256_int
+2 1
+.bootstrap n1256_int n1256
+0101
+.lincomb n1256 n1256_neg
+-1 1
+.lincomb n1222_neg n1256_neg n1257_int
+2 1
+.bootstrap n1257_int n1257
+0001
+.lincomb n1257 pi138 n1258_int
+2 1
+.bootstrap n1258_int n1258
+0101
+.lincomb n1258 pi139 n1259_int
+2 1
+.bootstrap n1259_int n1259
+0101
+.lincomb n1259 n1259_neg
+-1 1
+.lincomb n1221_neg n1259_neg n1260_int
+2 1
+.bootstrap n1260_int n1260
+0001
+.lincomb n1260 pi11 n1261_int
+2 1
+.bootstrap n1261_int n1261
+0101
+.lincomb n1261 pi140 n1262_int
+2 1
+.bootstrap n1262_int n1262
+0101
+.lincomb n1220_neg n1262 n1263_int
+2 1
+.bootstrap n1263_int n1263
+0001
+.lincomb n1263 pi12 n1264_int
+2 1
+.bootstrap n1264_int n1264
+0101
+.lincomb n1264 pi141 n1265_int
+2 1
+.bootstrap n1265_int n1265
+0101
+.lincomb n1219_neg n1265 n1266_int
+2 1
+.bootstrap n1266_int n1266
+0001
+.lincomb n1266 pi13 n1267_int
+2 1
+.bootstrap n1267_int n1267
+0101
+.lincomb n1267 pi142 n1268_int
+2 1
+.bootstrap n1268_int n1268
+0101
+.lincomb n1218_neg n1268 n1269_int
+2 1
+.bootstrap n1269_int n1269
+0001
+.lincomb n1269 pi14 n1270_int
+2 1
+.bootstrap n1270_int n1270
+0101
+.lincomb n1270 pi143 n1271_int
+2 1
+.bootstrap n1271_int n1271
+0101
+.lincomb n1217_neg n1271 n1272_int
+2 1
+.bootstrap n1272_int n1272
+0001
+.lincomb n1272 pi15 n1273_int
+2 1
+.bootstrap n1273_int n1273
+0101
+.lincomb n1273 pi144 n1274_int
+2 1
+.bootstrap n1274_int n1274
+0101
+.lincomb n1216_neg n1274 n1275_int
+2 1
+.bootstrap n1275_int n1275
+0001
+.lincomb n1275 pi16 n1276_int
+2 1
+.bootstrap n1276_int n1276
+0101
+.lincomb n1276 pi145 n1277_int
+2 1
+.bootstrap n1277_int n1277
+0101
+.lincomb n1277 n1277_neg
+-1 1
+.lincomb n1215_neg n1277_neg n1278_int
+2 1
+.bootstrap n1278_int n1278
+0001
+.lincomb n1278 pi145 n1279_int
+2 1
+.bootstrap n1279_int n1279
+0101
+.lincomb n1279 pi146 n1280_int
+2 1
+.bootstrap n1280_int n1280
+0101
+.lincomb n1280 n1280_neg
+-1 1
+.lincomb n1214_neg n1280_neg n1281_int
+2 1
+.bootstrap n1281_int n1281
+0001
+.lincomb n1281 pi18 n1282_int
+2 1
+.bootstrap n1282_int n1282
+0101
+.lincomb n1282 pi147 n1283_int
+2 1
+.bootstrap n1283_int n1283
+0101
+.lincomb n1213_neg n1283 n1284_int
+2 1
+.bootstrap n1284_int n1284
+0001
+.lincomb n1284 pi19 n1285_int
+2 1
+.bootstrap n1285_int n1285
+0101
+.lincomb n1285 pi148 n1286_int
+2 1
+.bootstrap n1286_int n1286
+0101
+.lincomb n1286 n1286_neg
+-1 1
+.lincomb n1212_neg n1286_neg n1287_int
+2 1
+.bootstrap n1287_int n1287
+0001
+.lincomb n1287 pi148 n1288_int
+2 1
+.bootstrap n1288_int n1288
+0101
+.lincomb n1288 pi149 n1289_int
+2 1
+.bootstrap n1289_int n1289
+0101
+.lincomb n1211_neg n1289 n1290_int
+2 1
+.bootstrap n1290_int n1290
+0001
+.lincomb n1290 pi149 n1291_int
+2 1
+.bootstrap n1291_int n1291
+0101
+.lincomb n1291 pi150 n1292_int
+2 1
+.bootstrap n1292_int n1292
+0101
+.lincomb n1210_neg n1292 n1293_int
+2 1
+.bootstrap n1293_int n1293
+0001
+.lincomb n1293 pi150 n1294_int
+2 1
+.bootstrap n1294_int n1294
+0101
+.lincomb n1294 pi151 n1295_int
+2 1
+.bootstrap n1295_int n1295
+0101
+.lincomb n1209_neg n1295 n1296_int
+2 1
+.bootstrap n1296_int n1296
+0001
+.lincomb n1296 pi151 n1297_int
+2 1
+.bootstrap n1297_int n1297
+0101
+.lincomb n1297 pi152 n1298_int
+2 1
+.bootstrap n1298_int n1298
+0101
+.lincomb n1208_neg n1298 n1299_int
+2 1
+.bootstrap n1299_int n1299
+0001
+.lincomb n1299 pi152 n1300_int
+2 1
+.bootstrap n1300_int n1300
+0101
+.lincomb n1300 pi153 n1301_int
+2 1
+.bootstrap n1301_int n1301
+0101
+.lincomb n1207_neg n1301 n1302_int
+2 1
+.bootstrap n1302_int n1302
+0001
+.lincomb n1302 pi153 n1303_int
+2 1
+.bootstrap n1303_int n1303
+0101
+.lincomb n1303 pi154 n1304_int
+2 1
+.bootstrap n1304_int n1304
+0101
+.lincomb n1304 n1304_neg
+-1 1
+.lincomb n1206_neg n1304_neg n1305_int
+2 1
+.bootstrap n1305_int n1305
+0001
+.lincomb n1305 pi26 n1306_int
+2 1
+.bootstrap n1306_int n1306
+0101
+.lincomb n1306 pi155 n1307_int
+2 1
+.bootstrap n1307_int n1307
+0101
+.lincomb n1205_neg n1307 n1308_int
+2 1
+.bootstrap n1308_int n1308
+0001
+.lincomb n1308 pi27 n1309_int
+2 1
+.bootstrap n1309_int n1309
+0101
+.lincomb n1309 pi156 n1310_int
+2 1
+.bootstrap n1310_int n1310
+0101
+.lincomb n1310 n1310_neg
+-1 1
+.lincomb n1204_neg n1310_neg n1311_int
+2 1
+.bootstrap n1311_int n1311
+0001
+.lincomb n1311 pi156 n1312_int
+2 1
+.bootstrap n1312_int n1312
+0101
+.lincomb n1312 pi157 n1313_int
+2 1
+.bootstrap n1313_int n1313
+0101
+.lincomb n1313 n1313_neg
+-1 1
+.lincomb n1203_neg n1313_neg n1314_int
+2 1
+.bootstrap n1314_int n1314
+0001
+.lincomb n1314 pi29 n1315_int
+2 1
+.bootstrap n1315_int n1315
+0101
+.lincomb n1315 pi158 n1316_int
+2 1
+.bootstrap n1316_int n1316
+0101
+.lincomb n1202_neg n1316 n1317_int
+2 1
+.bootstrap n1317_int n1317
+0001
+.lincomb n1317 pi30 n1318_int
+2 1
+.bootstrap n1318_int n1318
+0101
+.lincomb n1318 pi159 n1319_int
+2 1
+.bootstrap n1319_int n1319
+0101
+.lincomb n1319 n1319_neg
+-1 1
+.lincomb n1201_neg n1319_neg n1320_int
+2 1
+.bootstrap n1320_int n1320
+0001
+.lincomb n1320 pi159 n1321_int
+2 1
+.bootstrap n1321_int n1321
+0101
+.lincomb n1321 pi160 n1322_int
+2 1
+.bootstrap n1322_int n1322
+0101
+.lincomb n1322 n1322_neg
+-1 1
+.lincomb n1200_neg n1322_neg n1323_int
+2 1
+.bootstrap n1323_int n1323
+0001
+.lincomb n1323 pi32 n1324_int
+2 1
+.bootstrap n1324_int n1324
+0101
+.lincomb n1324 pi161 n1325_int
+2 1
+.bootstrap n1325_int n1325
+0101
+.lincomb n1199_neg n1325 n1326_int
+2 1
+.bootstrap n1326_int n1326
+0001
+.lincomb n1326 pi33 n1327_int
+2 1
+.bootstrap n1327_int n1327
+0101
+.lincomb n1327 pi162 n1328_int
+2 1
+.bootstrap n1328_int n1328
+0101
+.lincomb n1328 n1328_neg
+-1 1
+.lincomb n1198_neg n1328_neg n1329_int
+2 1
+.bootstrap n1329_int n1329
+0001
+.lincomb n1329 pi162 n1330_int
+2 1
+.bootstrap n1330_int n1330
+0101
+.lincomb n1330 pi163 n1331_int
+2 1
+.bootstrap n1331_int n1331
+0101
+.lincomb n1197_neg n1331 n1332_int
+2 1
+.bootstrap n1332_int n1332
+0001
+.lincomb n1332 pi163 n1333_int
+2 1
+.bootstrap n1333_int n1333
+0101
+.lincomb n1333 pi164 n1334_int
+2 1
+.bootstrap n1334_int n1334
+0101
+.lincomb n1196_neg n1334 n1335_int
+2 1
+.bootstrap n1335_int n1335
+0001
+.lincomb n1335 pi164 n1336_int
+2 1
+.bootstrap n1336_int n1336
+0101
+.lincomb n1336 pi165 n1337_int
+2 1
+.bootstrap n1337_int n1337
+0101
+.lincomb n1195_neg n1337 n1338_int
+2 1
+.bootstrap n1338_int n1338
+0001
+.lincomb n1338 pi165 n1339_int
+2 1
+.bootstrap n1339_int n1339
+0101
+.lincomb n1339 pi166 n1340_int
+2 1
+.bootstrap n1340_int n1340
+0101
+.lincomb n1340 n1340_neg
+-1 1
+.lincomb n1194_neg n1340_neg n1341_int
+2 1
+.bootstrap n1341_int n1341
+0001
+.lincomb n1341 pi38 n1342_int
+2 1
+.bootstrap n1342_int n1342
+0101
+.lincomb n1342 pi167 n1343_int
+2 1
+.bootstrap n1343_int n1343
+0101
+.lincomb n1193_neg n1343 n1344_int
+2 1
+.bootstrap n1344_int n1344
+0001
+.lincomb n1344 pi39 n1345_int
+2 1
+.bootstrap n1345_int n1345
+0101
+.lincomb n1345 n1345_neg
+-1 1
+.lincomb pi40_neg pi168 n1346_int
+2 1
+.bootstrap n1346_int n1346
+0001
+.lincomb n1346 n1346_neg
+-1 1
+.lincomb pi168 pi40 n1347_int
+2 1
+.bootstrap n1347_int n1347
+0101
+.lincomb n1346 n1347 n1348_int
+2 1
+.bootstrap n1348_int n1348
+0101
+.lincomb n1348 n1348_neg
+-1 1
+.lincomb n1345_neg n1348_neg n1349_int
+2 1
+.bootstrap n1349_int n1349
+0001
+.lincomb n1349 n1349_neg
+-1 1
+.lincomb pi42_neg pi170 n1350_int
+2 1
+.bootstrap n1350_int n1350
+0001
+.lincomb n1350 n1350_neg
+-1 1
+.lincomb pi43_neg pi171 n1351_int
+2 1
+.bootstrap n1351_int n1351
+0001
+.lincomb n1351 n1351_neg
+-1 1
+.lincomb n1350_neg n1351_neg n1352_int
+2 1
+.bootstrap n1352_int n1352
+0001
+.lincomb pi41 pi169_neg n1353_int
+2 1
+.bootstrap n1353_int n1353
+0001
+.lincomb pi169 pi41 n1354_int
+2 1
+.bootstrap n1354_int n1354
+0101
+.lincomb n1353 n1354 n1355_int
+2 1
+.bootstrap n1355_int n1355
+0101
+.lincomb n1355 n1355_neg
+-1 1
+.lincomb n1346_neg n1355_neg n1356_int
+2 1
+.bootstrap n1356_int n1356
+0001
+.lincomb n1352 n1356 n1357_int
+2 1
+.bootstrap n1357_int n1357
+0001
+.lincomb n1349_neg n1357 n1358_int
+2 1
+.bootstrap n1358_int n1358
+0001
+.lincomb n1358 n1358_neg
+-1 1
+.lincomb pi171 pi43 n1359_int
+2 1
+.bootstrap n1359_int n1359
+0101
+.lincomb n1359 n1359_neg
+-1 1
+.lincomb pi170 pi42 n1360_int
+2 1
+.bootstrap n1360_int n1360
+0101
+.lincomb n1360 n1360_neg
+-1 1
+.lincomb n1353 pi170 n1361_int
+2 1
+.bootstrap n1361_int n1361
+0101
+.lincomb n1361 n1361_neg
+-1 1
+.lincomb n1360_neg n1361_neg n1362_int
+2 1
+.bootstrap n1362_int n1362
+0001
+.lincomb n1362 pi170 n1363_int
+2 1
+.bootstrap n1363_int n1363
+0101
+.lincomb n1363 pi171 n1364_int
+2 1
+.bootstrap n1364_int n1364
+0101
+.lincomb n1359_neg n1364 n1365_int
+2 1
+.bootstrap n1365_int n1365
+0001
+.lincomb n1365 pi171 n1366_int
+2 1
+.bootstrap n1366_int n1366
+0101
+.lincomb pi44_neg pi172 n1367_int
+2 1
+.bootstrap n1367_int n1367
+0001
+.lincomb n1367 n1367_neg
+-1 1
+.lincomb pi172 pi44 n1368_int
+2 1
+.bootstrap n1368_int n1368
+0101
+.lincomb n1367 n1368 n1369_int
+2 1
+.bootstrap n1369_int n1369
+0101
+.lincomb n1369 n1369_neg
+-1 1
+.lincomb n1366 n1369_neg n1370_int
+2 1
+.bootstrap n1370_int n1370
+0001
+.lincomb n1358_neg n1370 n1371_int
+2 1
+.bootstrap n1371_int n1371
+0001
+.lincomb n1371 n1371_neg
+-1 1
+.lincomb pi47_neg pi175 n1372_int
+2 1
+.bootstrap n1372_int n1372
+0001
+.lincomb n1372 n1372_neg
+-1 1
+.lincomb pi46_neg pi174 n1373_int
+2 1
+.bootstrap n1373_int n1373
+0001
+.lincomb n1373 n1373_neg
+-1 1
+.lincomb n1372_neg n1373_neg n1374_int
+2 1
+.bootstrap n1374_int n1374
+0001
+.lincomb pi45 pi173_neg n1375_int
+2 1
+.bootstrap n1375_int n1375
+0001
+.lincomb pi173 pi45 n1376_int
+2 1
+.bootstrap n1376_int n1376
+0101
+.lincomb n1375 n1376 n1377_int
+2 1
+.bootstrap n1377_int n1377
+0101
+.lincomb n1377 n1377_neg
+-1 1
+.lincomb n1367_neg n1377_neg n1378_int
+2 1
+.bootstrap n1378_int n1378
+0001
+.lincomb n1374 n1378 n1379_int
+2 1
+.bootstrap n1379_int n1379
+0001
+.lincomb n1371_neg n1379 n1380_int
+2 1
+.bootstrap n1380_int n1380
+0001
+.lincomb n1380 n1380_neg
+-1 1
+.lincomb pi175 pi47 n1381_int
+2 1
+.bootstrap n1381_int n1381
+0101
+.lincomb n1381 n1381_neg
+-1 1
+.lincomb pi174 pi46 n1382_int
+2 1
+.bootstrap n1382_int n1382
+0101
+.lincomb n1382 n1382_neg
+-1 1
+.lincomb n1375 pi174 n1383_int
+2 1
+.bootstrap n1383_int n1383
+0101
+.lincomb n1383 n1383_neg
+-1 1
+.lincomb n1382_neg n1383_neg n1384_int
+2 1
+.bootstrap n1384_int n1384
+0001
+.lincomb n1384 pi174 n1385_int
+2 1
+.bootstrap n1385_int n1385
+0101
+.lincomb n1385 pi175 n1386_int
+2 1
+.bootstrap n1386_int n1386
+0101
+.lincomb n1381_neg n1386 n1387_int
+2 1
+.bootstrap n1387_int n1387
+0001
+.lincomb n1387 pi175 n1388_int
+2 1
+.bootstrap n1388_int n1388
+0101
+.lincomb pi48_neg pi176 n1389_int
+2 1
+.bootstrap n1389_int n1389
+0001
+.lincomb n1389 n1389_neg
+-1 1
+.lincomb pi176 pi48 n1390_int
+2 1
+.bootstrap n1390_int n1390
+0101
+.lincomb n1389 n1390 n1391_int
+2 1
+.bootstrap n1391_int n1391
+0101
+.lincomb n1391 n1391_neg
+-1 1
+.lincomb n1388 n1391_neg n1392_int
+2 1
+.bootstrap n1392_int n1392
+0001
+.lincomb n1380_neg n1392 n1393_int
+2 1
+.bootstrap n1393_int n1393
+0001
+.lincomb n1393 n1393_neg
+-1 1
+.lincomb n1188_neg n1389_neg n1394_int
+2 1
+.bootstrap n1394_int n1394
+0001
+.lincomb n1393_neg n1394 n1395_int
+2 1
+.bootstrap n1395_int n1395
+0001
+.lincomb n1395 pi178 n1396_int
+2 1
+.bootstrap n1396_int n1396
+0101
+.lincomb n1396 pi178 n1397_int
+2 1
+.bootstrap n1397_int n1397
+0101
+.lincomb n1397 n1397_neg
+-1 1
+.lincomb n1192_neg n1397_neg n1398_int
+2 1
+.bootstrap n1398_int n1398
+0001
+.lincomb n1398 pi178 n1399_int
+2 1
+.bootstrap n1399_int n1399
+0101
+.lincomb n1399 n1399_neg
+-1 1
+.lincomb n1187_neg n1399_neg n1400_int
+2 1
+.bootstrap n1400_int n1400
+0001
+.lincomb n1400 pi50 n1401_int
+2 1
+.bootstrap n1401_int n1401
+0101
+.lincomb n1401 pi179 n1402_int
+2 1
+.bootstrap n1402_int n1402
+0101
+.lincomb n1402 n1402_neg
+-1 1
+.lincomb n1186_neg n1402_neg n1403_int
+2 1
+.bootstrap n1403_int n1403
+0001
+.lincomb n1403 pi179 n1404_int
+2 1
+.bootstrap n1404_int n1404
+0101
+.lincomb n1404 pi180 n1405_int
+2 1
+.bootstrap n1405_int n1405
+0101
+.lincomb n1185_neg n1405 n1406_int
+2 1
+.bootstrap n1406_int n1406
+0001
+.lincomb n1406 pi180 n1407_int
+2 1
+.bootstrap n1407_int n1407
+0101
+.lincomb n1407 pi181 n1408_int
+2 1
+.bootstrap n1408_int n1408
+0101
+.lincomb n1184_neg n1408 n1409_int
+2 1
+.bootstrap n1409_int n1409
+0001
+.lincomb n1409 pi181 n1410_int
+2 1
+.bootstrap n1410_int n1410
+0101
+.lincomb n1410 pi182 n1411_int
+2 1
+.bootstrap n1411_int n1411
+0101
+.lincomb n1183_neg n1411 n1412_int
+2 1
+.bootstrap n1412_int n1412
+0001
+.lincomb n1412 pi182 n1413_int
+2 1
+.bootstrap n1413_int n1413
+0101
+.lincomb n1413 pi183 n1414_int
+2 1
+.bootstrap n1414_int n1414
+0101
+.lincomb n1182_neg n1414 n1415_int
+2 1
+.bootstrap n1415_int n1415
+0001
+.lincomb n1415 pi183 n1416_int
+2 1
+.bootstrap n1416_int n1416
+0101
+.lincomb n1416 pi184 n1417_int
+2 1
+.bootstrap n1417_int n1417
+0101
+.lincomb n1417 n1417_neg
+-1 1
+.lincomb n1181_neg n1417_neg n1418_int
+2 1
+.bootstrap n1418_int n1418
+0001
+.lincomb n1418 pi56 n1419_int
+2 1
+.bootstrap n1419_int n1419
+0101
+.lincomb n1419 pi185 n1420_int
+2 1
+.bootstrap n1420_int n1420
+0101
+.lincomb n1180_neg n1420 n1421_int
+2 1
+.bootstrap n1421_int n1421
+0001
+.lincomb n1421 pi57 n1422_int
+2 1
+.bootstrap n1422_int n1422
+0101
+.lincomb n1422 pi186 n1423_int
+2 1
+.bootstrap n1423_int n1423
+0101
+.lincomb n1423 n1423_neg
+-1 1
+.lincomb n1179_neg n1423_neg n1424_int
+2 1
+.bootstrap n1424_int n1424
+0001
+.lincomb n1424 pi186 n1425_int
+2 1
+.bootstrap n1425_int n1425
+0101
+.lincomb n1425 pi187 n1426_int
+2 1
+.bootstrap n1426_int n1426
+0101
+.lincomb n1178_neg n1426 n1427_int
+2 1
+.bootstrap n1427_int n1427
+0001
+.lincomb n1427 pi187 n1428_int
+2 1
+.bootstrap n1428_int n1428
+0101
+.lincomb n1170_neg n1428 n1429_int
+2 1
+.bootstrap n1429_int n1429
+0001
+.lincomb n1429 n1429_neg
+-1 1
+.lincomb n1177 n1429_neg n1430_int
+2 1
+.bootstrap n1430_int n1430
+0001
+.lincomb n1430 n1430_neg
+-1 1
+.lincomb pi191 pi63 n1431_int
+2 1
+.bootstrap n1431_int n1431
+0101
+.lincomb n1431 n1431_neg
+-1 1
+.lincomb pi190 pi62 n1432_int
+2 1
+.bootstrap n1432_int n1432
+0101
+.lincomb n1432 n1432_neg
+-1 1
+.lincomb n1173 pi190 n1433_int
+2 1
+.bootstrap n1433_int n1433
+0101
+.lincomb n1433 n1433_neg
+-1 1
+.lincomb n1432_neg n1433_neg n1434_int
+2 1
+.bootstrap n1434_int n1434
+0001
+.lincomb n1434 pi190 n1435_int
+2 1
+.bootstrap n1435_int n1435
+0101
+.lincomb n1435 pi191 n1436_int
+2 1
+.bootstrap n1436_int n1436
+0101
+.lincomb n1431_neg n1436 n1437_int
+2 1
+.bootstrap n1437_int n1437
+0001
+.lincomb n1437 pi191 n1438_int
+2 1
+.bootstrap n1438_int n1438
+0101
+.lincomb n1162_neg n1438 n1439_int
+2 1
+.bootstrap n1439_int n1439
+0001
+.lincomb n1430_neg n1439 n1440_int
+2 1
+.bootstrap n1440_int n1440
+0001
+.lincomb n1440 pi193 n1441_int
+2 1
+.bootstrap n1441_int n1441
+0101
+.lincomb n1441 pi193 n1442_int
+2 1
+.bootstrap n1442_int n1442
+0101
+.lincomb n1442 n1442_neg
+-1 1
+.lincomb n1166_neg n1442_neg n1443_int
+2 1
+.bootstrap n1443_int n1443
+0001
+.lincomb n1443 pi193 n1444_int
+2 1
+.bootstrap n1444_int n1444
+0101
+.lincomb n1161_neg n1444 n1445_int
+2 1
+.bootstrap n1445_int n1445
+0001
+.lincomb n1445 pi65 n1446_int
+2 1
+.bootstrap n1446_int n1446
+0101
+.lincomb n1446 pi194 n1447_int
+2 1
+.bootstrap n1447_int n1447
+0101
+.lincomb n1447 n1447_neg
+-1 1
+.lincomb n1160_neg n1447_neg n1448_int
+2 1
+.bootstrap n1448_int n1448
+0001
+.lincomb n1448 pi194 n1449_int
+2 1
+.bootstrap n1449_int n1449
+0101
+.lincomb n1449 pi195 n1450_int
+2 1
+.bootstrap n1450_int n1450
+0101
+.lincomb n1450 n1450_neg
+-1 1
+.lincomb n1159_neg n1450_neg n1451_int
+2 1
+.bootstrap n1451_int n1451
+0001
+.lincomb n1451 pi67 n1452_int
+2 1
+.bootstrap n1452_int n1452
+0101
+.lincomb n1452 pi196 n1453_int
+2 1
+.bootstrap n1453_int n1453
+0101
+.lincomb n1158_neg n1453 n1454_int
+2 1
+.bootstrap n1454_int n1454
+0001
+.lincomb n1454 pi68 n1455_int
+2 1
+.bootstrap n1455_int n1455
+0101
+.lincomb n1157 n1455 n1456_int
+2 1
+.bootstrap n1456_int n1456
+0001
+.lincomb n1456 n1456_neg
+-1 1
+.lincomb pi199 pi71 n1457_int
+2 1
+.bootstrap n1457_int n1457
+0101
+.lincomb n1457 n1457_neg
+-1 1
+.lincomb pi198 pi70 n1458_int
+2 1
+.bootstrap n1458_int n1458
+0101
+.lincomb n1458 n1458_neg
+-1 1
+.lincomb n1154 pi198 n1459_int
+2 1
+.bootstrap n1459_int n1459
+0101
+.lincomb n1459 n1459_neg
+-1 1
+.lincomb n1458_neg n1459_neg n1460_int
+2 1
+.bootstrap n1460_int n1460
+0001
+.lincomb n1460 pi198 n1461_int
+2 1
+.bootstrap n1461_int n1461
+0101
+.lincomb n1461 pi199 n1462_int
+2 1
+.bootstrap n1462_int n1462
+0101
+.lincomb n1457_neg n1462 n1463_int
+2 1
+.bootstrap n1463_int n1463
+0001
+.lincomb n1463 pi199 n1464_int
+2 1
+.bootstrap n1464_int n1464
+0101
+.lincomb pi72_neg pi200 n1465_int
+2 1
+.bootstrap n1465_int n1465
+0001
+.lincomb n1465 n1465_neg
+-1 1
+.lincomb pi200 pi72 n1466_int
+2 1
+.bootstrap n1466_int n1466
+0101
+.lincomb n1465 n1466 n1467_int
+2 1
+.bootstrap n1467_int n1467
+0101
+.lincomb n1467 n1467_neg
+-1 1
+.lincomb n1464 n1467_neg n1468_int
+2 1
+.bootstrap n1468_int n1468
+0001
+.lincomb n1456_neg n1468 n1469_int
+2 1
+.bootstrap n1469_int n1469
+0001
+.lincomb n1469 n1469_neg
+-1 1
+.lincomb pi73 pi201_neg n1470_int
+2 1
+.bootstrap n1470_int n1470
+0001
+.lincomb n1470 n1470_neg
+-1 1
+.lincomb pi201 pi73 n1471_int
+2 1
+.bootstrap n1471_int n1471
+0101
+.lincomb n1470 n1471 n1472_int
+2 1
+.bootstrap n1472_int n1472
+0101
+.lincomb n1472 n1472_neg
+-1 1
+.lincomb n1465_neg n1472_neg n1473_int
+2 1
+.bootstrap n1473_int n1473
+0001
+.lincomb n1469_neg n1473 n1474_int
+2 1
+.bootstrap n1474_int n1474
+0001
+.lincomb n1474 n1474_neg
+-1 1
+.lincomb pi74_neg pi202 n1475_int
+2 1
+.bootstrap n1475_int n1475
+0001
+.lincomb n1475 n1475_neg
+-1 1
+.lincomb pi202 pi74 n1476_int
+2 1
+.bootstrap n1476_int n1476
+0101
+.lincomb n1475 n1476 n1477_int
+2 1
+.bootstrap n1477_int n1477
+0101
+.lincomb n1477 n1477_neg
+-1 1
+.lincomb n1470_neg n1477_neg n1478_int
+2 1
+.bootstrap n1478_int n1478
+0001
+.lincomb n1474_neg n1478 n1479_int
+2 1
+.bootstrap n1479_int n1479
+0001
+.lincomb n1479 n1479_neg
+-1 1
+.lincomb pi75 pi203_neg n1480_int
+2 1
+.bootstrap n1480_int n1480
+0001
+.lincomb n1480 n1480_neg
+-1 1
+.lincomb pi203 pi75 n1481_int
+2 1
+.bootstrap n1481_int n1481
+0101
+.lincomb n1480 n1481 n1482_int
+2 1
+.bootstrap n1482_int n1482
+0101
+.lincomb n1482 n1482_neg
+-1 1
+.lincomb n1475_neg n1482_neg n1483_int
+2 1
+.bootstrap n1483_int n1483
+0001
+.lincomb n1479_neg n1483 n1484_int
+2 1
+.bootstrap n1484_int n1484
+0001
+.lincomb n1484 n1484_neg
+-1 1
+.lincomb pi76_neg pi204 n1485_int
+2 1
+.bootstrap n1485_int n1485
+0001
+.lincomb n1485 n1485_neg
+-1 1
+.lincomb pi204 pi76 n1486_int
+2 1
+.bootstrap n1486_int n1486
+0101
+.lincomb n1485 n1486 n1487_int
+2 1
+.bootstrap n1487_int n1487
+0101
+.lincomb n1487 n1487_neg
+-1 1
+.lincomb n1480_neg n1487_neg n1488_int
+2 1
+.bootstrap n1488_int n1488
+0001
+.lincomb n1484_neg n1488 n1489_int
+2 1
+.bootstrap n1489_int n1489
+0001
+.lincomb n1489 n1489_neg
+-1 1
+.lincomb pi77 pi205_neg n1490_int
+2 1
+.bootstrap n1490_int n1490
+0001
+.lincomb n1490 n1490_neg
+-1 1
+.lincomb pi205 pi77 n1491_int
+2 1
+.bootstrap n1491_int n1491
+0101
+.lincomb n1490 n1491 n1492_int
+2 1
+.bootstrap n1492_int n1492
+0101
+.lincomb n1492 n1492_neg
+-1 1
+.lincomb n1485_neg n1492_neg n1493_int
+2 1
+.bootstrap n1493_int n1493
+0001
+.lincomb n1489_neg n1493 n1494_int
+2 1
+.bootstrap n1494_int n1494
+0001
+.lincomb n1494 n1494_neg
+-1 1
+.lincomb pi78_neg pi206 n1495_int
+2 1
+.bootstrap n1495_int n1495
+0001
+.lincomb n1495 n1495_neg
+-1 1
+.lincomb pi206 pi78 n1496_int
+2 1
+.bootstrap n1496_int n1496
+0101
+.lincomb n1495 n1496 n1497_int
+2 1
+.bootstrap n1497_int n1497
+0101
+.lincomb n1497 n1497_neg
+-1 1
+.lincomb n1490_neg n1497_neg n1498_int
+2 1
+.bootstrap n1498_int n1498
+0001
+.lincomb n1494_neg n1498 n1499_int
+2 1
+.bootstrap n1499_int n1499
+0001
+.lincomb n1499 n1499_neg
+-1 1
+.lincomb pi79 pi207_neg n1500_int
+2 1
+.bootstrap n1500_int n1500
+0001
+.lincomb n1500 n1500_neg
+-1 1
+.lincomb pi207 pi79 n1501_int
+2 1
+.bootstrap n1501_int n1501
+0101
+.lincomb n1500 n1501 n1502_int
+2 1
+.bootstrap n1502_int n1502
+0101
+.lincomb n1502 n1502_neg
+-1 1
+.lincomb n1495_neg n1502_neg n1503_int
+2 1
+.bootstrap n1503_int n1503
+0001
+.lincomb n1499_neg n1503 n1504_int
+2 1
+.bootstrap n1504_int n1504
+0001
+.lincomb n1504 n1504_neg
+-1 1
+.lincomb pi80_neg pi208 n1505_int
+2 1
+.bootstrap n1505_int n1505
+0001
+.lincomb n1505 n1505_neg
+-1 1
+.lincomb pi208 pi80 n1506_int
+2 1
+.bootstrap n1506_int n1506
+0101
+.lincomb n1505 n1506 n1507_int
+2 1
+.bootstrap n1507_int n1507
+0101
+.lincomb n1507 n1507_neg
+-1 1
+.lincomb n1500_neg n1507_neg n1508_int
+2 1
+.bootstrap n1508_int n1508
+0001
+.lincomb n1504_neg n1508 n1509_int
+2 1
+.bootstrap n1509_int n1509
+0001
+.lincomb n1509 n1509_neg
+-1 1
+.lincomb n1146_neg n1505_neg n1510_int
+2 1
+.bootstrap n1510_int n1510
+0001
+.lincomb n1509_neg n1510 n1511_int
+2 1
+.bootstrap n1511_int n1511
+0001
+.lincomb n1511 pi210 n1512_int
+2 1
+.bootstrap n1512_int n1512
+0101
+.lincomb n1512 pi210 n1513_int
+2 1
+.bootstrap n1513_int n1513
+0101
+.lincomb n1513 n1513_neg
+-1 1
+.lincomb n1150_neg n1513_neg n1514_int
+2 1
+.bootstrap n1514_int n1514
+0001
+.lincomb n1514 pi210 n1515_int
+2 1
+.bootstrap n1515_int n1515
+0101
+.lincomb n1515 n1515_neg
+-1 1
+.lincomb n1145_neg n1515_neg n1516_int
+2 1
+.bootstrap n1516_int n1516
+0001
+.lincomb n1516 pi82 n1517_int
+2 1
+.bootstrap n1517_int n1517
+0101
+.lincomb n1517 pi211 n1518_int
+2 1
+.bootstrap n1518_int n1518
+0101
+.lincomb n1518 n1518_neg
+-1 1
+.lincomb n1144_neg n1518_neg n1519_int
+2 1
+.bootstrap n1519_int n1519
+0001
+.lincomb n1519 pi211 n1520_int
+2 1
+.bootstrap n1520_int n1520
+0101
+.lincomb n1520 pi212 n1521_int
+2 1
+.bootstrap n1521_int n1521
+0101
+.lincomb n1143_neg n1521 n1522_int
+2 1
+.bootstrap n1522_int n1522
+0001
+.lincomb n1522 pi212 n1523_int
+2 1
+.bootstrap n1523_int n1523
+0101
+.lincomb n1523 pi213 n1524_int
+2 1
+.bootstrap n1524_int n1524
+0101
+.lincomb n1142_neg n1524 n1525_int
+2 1
+.bootstrap n1525_int n1525
+0001
+.lincomb n1525 pi213 n1526_int
+2 1
+.bootstrap n1526_int n1526
+0101
+.lincomb n1526 pi214 n1527_int
+2 1
+.bootstrap n1527_int n1527
+0101
+.lincomb n1141_neg n1527 n1528_int
+2 1
+.bootstrap n1528_int n1528
+0001
+.lincomb n1528 pi214 n1529_int
+2 1
+.bootstrap n1529_int n1529
+0101
+.lincomb n1529 pi215 n1530_int
+2 1
+.bootstrap n1530_int n1530
+0101
+.lincomb n1140_neg n1530 n1531_int
+2 1
+.bootstrap n1531_int n1531
+0001
+.lincomb n1531 pi215 n1532_int
+2 1
+.bootstrap n1532_int n1532
+0101
+.lincomb n1532 pi216 n1533_int
+2 1
+.bootstrap n1533_int n1533
+0101
+.lincomb n1139_neg n1533 n1534_int
+2 1
+.bootstrap n1534_int n1534
+0001
+.lincomb n1534 pi216 n1535_int
+2 1
+.bootstrap n1535_int n1535
+0101
+.lincomb n1535 pi217 n1536_int
+2 1
+.bootstrap n1536_int n1536
+0101
+.lincomb n1138_neg n1536 n1537_int
+2 1
+.bootstrap n1537_int n1537
+0001
+.lincomb n1537 pi217 n1538_int
+2 1
+.bootstrap n1538_int n1538
+0101
+.lincomb n1538 pi218 n1539_int
+2 1
+.bootstrap n1539_int n1539
+0101
+.lincomb n1539 n1539_neg
+-1 1
+.lincomb n1137_neg n1539_neg n1540_int
+2 1
+.bootstrap n1540_int n1540
+0001
+.lincomb n1540 pi90 n1541_int
+2 1
+.bootstrap n1541_int n1541
+0101
+.lincomb n1541 pi219 n1542_int
+2 1
+.bootstrap n1542_int n1542
+0101
+.lincomb n1136_neg n1542 n1543_int
+2 1
+.bootstrap n1543_int n1543
+0001
+.lincomb n1543 pi91 n1544_int
+2 1
+.bootstrap n1544_int n1544
+0101
+.lincomb n1544 pi220 n1545_int
+2 1
+.bootstrap n1545_int n1545
+0101
+.lincomb n1135_neg n1545 n1546_int
+2 1
+.bootstrap n1546_int n1546
+0001
+.lincomb n1546 pi92 n1547_int
+2 1
+.bootstrap n1547_int n1547
+0101
+.lincomb n1547 pi221 n1548_int
+2 1
+.bootstrap n1548_int n1548
+0101
+.lincomb n1134_neg n1548 n1549_int
+2 1
+.bootstrap n1549_int n1549
+0001
+.lincomb n1549 pi93 n1550_int
+2 1
+.bootstrap n1550_int n1550
+0101
+.lincomb n1550 pi222 n1551_int
+2 1
+.bootstrap n1551_int n1551
+0101
+.lincomb n1133_neg n1551 n1552_int
+2 1
+.bootstrap n1552_int n1552
+0001
+.lincomb n1552 pi94 n1553_int
+2 1
+.bootstrap n1553_int n1553
+0101
+.lincomb n1553 pi223 n1554_int
+2 1
+.bootstrap n1554_int n1554
+0101
+.lincomb n1132_neg n1554 n1555_int
+2 1
+.bootstrap n1555_int n1555
+0001
+.lincomb n1555 pi95 n1556_int
+2 1
+.bootstrap n1556_int n1556
+0101
+.lincomb n1556 pi224 n1557_int
+2 1
+.bootstrap n1557_int n1557
+0101
+.lincomb n1557 n1557_neg
+-1 1
+.lincomb n1131_neg n1557_neg n1558_int
+2 1
+.bootstrap n1558_int n1558
+0001
+.lincomb n1558 pi224 n1559_int
+2 1
+.bootstrap n1559_int n1559
+0101
+.lincomb n1559 pi225 n1560_int
+2 1
+.bootstrap n1560_int n1560
+0101
+.lincomb n1560 n1560_neg
+-1 1
+.lincomb n1130_neg n1560_neg n1561_int
+2 1
+.bootstrap n1561_int n1561
+0001
+.lincomb n1561 pi97 n1562_int
+2 1
+.bootstrap n1562_int n1562
+0101
+.lincomb n1562 pi226 n1563_int
+2 1
+.bootstrap n1563_int n1563
+0101
+.lincomb n1129_neg n1563 n1564_int
+2 1
+.bootstrap n1564_int n1564
+0001
+.lincomb n1564 pi98 n1565_int
+2 1
+.bootstrap n1565_int n1565
+0101
+.lincomb n1565 pi227 n1566_int
+2 1
+.bootstrap n1566_int n1566
+0101
+.lincomb n1566 n1566_neg
+-1 1
+.lincomb n1128_neg n1566_neg n1567_int
+2 1
+.bootstrap n1567_int n1567
+0001
+.lincomb n1567 pi227 n1568_int
+2 1
+.bootstrap n1568_int n1568
+0101
+.lincomb n1568 pi228 n1569_int
+2 1
+.bootstrap n1569_int n1569
+0101
+.lincomb n1127_neg n1569 n1570_int
+2 1
+.bootstrap n1570_int n1570
+0001
+.lincomb n1570 pi228 n1571_int
+2 1
+.bootstrap n1571_int n1571
+0101
+.lincomb n1571 pi229 n1572_int
+2 1
+.bootstrap n1572_int n1572
+0101
+.lincomb n1572 n1572_neg
+-1 1
+.lincomb n1126_neg n1572_neg n1573_int
+2 1
+.bootstrap n1573_int n1573
+0001
+.lincomb n1573 pi101 n1574_int
+2 1
+.bootstrap n1574_int n1574
+0101
+.lincomb n1574 pi230 n1575_int
+2 1
+.bootstrap n1575_int n1575
+0101
+.lincomb n1125_neg n1575 n1576_int
+2 1
+.bootstrap n1576_int n1576
+0001
+.lincomb n1576 pi102 n1577_int
+2 1
+.bootstrap n1577_int n1577
+0101
+.lincomb n1577 pi231 n1578_int
+2 1
+.bootstrap n1578_int n1578
+0101
+.lincomb n1578 n1578_neg
+-1 1
+.lincomb n1124_neg n1578_neg n1579_int
+2 1
+.bootstrap n1579_int n1579
+0001
+.lincomb n1579 pi231 n1580_int
+2 1
+.bootstrap n1580_int n1580
+0101
+.lincomb n1580 pi232 n1581_int
+2 1
+.bootstrap n1581_int n1581
+0101
+.lincomb n1123_neg n1581 n1582_int
+2 1
+.bootstrap n1582_int n1582
+0001
+.lincomb n1582 pi232 n1583_int
+2 1
+.bootstrap n1583_int n1583
+0101
+.lincomb n1583 pi233 n1584_int
+2 1
+.bootstrap n1584_int n1584
+0101
+.lincomb n1584 n1584_neg
+-1 1
+.lincomb n1122_neg n1584_neg n1585_int
+2 1
+.bootstrap n1585_int n1585
+0001
+.lincomb n1585 pi105 n1586_int
+2 1
+.bootstrap n1586_int n1586
+0101
+.lincomb n1586 pi234 n1587_int
+2 1
+.bootstrap n1587_int n1587
+0101
+.lincomb n1121_neg n1587 n1588_int
+2 1
+.bootstrap n1588_int n1588
+0001
+.lincomb n1588 pi106 n1589_int
+2 1
+.bootstrap n1589_int n1589
+0101
+.lincomb n1589 pi235 n1590_int
+2 1
+.bootstrap n1590_int n1590
+0101
+.lincomb n1590 n1590_neg
+-1 1
+.lincomb n1120_neg n1590_neg n1591_int
+2 1
+.bootstrap n1591_int n1591
+0001
+.lincomb n1591 pi235 n1592_int
+2 1
+.bootstrap n1592_int n1592
+0101
+.lincomb n1592 pi236 n1593_int
+2 1
+.bootstrap n1593_int n1593
+0101
+.lincomb n1119_neg n1593 n1594_int
+2 1
+.bootstrap n1594_int n1594
+0001
+.lincomb n1594 pi236 n1595_int
+2 1
+.bootstrap n1595_int n1595
+0101
+.lincomb n1595 pi237 n1596_int
+2 1
+.bootstrap n1596_int n1596
+0101
+.lincomb n1596 n1596_neg
+-1 1
+.lincomb n1118_neg n1596_neg n1597_int
+2 1
+.bootstrap n1597_int n1597
+0001
+.lincomb n1597 pi109 n1598_int
+2 1
+.bootstrap n1598_int n1598
+0101
+.lincomb n1598 pi238 n1599_int
+2 1
+.bootstrap n1599_int n1599
+0101
+.lincomb n1117_neg n1599 n1600_int
+2 1
+.bootstrap n1600_int n1600
+0001
+.lincomb n1600 pi110 n1601_int
+2 1
+.bootstrap n1601_int n1601
+0101
+.lincomb n1601 pi239 n1602_int
+2 1
+.bootstrap n1602_int n1602
+0101
+.lincomb n1602 n1602_neg
+-1 1
+.lincomb n1116_neg n1602_neg n1603_int
+2 1
+.bootstrap n1603_int n1603
+0001
+.lincomb n1603 pi239 n1604_int
+2 1
+.bootstrap n1604_int n1604
+0101
+.lincomb n1604 pi240 n1605_int
+2 1
+.bootstrap n1605_int n1605
+0101
+.lincomb n1115_neg n1605 n1606_int
+2 1
+.bootstrap n1606_int n1606
+0001
+.lincomb n1606 pi240 n1607_int
+2 1
+.bootstrap n1607_int n1607
+0101
+.lincomb n1607 pi241 n1608_int
+2 1
+.bootstrap n1608_int n1608
+0101
+.lincomb n1608 n1608_neg
+-1 1
+.lincomb n1114_neg n1608_neg n1609_int
+2 1
+.bootstrap n1609_int n1609
+0001
+.lincomb n1609 pi113 n1610_int
+2 1
+.bootstrap n1610_int n1610
+0101
+.lincomb n1610 pi242 n1611_int
+2 1
+.bootstrap n1611_int n1611
+0101
+.lincomb n1113_neg n1611 n1612_int
+2 1
+.bootstrap n1612_int n1612
+0001
+.lincomb n1612 pi114 n1613_int
+2 1
+.bootstrap n1613_int n1613
+0101
+.lincomb n1613 pi243 n1614_int
+2 1
+.bootstrap n1614_int n1614
+0101
+.lincomb n1614 n1614_neg
+-1 1
+.lincomb n1112_neg n1614_neg n1615_int
+2 1
+.bootstrap n1615_int n1615
+0001
+.lincomb n1615 pi243 n1616_int
+2 1
+.bootstrap n1616_int n1616
+0101
+.lincomb n1616 pi244 n1617_int
+2 1
+.bootstrap n1617_int n1617
+0101
+.lincomb n1617 n1617_neg
+-1 1
+.lincomb n1111_neg n1617_neg n1618_int
+2 1
+.bootstrap n1618_int n1618
+0001
+.lincomb n1618 pi116 n1619_int
+2 1
+.bootstrap n1619_int n1619
+0101
+.lincomb n1619 pi245 n1620_int
+2 1
+.bootstrap n1620_int n1620
+0101
+.lincomb n1110_neg n1620 n1621_int
+2 1
+.bootstrap n1621_int n1621
+0001
+.lincomb n1621 pi117 n1622_int
+2 1
+.bootstrap n1622_int n1622
+0101
+.lincomb n1622 pi246 n1623_int
+2 1
+.bootstrap n1623_int n1623
+0101
+.lincomb n1623 n1623_neg
+-1 1
+.lincomb n1109_neg n1623_neg n1624_int
+2 1
+.bootstrap n1624_int n1624
+0001
+.lincomb n1624 pi246 n1625_int
+2 1
+.bootstrap n1625_int n1625
+0101
+.lincomb n1625 pi247 n1626_int
+2 1
+.bootstrap n1626_int n1626
+0101
+.lincomb n1626 n1626_neg
+-1 1
+.lincomb n1108_neg n1626_neg n1627_int
+2 1
+.bootstrap n1627_int n1627
+0001
+.lincomb n1627 pi119 n1628_int
+2 1
+.bootstrap n1628_int n1628
+0101
+.lincomb n1628 pi248 n1629_int
+2 1
+.bootstrap n1629_int n1629
+0101
+.lincomb n1107_neg n1629 n1630_int
+2 1
+.bootstrap n1630_int n1630
+0001
+.lincomb n1630 pi120 n1631_int
+2 1
+.bootstrap n1631_int n1631
+0101
+.lincomb n1631 pi249 n1632_int
+2 1
+.bootstrap n1632_int n1632
+0101
+.lincomb n1106_neg n1632 n1633_int
+2 1
+.bootstrap n1633_int n1633
+0001
+.lincomb n1633 pi121 n1634_int
+2 1
+.bootstrap n1634_int n1634
+0101
+.lincomb n1634 pi250 n1635_int
+2 1
+.bootstrap n1635_int n1635
+0101
+.lincomb n1105_neg n1635 n1636_int
+2 1
+.bootstrap n1636_int n1636
+0001
+.lincomb n1636 pi122 n1637_int
+2 1
+.bootstrap n1637_int n1637
+0101
+.lincomb n1637 pi251 n1638_int
+2 1
+.bootstrap n1638_int n1638
+0101
+.lincomb n1638 n1638_neg
+-1 1
+.lincomb n1104_neg n1638_neg n1639_int
+2 1
+.bootstrap n1639_int n1639
+0001
+.lincomb n1639 pi251 n1640_int
+2 1
+.bootstrap n1640_int n1640
+0101
+.lincomb n1099_neg n1640 n1641_int
+2 1
+.bootstrap n1641_int n1641
+0001
+.lincomb n1641 n1641_neg
+-1 1
+.lincomb n1103 n1641_neg n1642_int
+2 1
+.bootstrap n1642_int n1642
+0001
+.lincomb n1642 pi256 n1643_int
+2 1
+.bootstrap n1643_int n1643
+0101
+.lincomb n1643 pi256 n1644_int
+2 1
+.bootstrap n1644_int n1644
+0101
+.lincomb n1644 n1644_neg
+-1 1
+.lincomb n1095 n1644_neg n1645_int
+2 1
+.bootstrap n1645_int n1645
+0001
+.lincomb n1645 pi256 n1646_int
+2 1
+.bootstrap n1646_int n1646
+0101
+.lincomb n1083_neg n1646 n1647_int
+2 1
+.bootstrap n1647_int n1647
+0001
+.lincomb n1647 pi128 n1648_int
+2 1
+.bootstrap n1648_int n1648
+0101
+.lincomb n1082 n1648 n1649_int
+2 1
+.bootstrap n1649_int n1649
+0001
+.lincomb n1649 pi127 n1650_int
+2 1
+.bootstrap n1650_int n1650
+0101
+.lincomb n1080 n1650 n1651_int
+2 1
+.bootstrap n1651_int n1651
+0101
+.lincomb n1651 n1651_neg
+-1 1
+.lincomb n1084 n1648 n1652_int
+2 1
+.bootstrap n1652_int n1652
+0001
+.lincomb n1652 pi126 n1653_int
+2 1
+.bootstrap n1653_int n1653
+0101
+.lincomb n518 n1078 n1654_int
+2 1
+.bootstrap n1654_int n1654
+0001
+.lincomb n1654 pi382 n1655_int
+2 1
+.bootstrap n1655_int n1655
+0101
+.lincomb n1653 n1655 n1656_int
+2 1
+.bootstrap n1656_int n1656
+0101
+.lincomb n1656 n1656_neg
+-1 1
+.lincomb n1086 n1648 n1657_int
+2 1
+.bootstrap n1657_int n1657
+0001
+.lincomb n1657 pi125 n1658_int
+2 1
+.bootstrap n1658_int n1658
+0101
+.lincomb n520 n1078 n1659_int
+2 1
+.bootstrap n1659_int n1659
+0001
+.lincomb n1659 pi381 n1660_int
+2 1
+.bootstrap n1660_int n1660
+0101
+.lincomb n1658 n1660 n1661_int
+2 1
+.bootstrap n1661_int n1661
+0101
+.lincomb n1661 n1661_neg
+-1 1
+.lincomb n1100 n1648 n1662_int
+2 1
+.bootstrap n1662_int n1662
+0001
+.lincomb n1662 pi124 n1663_int
+2 1
+.bootstrap n1663_int n1663
+0101
+.lincomb n534 n1078 n1664_int
+2 1
+.bootstrap n1664_int n1664
+0001
+.lincomb n1664 pi380 n1665_int
+2 1
+.bootstrap n1665_int n1665
+0101
+.lincomb n1663 n1665 n1666_int
+2 1
+.bootstrap n1666_int n1666
+0101
+.lincomb n1666 n1666_neg
+-1 1
+.lincomb n1104 n1648 n1667_int
+2 1
+.bootstrap n1667_int n1667
+0001
+.lincomb n1667 pi123 n1668_int
+2 1
+.bootstrap n1668_int n1668
+0101
+.lincomb n538 n1078 n1669_int
+2 1
+.bootstrap n1669_int n1669
+0001
+.lincomb n1669 pi379 n1670_int
+2 1
+.bootstrap n1670_int n1670
+0101
+.lincomb n1668 n1670 n1671_int
+2 1
+.bootstrap n1671_int n1671
+0101
+.lincomb n1671 n1671_neg
+-1 1
+.lincomb n1105 n1648 n1672_int
+2 1
+.bootstrap n1672_int n1672
+0001
+.lincomb n1672 pi122 n1673_int
+2 1
+.bootstrap n1673_int n1673
+0101
+.lincomb n539 n1078 n1674_int
+2 1
+.bootstrap n1674_int n1674
+0001
+.lincomb n1674 pi378 n1675_int
+2 1
+.bootstrap n1675_int n1675
+0101
+.lincomb n1673 n1675 n1676_int
+2 1
+.bootstrap n1676_int n1676
+0101
+.lincomb n1676 n1676_neg
+-1 1
+.lincomb n540 n1078 n1677_int
+2 1
+.bootstrap n1677_int n1677
+0001
+.lincomb n1677 pi377 n1678_int
+2 1
+.bootstrap n1678_int n1678
+0101
+.lincomb n1106 n1648 n1679_int
+2 1
+.bootstrap n1679_int n1679
+0001
+.lincomb n1679 pi121 n1680_int
+2 1
+.bootstrap n1680_int n1680
+0101
+.lincomb n1678 n1680 n1681_int
+2 1
+.bootstrap n1681_int n1681
+0101
+.lincomb n1681 n1681_neg
+-1 1
+.lincomb n1107 n1648 n1682_int
+2 1
+.bootstrap n1682_int n1682
+0001
+.lincomb n1682 pi120 n1683_int
+2 1
+.bootstrap n1683_int n1683
+0101
+.lincomb n541 n1078 n1684_int
+2 1
+.bootstrap n1684_int n1684
+0001
+.lincomb n1684 pi376 n1685_int
+2 1
+.bootstrap n1685_int n1685
+0101
+.lincomb n1683 n1685 n1686_int
+2 1
+.bootstrap n1686_int n1686
+0101
+.lincomb n1686 n1686_neg
+-1 1
+.lincomb n1108 n1648 n1687_int
+2 1
+.bootstrap n1687_int n1687
+0001
+.lincomb n1687 pi119 n1688_int
+2 1
+.bootstrap n1688_int n1688
+0101
+.lincomb n542 n1078 n1689_int
+2 1
+.bootstrap n1689_int n1689
+0001
+.lincomb n1689 pi375 n1690_int
+2 1
+.bootstrap n1690_int n1690
+0101
+.lincomb n1688 n1690 n1691_int
+2 1
+.bootstrap n1691_int n1691
+0101
+.lincomb n1691 n1691_neg
+-1 1
+.lincomb n1109 n1648 n1692_int
+2 1
+.bootstrap n1692_int n1692
+0001
+.lincomb n1692 pi118 n1693_int
+2 1
+.bootstrap n1693_int n1693
+0101
+.lincomb n543 n1078 n1694_int
+2 1
+.bootstrap n1694_int n1694
+0001
+.lincomb n1694 pi374 n1695_int
+2 1
+.bootstrap n1695_int n1695
+0101
+.lincomb n1693 n1695 n1696_int
+2 1
+.bootstrap n1696_int n1696
+0101
+.lincomb n1696 n1696_neg
+-1 1
+.lincomb n544 n1078 n1697_int
+2 1
+.bootstrap n1697_int n1697
+0001
+.lincomb n1697 pi373 n1698_int
+2 1
+.bootstrap n1698_int n1698
+0101
+.lincomb n1110 n1648 n1699_int
+2 1
+.bootstrap n1699_int n1699
+0001
+.lincomb n1699 pi117 n1700_int
+2 1
+.bootstrap n1700_int n1700
+0101
+.lincomb n1698 n1700 n1701_int
+2 1
+.bootstrap n1701_int n1701
+0101
+.lincomb n1701 n1701_neg
+-1 1
+.lincomb n545 n1078 n1702_int
+2 1
+.bootstrap n1702_int n1702
+0001
+.lincomb n1702 pi372 n1703_int
+2 1
+.bootstrap n1703_int n1703
+0101
+.lincomb n1111 n1648 n1704_int
+2 1
+.bootstrap n1704_int n1704
+0001
+.lincomb n1704 pi116 n1705_int
+2 1
+.bootstrap n1705_int n1705
+0101
+.lincomb n1703 n1705 n1706_int
+2 1
+.bootstrap n1706_int n1706
+0101
+.lincomb n1706 n1706_neg
+-1 1
+.lincomb n1112 n1648 n1707_int
+2 1
+.bootstrap n1707_int n1707
+0001
+.lincomb n1707 pi115 n1708_int
+2 1
+.bootstrap n1708_int n1708
+0101
+.lincomb n546 n1078 n1709_int
+2 1
+.bootstrap n1709_int n1709
+0001
+.lincomb n1709 pi371 n1710_int
+2 1
+.bootstrap n1710_int n1710
+0101
+.lincomb n1708 n1710 n1711_int
+2 1
+.bootstrap n1711_int n1711
+0101
+.lincomb n1711 n1711_neg
+-1 1
+.lincomb n1113 n1648 n1712_int
+2 1
+.bootstrap n1712_int n1712
+0001
+.lincomb n1712 pi114 n1713_int
+2 1
+.bootstrap n1713_int n1713
+0101
+.lincomb n547 n1078 n1714_int
+2 1
+.bootstrap n1714_int n1714
+0001
+.lincomb n1714 pi370 n1715_int
+2 1
+.bootstrap n1715_int n1715
+0101
+.lincomb n1713 n1715 n1716_int
+2 1
+.bootstrap n1716_int n1716
+0101
+.lincomb n1716 n1716_neg
+-1 1
+.lincomb n1114 n1648 n1717_int
+2 1
+.bootstrap n1717_int n1717
+0001
+.lincomb n1717 pi113 n1718_int
+2 1
+.bootstrap n1718_int n1718
+0101
+.lincomb n548 n1078 n1719_int
+2 1
+.bootstrap n1719_int n1719
+0001
+.lincomb n1719 pi369 n1720_int
+2 1
+.bootstrap n1720_int n1720
+0101
+.lincomb n1718 n1720 n1721_int
+2 1
+.bootstrap n1721_int n1721
+0101
+.lincomb n1721 n1721_neg
+-1 1
+.lincomb n1115 n1648 n1722_int
+2 1
+.bootstrap n1722_int n1722
+0001
+.lincomb n1722 pi112 n1723_int
+2 1
+.bootstrap n1723_int n1723
+0101
+.lincomb n549 n1078 n1724_int
+2 1
+.bootstrap n1724_int n1724
+0001
+.lincomb n1724 pi368 n1725_int
+2 1
+.bootstrap n1725_int n1725
+0101
+.lincomb n1723 n1725 n1726_int
+2 1
+.bootstrap n1726_int n1726
+0101
+.lincomb n1726 n1726_neg
+-1 1
+.lincomb n550 n1078 n1727_int
+2 1
+.bootstrap n1727_int n1727
+0001
+.lincomb n1727 pi367 n1728_int
+2 1
+.bootstrap n1728_int n1728
+0101
+.lincomb n1116 n1648 n1729_int
+2 1
+.bootstrap n1729_int n1729
+0001
+.lincomb n1729 pi111 n1730_int
+2 1
+.bootstrap n1730_int n1730
+0101
+.lincomb n1728 n1730 n1731_int
+2 1
+.bootstrap n1731_int n1731
+0101
+.lincomb n1731 n1731_neg
+-1 1
+.lincomb n551 n1078 n1732_int
+2 1
+.bootstrap n1732_int n1732
+0001
+.lincomb n1732 pi366 n1733_int
+2 1
+.bootstrap n1733_int n1733
+0101
+.lincomb n1117 n1648 n1734_int
+2 1
+.bootstrap n1734_int n1734
+0001
+.lincomb n1734 pi110 n1735_int
+2 1
+.bootstrap n1735_int n1735
+0101
+.lincomb n1733 n1735 n1736_int
+2 1
+.bootstrap n1736_int n1736
+0101
+.lincomb n1736 n1736_neg
+-1 1
+.lincomb n552 n1078 n1737_int
+2 1
+.bootstrap n1737_int n1737
+0001
+.lincomb n1737 pi365 n1738_int
+2 1
+.bootstrap n1738_int n1738
+0101
+.lincomb n1118 n1648 n1739_int
+2 1
+.bootstrap n1739_int n1739
+0001
+.lincomb n1739 pi109 n1740_int
+2 1
+.bootstrap n1740_int n1740
+0101
+.lincomb n1738 n1740 n1741_int
+2 1
+.bootstrap n1741_int n1741
+0101
+.lincomb n1741 n1741_neg
+-1 1
+.lincomb n1119 n1648 n1742_int
+2 1
+.bootstrap n1742_int n1742
+0001
+.lincomb n1742 pi108 n1743_int
+2 1
+.bootstrap n1743_int n1743
+0101
+.lincomb n553 n1078 n1744_int
+2 1
+.bootstrap n1744_int n1744
+0001
+.lincomb n1744 pi364 n1745_int
+2 1
+.bootstrap n1745_int n1745
+0101
+.lincomb n1743 n1745 n1746_int
+2 1
+.bootstrap n1746_int n1746
+0101
+.lincomb n1746 n1746_neg
+-1 1
+.lincomb n1120 n1648 n1747_int
+2 1
+.bootstrap n1747_int n1747
+0001
+.lincomb n1747 pi107 n1748_int
+2 1
+.bootstrap n1748_int n1748
+0101
+.lincomb n554 n1078 n1749_int
+2 1
+.bootstrap n1749_int n1749
+0001
+.lincomb n1749 pi363 n1750_int
+2 1
+.bootstrap n1750_int n1750
+0101
+.lincomb n1748 n1750 n1751_int
+2 1
+.bootstrap n1751_int n1751
+0101
+.lincomb n1751 n1751_neg
+-1 1
+.lincomb n1121 n1648 n1752_int
+2 1
+.bootstrap n1752_int n1752
+0001
+.lincomb n1752 pi106 n1753_int
+2 1
+.bootstrap n1753_int n1753
+0101
+.lincomb n555 n1078 n1754_int
+2 1
+.bootstrap n1754_int n1754
+0001
+.lincomb n1754 pi362 n1755_int
+2 1
+.bootstrap n1755_int n1755
+0101
+.lincomb n1753 n1755 n1756_int
+2 1
+.bootstrap n1756_int n1756
+0101
+.lincomb n1756 n1756_neg
+-1 1
+.lincomb n556 n1078 n1757_int
+2 1
+.bootstrap n1757_int n1757
+0001
+.lincomb n1757 pi361 n1758_int
+2 1
+.bootstrap n1758_int n1758
+0101
+.lincomb n1122 n1648 n1759_int
+2 1
+.bootstrap n1759_int n1759
+0001
+.lincomb n1759 pi105 n1760_int
+2 1
+.bootstrap n1760_int n1760
+0101
+.lincomb n1758 n1760 n1761_int
+2 1
+.bootstrap n1761_int n1761
+0101
+.lincomb n1761 n1761_neg
+-1 1
+.lincomb n557 n1078 n1762_int
+2 1
+.bootstrap n1762_int n1762
+0001
+.lincomb n1762 pi360 n1763_int
+2 1
+.bootstrap n1763_int n1763
+0101
+.lincomb n1123 n1648 n1764_int
+2 1
+.bootstrap n1764_int n1764
+0001
+.lincomb n1764 pi104 n1765_int
+2 1
+.bootstrap n1765_int n1765
+0101
+.lincomb n1763 n1765 n1766_int
+2 1
+.bootstrap n1766_int n1766
+0101
+.lincomb n1766 n1766_neg
+-1 1
+.lincomb n1124 n1648 n1767_int
+2 1
+.bootstrap n1767_int n1767
+0001
+.lincomb n1767 pi103 n1768_int
+2 1
+.bootstrap n1768_int n1768
+0101
+.lincomb n558 n1078 n1769_int
+2 1
+.bootstrap n1769_int n1769
+0001
+.lincomb n1769 pi359 n1770_int
+2 1
+.bootstrap n1770_int n1770
+0101
+.lincomb n1768 n1770 n1771_int
+2 1
+.bootstrap n1771_int n1771
+0101
+.lincomb n1771 n1771_neg
+-1 1
+.lincomb n559 n1078 n1772_int
+2 1
+.bootstrap n1772_int n1772
+0001
+.lincomb n1772 pi358 n1773_int
+2 1
+.bootstrap n1773_int n1773
+0101
+.lincomb n1125 n1648 n1774_int
+2 1
+.bootstrap n1774_int n1774
+0001
+.lincomb n1774 pi102 n1775_int
+2 1
+.bootstrap n1775_int n1775
+0101
+.lincomb n1773 n1775 n1776_int
+2 1
+.bootstrap n1776_int n1776
+0101
+.lincomb n1776 n1776_neg
+-1 1
+.lincomb n560 n1078 n1777_int
+2 1
+.bootstrap n1777_int n1777
+0001
+.lincomb n1777 pi357 n1778_int
+2 1
+.bootstrap n1778_int n1778
+0101
+.lincomb n1126 n1648 n1779_int
+2 1
+.bootstrap n1779_int n1779
+0001
+.lincomb n1779 pi101 n1780_int
+2 1
+.bootstrap n1780_int n1780
+0101
+.lincomb n1778 n1780 n1781_int
+2 1
+.bootstrap n1781_int n1781
+0101
+.lincomb n1781 n1781_neg
+-1 1
+.lincomb n1127 n1648 n1782_int
+2 1
+.bootstrap n1782_int n1782
+0001
+.lincomb n1782 pi100 n1783_int
+2 1
+.bootstrap n1783_int n1783
+0101
+.lincomb n561 n1078 n1784_int
+2 1
+.bootstrap n1784_int n1784
+0001
+.lincomb n1784 pi356 n1785_int
+2 1
+.bootstrap n1785_int n1785
+0101
+.lincomb n1783 n1785 n1786_int
+2 1
+.bootstrap n1786_int n1786
+0101
+.lincomb n1786 n1786_neg
+-1 1
+.lincomb n1128 n1648 n1787_int
+2 1
+.bootstrap n1787_int n1787
+0001
+.lincomb n1787 pi99 n1788_int
+2 1
+.bootstrap n1788_int n1788
+0101
+.lincomb n562 n1078 n1789_int
+2 1
+.bootstrap n1789_int n1789
+0001
+.lincomb n1789 pi355 n1790_int
+2 1
+.bootstrap n1790_int n1790
+0101
+.lincomb n1788 n1790 n1791_int
+2 1
+.bootstrap n1791_int n1791
+0101
+.lincomb n1791 n1791_neg
+-1 1
+.lincomb n563 n1078 n1792_int
+2 1
+.bootstrap n1792_int n1792
+0001
+.lincomb n1792 pi354 n1793_int
+2 1
+.bootstrap n1793_int n1793
+0101
+.lincomb n1129 n1648 n1794_int
+2 1
+.bootstrap n1794_int n1794
+0001
+.lincomb n1794 pi98 n1795_int
+2 1
+.bootstrap n1795_int n1795
+0101
+.lincomb n1793 n1795 n1796_int
+2 1
+.bootstrap n1796_int n1796
+0101
+.lincomb n1796 n1796_neg
+-1 1
+.lincomb n1130 n1648 n1797_int
+2 1
+.bootstrap n1797_int n1797
+0001
+.lincomb n1797 pi97 n1798_int
+2 1
+.bootstrap n1798_int n1798
+0101
+.lincomb n564 n1078 n1799_int
+2 1
+.bootstrap n1799_int n1799
+0001
+.lincomb n1799 pi353 n1800_int
+2 1
+.bootstrap n1800_int n1800
+0101
+.lincomb n1798 n1800 n1801_int
+2 1
+.bootstrap n1801_int n1801
+0101
+.lincomb n1801 n1801_neg
+-1 1
+.lincomb n1131 n1648 n1802_int
+2 1
+.bootstrap n1802_int n1802
+0001
+.lincomb n1802 pi96 n1803_int
+2 1
+.bootstrap n1803_int n1803
+0101
+.lincomb n565 n1078 n1804_int
+2 1
+.bootstrap n1804_int n1804
+0001
+.lincomb n1804 pi352 n1805_int
+2 1
+.bootstrap n1805_int n1805
+0101
+.lincomb n1803 n1805 n1806_int
+2 1
+.bootstrap n1806_int n1806
+0101
+.lincomb n1806 n1806_neg
+-1 1
+.lincomb n1132 n1648 n1807_int
+2 1
+.bootstrap n1807_int n1807
+0001
+.lincomb n1807 pi95 n1808_int
+2 1
+.bootstrap n1808_int n1808
+0101
+.lincomb n566 n1078 n1809_int
+2 1
+.bootstrap n1809_int n1809
+0001
+.lincomb n1809 pi351 n1810_int
+2 1
+.bootstrap n1810_int n1810
+0101
+.lincomb n1808 n1810 n1811_int
+2 1
+.bootstrap n1811_int n1811
+0101
+.lincomb n1811 n1811_neg
+-1 1
+.lincomb n1133 n1648 n1812_int
+2 1
+.bootstrap n1812_int n1812
+0001
+.lincomb n1812 pi94 n1813_int
+2 1
+.bootstrap n1813_int n1813
+0101
+.lincomb n567 n1078 n1814_int
+2 1
+.bootstrap n1814_int n1814
+0001
+.lincomb n1814 pi350 n1815_int
+2 1
+.bootstrap n1815_int n1815
+0101
+.lincomb n1813 n1815 n1816_int
+2 1
+.bootstrap n1816_int n1816
+0101
+.lincomb n1816 n1816_neg
+-1 1
+.lincomb n568 n1078 n1817_int
+2 1
+.bootstrap n1817_int n1817
+0001
+.lincomb n1817 pi349 n1818_int
+2 1
+.bootstrap n1818_int n1818
+0101
+.lincomb n1134 n1648 n1819_int
+2 1
+.bootstrap n1819_int n1819
+0001
+.lincomb n1819 pi93 n1820_int
+2 1
+.bootstrap n1820_int n1820
+0101
+.lincomb n1818 n1820 n1821_int
+2 1
+.bootstrap n1821_int n1821
+0101
+.lincomb n1821 n1821_neg
+-1 1
+.lincomb n569 n1078 n1822_int
+2 1
+.bootstrap n1822_int n1822
+0001
+.lincomb n1822 pi348 n1823_int
+2 1
+.bootstrap n1823_int n1823
+0101
+.lincomb n1135 n1648 n1824_int
+2 1
+.bootstrap n1824_int n1824
+0001
+.lincomb n1824 pi92 n1825_int
+2 1
+.bootstrap n1825_int n1825
+0101
+.lincomb n1823 n1825 n1826_int
+2 1
+.bootstrap n1826_int n1826
+0101
+.lincomb n1826 n1826_neg
+-1 1
+.lincomb n570 n1078 n1827_int
+2 1
+.bootstrap n1827_int n1827
+0001
+.lincomb n1827 pi347 n1828_int
+2 1
+.bootstrap n1828_int n1828
+0101
+.lincomb n1136 n1648 n1829_int
+2 1
+.bootstrap n1829_int n1829
+0001
+.lincomb n1829 pi91 n1830_int
+2 1
+.bootstrap n1830_int n1830
+0101
+.lincomb n1828 n1830 n1831_int
+2 1
+.bootstrap n1831_int n1831
+0101
+.lincomb n1831 n1831_neg
+-1 1
+.lincomb n1137 n1648 n1832_int
+2 1
+.bootstrap n1832_int n1832
+0001
+.lincomb n1832 pi90 n1833_int
+2 1
+.bootstrap n1833_int n1833
+0101
+.lincomb n571 n1078 n1834_int
+2 1
+.bootstrap n1834_int n1834
+0001
+.lincomb n1834 pi346 n1835_int
+2 1
+.bootstrap n1835_int n1835
+0101
+.lincomb n1833 n1835 n1836_int
+2 1
+.bootstrap n1836_int n1836
+0101
+.lincomb n1836 n1836_neg
+-1 1
+.lincomb n572 n1078 n1837_int
+2 1
+.bootstrap n1837_int n1837
+0001
+.lincomb n1837 pi345 n1838_int
+2 1
+.bootstrap n1838_int n1838
+0101
+.lincomb n1138 n1648 n1839_int
+2 1
+.bootstrap n1839_int n1839
+0001
+.lincomb n1839 pi89 n1840_int
+2 1
+.bootstrap n1840_int n1840
+0101
+.lincomb n1838 n1840 n1841_int
+2 1
+.bootstrap n1841_int n1841
+0101
+.lincomb n1841 n1841_neg
+-1 1
+.lincomb n573 n1078 n1842_int
+2 1
+.bootstrap n1842_int n1842
+0001
+.lincomb n1842 pi344 n1843_int
+2 1
+.bootstrap n1843_int n1843
+0101
+.lincomb n1139 n1648 n1844_int
+2 1
+.bootstrap n1844_int n1844
+0001
+.lincomb n1844 pi88 n1845_int
+2 1
+.bootstrap n1845_int n1845
+0101
+.lincomb n1843 n1845 n1846_int
+2 1
+.bootstrap n1846_int n1846
+0101
+.lincomb n1846 n1846_neg
+-1 1
+.lincomb n574 n1078 n1847_int
+2 1
+.bootstrap n1847_int n1847
+0001
+.lincomb n1847 pi343 n1848_int
+2 1
+.bootstrap n1848_int n1848
+0101
+.lincomb n1140 n1648 n1849_int
+2 1
+.bootstrap n1849_int n1849
+0001
+.lincomb n1849 pi87 n1850_int
+2 1
+.bootstrap n1850_int n1850
+0101
+.lincomb n1848 n1850 n1851_int
+2 1
+.bootstrap n1851_int n1851
+0101
+.lincomb n1851 n1851_neg
+-1 1
+.lincomb n575 n1078 n1852_int
+2 1
+.bootstrap n1852_int n1852
+0001
+.lincomb n1852 pi342 n1853_int
+2 1
+.bootstrap n1853_int n1853
+0101
+.lincomb n1141 n1648 n1854_int
+2 1
+.bootstrap n1854_int n1854
+0001
+.lincomb n1854 pi86 n1855_int
+2 1
+.bootstrap n1855_int n1855
+0101
+.lincomb n1853 n1855 n1856_int
+2 1
+.bootstrap n1856_int n1856
+0101
+.lincomb n1856 n1856_neg
+-1 1
+.lincomb n1142 n1648 n1857_int
+2 1
+.bootstrap n1857_int n1857
+0001
+.lincomb n1857 pi85 n1858_int
+2 1
+.bootstrap n1858_int n1858
+0101
+.lincomb n576 n1078 n1859_int
+2 1
+.bootstrap n1859_int n1859
+0001
+.lincomb n1859 pi341 n1860_int
+2 1
+.bootstrap n1860_int n1860
+0101
+.lincomb n1858 n1860 n1861_int
+2 1
+.bootstrap n1861_int n1861
+0101
+.lincomb n1861 n1861_neg
+-1 1
+.lincomb n577 n1078 n1862_int
+2 1
+.bootstrap n1862_int n1862
+0001
+.lincomb n1862 pi340 n1863_int
+2 1
+.bootstrap n1863_int n1863
+0101
+.lincomb n1143 n1648 n1864_int
+2 1
+.bootstrap n1864_int n1864
+0001
+.lincomb n1864 pi84 n1865_int
+2 1
+.bootstrap n1865_int n1865
+0101
+.lincomb n1863 n1865 n1866_int
+2 1
+.bootstrap n1866_int n1866
+0101
+.lincomb n1866 n1866_neg
+-1 1
+.lincomb n1144 n1648 n1867_int
+2 1
+.bootstrap n1867_int n1867
+0001
+.lincomb n1867 pi83 n1868_int
+2 1
+.bootstrap n1868_int n1868
+0101
+.lincomb n578 n1078 n1869_int
+2 1
+.bootstrap n1869_int n1869
+0001
+.lincomb n1869 pi339 n1870_int
+2 1
+.bootstrap n1870_int n1870
+0101
+.lincomb n1868 n1870 n1871_int
+2 1
+.bootstrap n1871_int n1871
+0101
+.lincomb n1871 n1871_neg
+-1 1
+.lincomb n579 n1078 n1872_int
+2 1
+.bootstrap n1872_int n1872
+0001
+.lincomb n1872 pi338 n1873_int
+2 1
+.bootstrap n1873_int n1873
+0101
+.lincomb n1145 n1648 n1874_int
+2 1
+.bootstrap n1874_int n1874
+0001
+.lincomb n1874 pi82 n1875_int
+2 1
+.bootstrap n1875_int n1875
+0101
+.lincomb n1873 n1875 n1876_int
+2 1
+.bootstrap n1876_int n1876
+0101
+.lincomb n1876 n1876_neg
+-1 1
+.lincomb n580 n1078 n1877_int
+2 1
+.bootstrap n1877_int n1877
+0001
+.lincomb n1877 pi337 n1878_int
+2 1
+.bootstrap n1878_int n1878
+0101
+.lincomb n1147 n1648 n1879_int
+2 1
+.bootstrap n1879_int n1879
+0001
+.lincomb n1879 pi81 n1880_int
+2 1
+.bootstrap n1880_int n1880
+0101
+.lincomb n1878 n1880 n1881_int
+2 1
+.bootstrap n1881_int n1881
+0101
+.lincomb n1881 n1881_neg
+-1 1
+.lincomb n581 n1078 n1882_int
+2 1
+.bootstrap n1882_int n1882
+0001
+.lincomb n1882 pi336 n1883_int
+2 1
+.bootstrap n1883_int n1883
+0101
+.lincomb n1506 n1648 n1884_int
+2 1
+.bootstrap n1884_int n1884
+0001
+.lincomb n1884 pi80 n1885_int
+2 1
+.bootstrap n1885_int n1885
+0101
+.lincomb n1883 n1885 n1886_int
+2 1
+.bootstrap n1886_int n1886
+0101
+.lincomb n1886 n1886_neg
+-1 1
+.lincomb n1501 n1648 n1887_int
+2 1
+.bootstrap n1887_int n1887
+0001
+.lincomb n1887 pi79 n1888_int
+2 1
+.bootstrap n1888_int n1888
+0101
+.lincomb n582 n1078 n1889_int
+2 1
+.bootstrap n1889_int n1889
+0001
+.lincomb n1889 pi335 n1890_int
+2 1
+.bootstrap n1890_int n1890
+0101
+.lincomb n1888 n1890 n1891_int
+2 1
+.bootstrap n1891_int n1891
+0101
+.lincomb n1891 n1891_neg
+-1 1
+.lincomb n583 n1078 n1892_int
+2 1
+.bootstrap n1892_int n1892
+0001
+.lincomb n1892 pi334 n1893_int
+2 1
+.bootstrap n1893_int n1893
+0101
+.lincomb n1496 n1648 n1894_int
+2 1
+.bootstrap n1894_int n1894
+0001
+.lincomb n1894 pi78 n1895_int
+2 1
+.bootstrap n1895_int n1895
+0101
+.lincomb n1893 n1895 n1896_int
+2 1
+.bootstrap n1896_int n1896
+0101
+.lincomb n1896 n1896_neg
+-1 1
+.lincomb n1491 n1648 n1897_int
+2 1
+.bootstrap n1897_int n1897
+0001
+.lincomb n1897 pi77 n1898_int
+2 1
+.bootstrap n1898_int n1898
+0101
+.lincomb n584 n1078 n1899_int
+2 1
+.bootstrap n1899_int n1899
+0001
+.lincomb n1899 pi333 n1900_int
+2 1
+.bootstrap n1900_int n1900
+0101
+.lincomb n1898 n1900 n1901_int
+2 1
+.bootstrap n1901_int n1901
+0101
+.lincomb n1901 n1901_neg
+-1 1
+.lincomb n1486 n1648 n1902_int
+2 1
+.bootstrap n1902_int n1902
+0001
+.lincomb n1902 pi76 n1903_int
+2 1
+.bootstrap n1903_int n1903
+0101
+.lincomb n585 n1078 n1904_int
+2 1
+.bootstrap n1904_int n1904
+0001
+.lincomb n1904 pi332 n1905_int
+2 1
+.bootstrap n1905_int n1905
+0101
+.lincomb n1903 n1905 n1906_int
+2 1
+.bootstrap n1906_int n1906
+0101
+.lincomb n1906 n1906_neg
+-1 1
+.lincomb n1481 n1648 n1907_int
+2 1
+.bootstrap n1907_int n1907
+0001
+.lincomb n1907 pi75 n1908_int
+2 1
+.bootstrap n1908_int n1908
+0101
+.lincomb n586 n1078 n1909_int
+2 1
+.bootstrap n1909_int n1909
+0001
+.lincomb n1909 pi331 n1910_int
+2 1
+.bootstrap n1910_int n1910
+0101
+.lincomb n1908 n1910 n1911_int
+2 1
+.bootstrap n1911_int n1911
+0101
+.lincomb n1911 n1911_neg
+-1 1
+.lincomb n1476 n1648 n1912_int
+2 1
+.bootstrap n1912_int n1912
+0001
+.lincomb n1912 pi74 n1913_int
+2 1
+.bootstrap n1913_int n1913
+0101
+.lincomb n587 n1078 n1914_int
+2 1
+.bootstrap n1914_int n1914
+0001
+.lincomb n1914 pi330 n1915_int
+2 1
+.bootstrap n1915_int n1915
+0101
+.lincomb n1913 n1915 n1916_int
+2 1
+.bootstrap n1916_int n1916
+0101
+.lincomb n1916 n1916_neg
+-1 1
+.lincomb n588 n1078 n1917_int
+2 1
+.bootstrap n1917_int n1917
+0001
+.lincomb n1917 pi329 n1918_int
+2 1
+.bootstrap n1918_int n1918
+0101
+.lincomb n1471 n1648 n1919_int
+2 1
+.bootstrap n1919_int n1919
+0001
+.lincomb n1919 pi73 n1920_int
+2 1
+.bootstrap n1920_int n1920
+0101
+.lincomb n1918 n1920 n1921_int
+2 1
+.bootstrap n1921_int n1921
+0101
+.lincomb n1921 n1921_neg
+-1 1
+.lincomb n590 n1078 n1922_int
+2 1
+.bootstrap n1922_int n1922
+0001
+.lincomb n1922 pi328 n1923_int
+2 1
+.bootstrap n1923_int n1923
+0101
+.lincomb n1466 n1648 n1924_int
+2 1
+.bootstrap n1924_int n1924
+0001
+.lincomb n1924 pi72 n1925_int
+2 1
+.bootstrap n1925_int n1925
+0101
+.lincomb n1923 n1925 n1926_int
+2 1
+.bootstrap n1926_int n1926
+0101
+.lincomb n1926 n1926_neg
+-1 1
+.lincomb n1457 n1648 n1927_int
+2 1
+.bootstrap n1927_int n1927
+0001
+.lincomb n1927 pi71 n1928_int
+2 1
+.bootstrap n1928_int n1928
+0101
+.lincomb n905 n1078 n1929_int
+2 1
+.bootstrap n1929_int n1929
+0001
+.lincomb n1929 pi327 n1930_int
+2 1
+.bootstrap n1930_int n1930
+0101
+.lincomb n1928 n1930 n1931_int
+2 1
+.bootstrap n1931_int n1931
+0101
+.lincomb n1931 n1931_neg
+-1 1
+.lincomb n906 n1078 n1932_int
+2 1
+.bootstrap n1932_int n1932
+0001
+.lincomb n1932 pi326 n1933_int
+2 1
+.bootstrap n1933_int n1933
+0101
+.lincomb n1458 n1648 n1934_int
+2 1
+.bootstrap n1934_int n1934
+0001
+.lincomb n1934 pi70 n1935_int
+2 1
+.bootstrap n1935_int n1935
+0101
+.lincomb n1933 n1935 n1936_int
+2 1
+.bootstrap n1936_int n1936
+0101
+.lincomb n1936 n1936_neg
+-1 1
+.lincomb n1155 n1648 n1937_int
+2 1
+.bootstrap n1937_int n1937
+0001
+.lincomb n1937 pi69 n1938_int
+2 1
+.bootstrap n1938_int n1938
+0101
+.lincomb n601 n1078 n1939_int
+2 1
+.bootstrap n1939_int n1939
+0001
+.lincomb n1939 pi325 n1940_int
+2 1
+.bootstrap n1940_int n1940
+0101
+.lincomb n1938 n1940 n1941_int
+2 1
+.bootstrap n1941_int n1941
+0101
+.lincomb n1941 n1941_neg
+-1 1
+.lincomb n598 n1078 n1942_int
+2 1
+.bootstrap n1942_int n1942
+0001
+.lincomb n1942 pi324 n1943_int
+2 1
+.bootstrap n1943_int n1943
+0101
+.lincomb n1158 n1648 n1944_int
+2 1
+.bootstrap n1944_int n1944
+0001
+.lincomb n1944 pi68 n1945_int
+2 1
+.bootstrap n1945_int n1945
+0101
+.lincomb n1943 n1945 n1946_int
+2 1
+.bootstrap n1946_int n1946
+0101
+.lincomb n1946 n1946_neg
+-1 1
+.lincomb n605 n1078 n1947_int
+2 1
+.bootstrap n1947_int n1947
+0001
+.lincomb n1947 pi323 n1948_int
+2 1
+.bootstrap n1948_int n1948
+0101
+.lincomb n1159 n1648 n1949_int
+2 1
+.bootstrap n1949_int n1949
+0001
+.lincomb n1949 pi67 n1950_int
+2 1
+.bootstrap n1950_int n1950
+0101
+.lincomb n1948 n1950 n1951_int
+2 1
+.bootstrap n1951_int n1951
+0101
+.lincomb n1951 n1951_neg
+-1 1
+.lincomb n1160 n1648 n1952_int
+2 1
+.bootstrap n1952_int n1952
+0001
+.lincomb n1952 pi66 n1953_int
+2 1
+.bootstrap n1953_int n1953
+0101
+.lincomb n606 n1078 n1954_int
+2 1
+.bootstrap n1954_int n1954
+0001
+.lincomb n1954 pi322 n1955_int
+2 1
+.bootstrap n1955_int n1955
+0101
+.lincomb n1953 n1955 n1956_int
+2 1
+.bootstrap n1956_int n1956
+0101
+.lincomb n1956 n1956_neg
+-1 1
+.lincomb n608 n1078 n1957_int
+2 1
+.bootstrap n1957_int n1957
+0001
+.lincomb n1957 pi321 n1958_int
+2 1
+.bootstrap n1958_int n1958
+0101
+.lincomb n1161 n1648 n1959_int
+2 1
+.bootstrap n1959_int n1959
+0001
+.lincomb n1959 pi65 n1960_int
+2 1
+.bootstrap n1960_int n1960
+0101
+.lincomb n1958 n1960 n1961_int
+2 1
+.bootstrap n1961_int n1961
+0101
+.lincomb n1961 n1961_neg
+-1 1
+.lincomb n1163 n1648 n1962_int
+2 1
+.bootstrap n1962_int n1962
+0001
+.lincomb n1962 pi64 n1963_int
+2 1
+.bootstrap n1963_int n1963
+0101
+.lincomb n887 n1078 n1964_int
+2 1
+.bootstrap n1964_int n1964
+0001
+.lincomb n1964 pi320 n1965_int
+2 1
+.bootstrap n1965_int n1965
+0101
+.lincomb n1963 n1965 n1966_int
+2 1
+.bootstrap n1966_int n1966
+0101
+.lincomb n1966 n1966_neg
+-1 1
+.lincomb n875 n1078 n1967_int
+2 1
+.bootstrap n1967_int n1967
+0001
+.lincomb n1967 pi319 n1968_int
+2 1
+.bootstrap n1968_int n1968
+0101
+.lincomb n1431 n1648 n1969_int
+2 1
+.bootstrap n1969_int n1969
+0001
+.lincomb n1969 pi63 n1970_int
+2 1
+.bootstrap n1970_int n1970
+0101
+.lincomb n1968 n1970 n1971_int
+2 1
+.bootstrap n1971_int n1971
+0101
+.lincomb n1971 n1971_neg
+-1 1
+.lincomb n878 n1078 n1972_int
+2 1
+.bootstrap n1972_int n1972
+0001
+.lincomb n1972 pi318 n1973_int
+2 1
+.bootstrap n1973_int n1973
+0101
+.lincomb n1432 n1648 n1974_int
+2 1
+.bootstrap n1974_int n1974
+0001
+.lincomb n1974 pi62 n1975_int
+2 1
+.bootstrap n1975_int n1975
+0101
+.lincomb n1973 n1975 n1976_int
+2 1
+.bootstrap n1976_int n1976
+0101
+.lincomb n1976 n1976_neg
+-1 1
+.lincomb n871 n1078 n1977_int
+2 1
+.bootstrap n1977_int n1977
+0001
+.lincomb n1977 pi317 n1978_int
+2 1
+.bootstrap n1978_int n1978
+0101
+.lincomb n1174 n1648 n1979_int
+2 1
+.bootstrap n1979_int n1979
+0001
+.lincomb n1979 pi61 n1980_int
+2 1
+.bootstrap n1980_int n1980
+0101
+.lincomb n1978 n1980 n1981_int
+2 1
+.bootstrap n1981_int n1981
+0101
+.lincomb n1981 n1981_neg
+-1 1
+.lincomb n867 n1078 n1982_int
+2 1
+.bootstrap n1982_int n1982
+0001
+.lincomb n1982 pi316 n1983_int
+2 1
+.bootstrap n1983_int n1983
+0101
+.lincomb n1171 n1648 n1984_int
+2 1
+.bootstrap n1984_int n1984
+0001
+.lincomb n1984 pi60 n1985_int
+2 1
+.bootstrap n1985_int n1985
+0101
+.lincomb n1983 n1985 n1986_int
+2 1
+.bootstrap n1986_int n1986
+0101
+.lincomb n1986 n1986_neg
+-1 1
+.lincomb n1178 n1648 n1987_int
+2 1
+.bootstrap n1987_int n1987
+0001
+.lincomb n1987 pi59 n1988_int
+2 1
+.bootstrap n1988_int n1988
+0101
+.lincomb n612 n1078 n1989_int
+2 1
+.bootstrap n1989_int n1989
+0001
+.lincomb n1989 pi315 n1990_int
+2 1
+.bootstrap n1990_int n1990
+0101
+.lincomb n1988 n1990 n1991_int
+2 1
+.bootstrap n1991_int n1991
+0101
+.lincomb n1991 n1991_neg
+-1 1
+.lincomb n1179 n1648 n1992_int
+2 1
+.bootstrap n1992_int n1992
+0001
+.lincomb n1992 pi58 n1993_int
+2 1
+.bootstrap n1993_int n1993
+0101
+.lincomb n613 n1078 n1994_int
+2 1
+.bootstrap n1994_int n1994
+0001
+.lincomb n1994 pi314 n1995_int
+2 1
+.bootstrap n1995_int n1995
+0101
+.lincomb n1993 n1995 n1996_int
+2 1
+.bootstrap n1996_int n1996
+0101
+.lincomb n1996 n1996_neg
+-1 1
+.lincomb n614 n1078 n1997_int
+2 1
+.bootstrap n1997_int n1997
+0001
+.lincomb n1997 pi313 n1998_int
+2 1
+.bootstrap n1998_int n1998
+0101
+.lincomb n1180 n1648 n1999_int
+2 1
+.bootstrap n1999_int n1999
+0001
+.lincomb n1999 pi57 n2000_int
+2 1
+.bootstrap n2000_int n2000
+0101
+.lincomb n1998 n2000 n2001_int
+2 1
+.bootstrap n2001_int n2001
+0101
+.lincomb n2001 n2001_neg
+-1 1
+.lincomb n615 n1078 n2002_int
+2 1
+.bootstrap n2002_int n2002
+0001
+.lincomb n2002 pi312 n2003_int
+2 1
+.bootstrap n2003_int n2003
+0101
+.lincomb n1181 n1648 n2004_int
+2 1
+.bootstrap n2004_int n2004
+0001
+.lincomb n2004 pi56 n2005_int
+2 1
+.bootstrap n2005_int n2005
+0101
+.lincomb n2003 n2005 n2006_int
+2 1
+.bootstrap n2006_int n2006
+0101
+.lincomb n2006 n2006_neg
+-1 1
+.lincomb n616 n1078 n2007_int
+2 1
+.bootstrap n2007_int n2007
+0001
+.lincomb n2007 pi311 n2008_int
+2 1
+.bootstrap n2008_int n2008
+0101
+.lincomb n1182 n1648 n2009_int
+2 1
+.bootstrap n2009_int n2009
+0001
+.lincomb n2009 pi55 n2010_int
+2 1
+.bootstrap n2010_int n2010
+0101
+.lincomb n2008 n2010 n2011_int
+2 1
+.bootstrap n2011_int n2011
+0101
+.lincomb n2011 n2011_neg
+-1 1
+.lincomb n1183 n1648 n2012_int
+2 1
+.bootstrap n2012_int n2012
+0001
+.lincomb n2012 pi54 n2013_int
+2 1
+.bootstrap n2013_int n2013
+0101
+.lincomb n617 n1078 n2014_int
+2 1
+.bootstrap n2014_int n2014
+0001
+.lincomb n2014 pi310 n2015_int
+2 1
+.bootstrap n2015_int n2015
+0101
+.lincomb n2013 n2015 n2016_int
+2 1
+.bootstrap n2016_int n2016
+0101
+.lincomb n2016 n2016_neg
+-1 1
+.lincomb n618 n1078 n2017_int
+2 1
+.bootstrap n2017_int n2017
+0001
+.lincomb n2017 pi309 n2018_int
+2 1
+.bootstrap n2018_int n2018
+0101
+.lincomb n1184 n1648 n2019_int
+2 1
+.bootstrap n2019_int n2019
+0001
+.lincomb n2019 pi53 n2020_int
+2 1
+.bootstrap n2020_int n2020
+0101
+.lincomb n2018 n2020 n2021_int
+2 1
+.bootstrap n2021_int n2021
+0101
+.lincomb n2021 n2021_neg
+-1 1
+.lincomb n1185 n1648 n2022_int
+2 1
+.bootstrap n2022_int n2022
+0001
+.lincomb n2022 pi52 n2023_int
+2 1
+.bootstrap n2023_int n2023
+0101
+.lincomb n620 n1078 n2024_int
+2 1
+.bootstrap n2024_int n2024
+0001
+.lincomb n2024 pi308 n2025_int
+2 1
+.bootstrap n2025_int n2025
+0101
+.lincomb n2023 n2025 n2026_int
+2 1
+.bootstrap n2026_int n2026
+0101
+.lincomb n2026 n2026_neg
+-1 1
+.lincomb n836 n1078 n2027_int
+2 1
+.bootstrap n2027_int n2027
+0001
+.lincomb n2027 pi307 n2028_int
+2 1
+.bootstrap n2028_int n2028
+0101
+.lincomb n1186 n1648 n2029_int
+2 1
+.bootstrap n2029_int n2029
+0001
+.lincomb n2029 pi51 n2030_int
+2 1
+.bootstrap n2030_int n2030
+0101
+.lincomb n2028 n2030 n2031_int
+2 1
+.bootstrap n2031_int n2031
+0101
+.lincomb n2031 n2031_neg
+-1 1
+.lincomb n831 n1078 n2032_int
+2 1
+.bootstrap n2032_int n2032
+0001
+.lincomb n2032 pi306 n2033_int
+2 1
+.bootstrap n2033_int n2033
+0101
+.lincomb n1187 n1648 n2034_int
+2 1
+.bootstrap n2034_int n2034
+0001
+.lincomb n2034 pi50 n2035_int
+2 1
+.bootstrap n2035_int n2035
+0101
+.lincomb n2033 n2035 n2036_int
+2 1
+.bootstrap n2036_int n2036
+0101
+.lincomb n2036 n2036_neg
+-1 1
+.lincomb n1189 n1648 n2037_int
+2 1
+.bootstrap n2037_int n2037
+0001
+.lincomb n2037 pi49 n2038_int
+2 1
+.bootstrap n2038_int n2038
+0101
+.lincomb n826 n1078 n2039_int
+2 1
+.bootstrap n2039_int n2039
+0001
+.lincomb n2039 pi305 n2040_int
+2 1
+.bootstrap n2040_int n2040
+0101
+.lincomb n2038 n2040 n2041_int
+2 1
+.bootstrap n2041_int n2041
+0101
+.lincomb n2041 n2041_neg
+-1 1
+.lincomb n821 n1078 n2042_int
+2 1
+.bootstrap n2042_int n2042
+0001
+.lincomb n2042 pi304 n2043_int
+2 1
+.bootstrap n2043_int n2043
+0101
+.lincomb n1390 n1648 n2044_int
+2 1
+.bootstrap n2044_int n2044
+0001
+.lincomb n2044 pi48 n2045_int
+2 1
+.bootstrap n2045_int n2045
+0101
+.lincomb n2043 n2045 n2046_int
+2 1
+.bootstrap n2046_int n2046
+0101
+.lincomb n2046 n2046_neg
+-1 1
+.lincomb n812 n1078 n2047_int
+2 1
+.bootstrap n2047_int n2047
+0001
+.lincomb n2047 pi303 n2048_int
+2 1
+.bootstrap n2048_int n2048
+0101
+.lincomb n1381 n1648 n2049_int
+2 1
+.bootstrap n2049_int n2049
+0001
+.lincomb n2049 pi47 n2050_int
+2 1
+.bootstrap n2050_int n2050
+0101
+.lincomb n2048 n2050 n2051_int
+2 1
+.bootstrap n2051_int n2051
+0101
+.lincomb n2051 n2051_neg
+-1 1
+.lincomb n813 n1078 n2052_int
+2 1
+.bootstrap n2052_int n2052
+0001
+.lincomb n2052 pi302 n2053_int
+2 1
+.bootstrap n2053_int n2053
+0101
+.lincomb n1382 n1648 n2054_int
+2 1
+.bootstrap n2054_int n2054
+0001
+.lincomb n2054 pi46 n2055_int
+2 1
+.bootstrap n2055_int n2055
+0101
+.lincomb n2053 n2055 n2056_int
+2 1
+.bootstrap n2056_int n2056
+0101
+.lincomb n2056 n2056_neg
+-1 1
+.lincomb n807 n1078 n2057_int
+2 1
+.bootstrap n2057_int n2057
+0001
+.lincomb n2057 pi301 n2058_int
+2 1
+.bootstrap n2058_int n2058
+0101
+.lincomb n1376 n1648 n2059_int
+2 1
+.bootstrap n2059_int n2059
+0001
+.lincomb n2059 pi45 n2060_int
+2 1
+.bootstrap n2060_int n2060
+0101
+.lincomb n2058 n2060 n2061_int
+2 1
+.bootstrap n2061_int n2061
+0101
+.lincomb n2061 n2061_neg
+-1 1
+.lincomb n1368 n1648 n2062_int
+2 1
+.bootstrap n2062_int n2062
+0001
+.lincomb n2062 pi44 n2063_int
+2 1
+.bootstrap n2063_int n2063
+0101
+.lincomb n799 n1078 n2064_int
+2 1
+.bootstrap n2064_int n2064
+0001
+.lincomb n2064 pi300 n2065_int
+2 1
+.bootstrap n2065_int n2065
+0101
+.lincomb n2063 n2065 n2066_int
+2 1
+.bootstrap n2066_int n2066
+0101
+.lincomb n2066 n2066_neg
+-1 1
+.lincomb n790 n1078 n2067_int
+2 1
+.bootstrap n2067_int n2067
+0001
+.lincomb n2067 pi299 n2068_int
+2 1
+.bootstrap n2068_int n2068
+0101
+.lincomb n1359 n1648 n2069_int
+2 1
+.bootstrap n2069_int n2069
+0001
+.lincomb n2069 pi43 n2070_int
+2 1
+.bootstrap n2070_int n2070
+0101
+.lincomb n2068 n2070 n2071_int
+2 1
+.bootstrap n2071_int n2071
+0101
+.lincomb n2071 n2071_neg
+-1 1
+.lincomb n791 n1078 n2072_int
+2 1
+.bootstrap n2072_int n2072
+0001
+.lincomb n2072 pi298 n2073_int
+2 1
+.bootstrap n2073_int n2073
+0101
+.lincomb n1360 n1648 n2074_int
+2 1
+.bootstrap n2074_int n2074
+0001
+.lincomb n2074 pi42 n2075_int
+2 1
+.bootstrap n2075_int n2075
+0101
+.lincomb n2073 n2075 n2076_int
+2 1
+.bootstrap n2076_int n2076
+0101
+.lincomb n2076 n2076_neg
+-1 1
+.lincomb n631 n1078 n2077_int
+2 1
+.bootstrap n2077_int n2077
+0001
+.lincomb n2077 pi297 n2078_int
+2 1
+.bootstrap n2078_int n2078
+0101
+.lincomb n1354 n1648 n2079_int
+2 1
+.bootstrap n2079_int n2079
+0001
+.lincomb n2079 pi41 n2080_int
+2 1
+.bootstrap n2080_int n2080
+0101
+.lincomb n2078 n2080 n2081_int
+2 1
+.bootstrap n2081_int n2081
+0101
+.lincomb n2081 n2081_neg
+-1 1
+.lincomb n628 n1078 n2082_int
+2 1
+.bootstrap n2082_int n2082
+0001
+.lincomb n2082 pi296 n2083_int
+2 1
+.bootstrap n2083_int n2083
+0101
+.lincomb n1347 n1648 n2084_int
+2 1
+.bootstrap n2084_int n2084
+0001
+.lincomb n2084 pi40 n2085_int
+2 1
+.bootstrap n2085_int n2085
+0101
+.lincomb n2083 n2085 n2086_int
+2 1
+.bootstrap n2086_int n2086
+0101
+.lincomb n2086 n2086_neg
+-1 1
+.lincomb n635 n1078 n2087_int
+2 1
+.bootstrap n2087_int n2087
+0001
+.lincomb n2087 pi295 n2088_int
+2 1
+.bootstrap n2088_int n2088
+0101
+.lincomb n1193 n1648 n2089_int
+2 1
+.bootstrap n2089_int n2089
+0001
+.lincomb n2089 pi39 n2090_int
+2 1
+.bootstrap n2090_int n2090
+0101
+.lincomb n2088 n2090 n2091_int
+2 1
+.bootstrap n2091_int n2091
+0101
+.lincomb n2091 n2091_neg
+-1 1
+.lincomb n1194 n1648 n2092_int
+2 1
+.bootstrap n2092_int n2092
+0001
+.lincomb n2092 pi38 n2093_int
+2 1
+.bootstrap n2093_int n2093
+0101
+.lincomb n636 n1078 n2094_int
+2 1
+.bootstrap n2094_int n2094
+0001
+.lincomb n2094 pi294 n2095_int
+2 1
+.bootstrap n2095_int n2095
+0101
+.lincomb n2093 n2095 n2096_int
+2 1
+.bootstrap n2096_int n2096
+0101
+.lincomb n2096 n2096_neg
+-1 1
+.lincomb n637 n1078 n2097_int
+2 1
+.bootstrap n2097_int n2097
+0001
+.lincomb n2097 pi293 n2098_int
+2 1
+.bootstrap n2098_int n2098
+0101
+.lincomb n1195 n1648 n2099_int
+2 1
+.bootstrap n2099_int n2099
+0001
+.lincomb n2099 pi37 n2100_int
+2 1
+.bootstrap n2100_int n2100
+0101
+.lincomb n2098 n2100 n2101_int
+2 1
+.bootstrap n2101_int n2101
+0101
+.lincomb n2101 n2101_neg
+-1 1
+.lincomb n1196 n1648 n2102_int
+2 1
+.bootstrap n2102_int n2102
+0001
+.lincomb n2102 pi36 n2103_int
+2 1
+.bootstrap n2103_int n2103
+0101
+.lincomb n638 n1078 n2104_int
+2 1
+.bootstrap n2104_int n2104
+0001
+.lincomb n2104 pi292 n2105_int
+2 1
+.bootstrap n2105_int n2105
+0101
+.lincomb n2103 n2105 n2106_int
+2 1
+.bootstrap n2106_int n2106
+0101
+.lincomb n2106 n2106_neg
+-1 1
+.lincomb n1197 n1648 n2107_int
+2 1
+.bootstrap n2107_int n2107
+0001
+.lincomb n2107 pi35 n2108_int
+2 1
+.bootstrap n2108_int n2108
+0101
+.lincomb n639 n1078 n2109_int
+2 1
+.bootstrap n2109_int n2109
+0001
+.lincomb n2109 pi291 n2110_int
+2 1
+.bootstrap n2110_int n2110
+0101
+.lincomb n2108 n2110 n2111_int
+2 1
+.bootstrap n2111_int n2111
+0101
+.lincomb n2111 n2111_neg
+-1 1
+.lincomb n640 n1078 n2112_int
+2 1
+.bootstrap n2112_int n2112
+0001
+.lincomb n2112 pi290 n2113_int
+2 1
+.bootstrap n2113_int n2113
+0101
+.lincomb n1198 n1648 n2114_int
+2 1
+.bootstrap n2114_int n2114
+0001
+.lincomb n2114 pi34 n2115_int
+2 1
+.bootstrap n2115_int n2115
+0101
+.lincomb n2113 n2115 n2116_int
+2 1
+.bootstrap n2116_int n2116
+0101
+.lincomb n2116 n2116_neg
+-1 1
+.lincomb n641 n1078 n2117_int
+2 1
+.bootstrap n2117_int n2117
+0001
+.lincomb n2117 pi289 n2118_int
+2 1
+.bootstrap n2118_int n2118
+0101
+.lincomb n1199 n1648 n2119_int
+2 1
+.bootstrap n2119_int n2119
+0001
+.lincomb n2119 pi33 n2120_int
+2 1
+.bootstrap n2120_int n2120
+0101
+.lincomb n2118 n2120 n2121_int
+2 1
+.bootstrap n2121_int n2121
+0101
+.lincomb n2121 n2121_neg
+-1 1
+.lincomb n642 n1078 n2122_int
+2 1
+.bootstrap n2122_int n2122
+0001
+.lincomb n2122 pi288 n2123_int
+2 1
+.bootstrap n2123_int n2123
+0101
+.lincomb n1200 n1648 n2124_int
+2 1
+.bootstrap n2124_int n2124
+0001
+.lincomb n2124 pi32 n2125_int
+2 1
+.bootstrap n2125_int n2125
+0101
+.lincomb n2123 n2125 n2126_int
+2 1
+.bootstrap n2126_int n2126
+0101
+.lincomb n2126 n2126_neg
+-1 1
+.lincomb n1201 n1648 n2127_int
+2 1
+.bootstrap n2127_int n2127
+0001
+.lincomb n2127 pi31 n2128_int
+2 1
+.bootstrap n2128_int n2128
+0101
+.lincomb n643 n1078 n2129_int
+2 1
+.bootstrap n2129_int n2129
+0001
+.lincomb n2129 pi287 n2130_int
+2 1
+.bootstrap n2130_int n2130
+0101
+.lincomb n2128 n2130 n2131_int
+2 1
+.bootstrap n2131_int n2131
+0101
+.lincomb n2131 n2131_neg
+-1 1
+.lincomb n644 n1078 n2132_int
+2 1
+.bootstrap n2132_int n2132
+0001
+.lincomb n2132 pi286 n2133_int
+2 1
+.bootstrap n2133_int n2133
+0101
+.lincomb n1202 n1648 n2134_int
+2 1
+.bootstrap n2134_int n2134
+0001
+.lincomb n2134 pi30 n2135_int
+2 1
+.bootstrap n2135_int n2135
+0101
+.lincomb n2133 n2135 n2136_int
+2 1
+.bootstrap n2136_int n2136
+0101
+.lincomb n2136 n2136_neg
+-1 1
+.lincomb n645 n1078 n2137_int
+2 1
+.bootstrap n2137_int n2137
+0001
+.lincomb n2137 pi285 n2138_int
+2 1
+.bootstrap n2138_int n2138
+0101
+.lincomb n1203 n1648 n2139_int
+2 1
+.bootstrap n2139_int n2139
+0001
+.lincomb n2139 pi29 n2140_int
+2 1
+.bootstrap n2140_int n2140
+0101
+.lincomb n2138 n2140 n2141_int
+2 1
+.bootstrap n2141_int n2141
+0101
+.lincomb n2141 n2141_neg
+-1 1
+.lincomb n1204 n1648 n2142_int
+2 1
+.bootstrap n2142_int n2142
+0001
+.lincomb n2142 pi28 n2143_int
+2 1
+.bootstrap n2143_int n2143
+0101
+.lincomb n646 n1078 n2144_int
+2 1
+.bootstrap n2144_int n2144
+0001
+.lincomb n2144 pi284 n2145_int
+2 1
+.bootstrap n2145_int n2145
+0101
+.lincomb n2143 n2145 n2146_int
+2 1
+.bootstrap n2146_int n2146
+0101
+.lincomb n2146 n2146_neg
+-1 1
+.lincomb n647 n1078 n2147_int
+2 1
+.bootstrap n2147_int n2147
+0001
+.lincomb n2147 pi283 n2148_int
+2 1
+.bootstrap n2148_int n2148
+0101
+.lincomb n1205 n1648 n2149_int
+2 1
+.bootstrap n2149_int n2149
+0001
+.lincomb n2149 pi27 n2150_int
+2 1
+.bootstrap n2150_int n2150
+0101
+.lincomb n2148 n2150 n2151_int
+2 1
+.bootstrap n2151_int n2151
+0101
+.lincomb n2151 n2151_neg
+-1 1
+.lincomb n648 n1078 n2152_int
+2 1
+.bootstrap n2152_int n2152
+0001
+.lincomb n2152 pi282 n2153_int
+2 1
+.bootstrap n2153_int n2153
+0101
+.lincomb n1206 n1648 n2154_int
+2 1
+.bootstrap n2154_int n2154
+0001
+.lincomb n2154 pi26 n2155_int
+2 1
+.bootstrap n2155_int n2155
+0101
+.lincomb n2153 n2155 n2156_int
+2 1
+.bootstrap n2156_int n2156
+0101
+.lincomb n2156 n2156_neg
+-1 1
+.lincomb n649 n1078 n2157_int
+2 1
+.bootstrap n2157_int n2157
+0001
+.lincomb n2157 pi281 n2158_int
+2 1
+.bootstrap n2158_int n2158
+0101
+.lincomb n1207 n1648 n2159_int
+2 1
+.bootstrap n2159_int n2159
+0001
+.lincomb n2159 pi25 n2160_int
+2 1
+.bootstrap n2160_int n2160
+0101
+.lincomb n2158 n2160 n2161_int
+2 1
+.bootstrap n2161_int n2161
+0101
+.lincomb n2161 n2161_neg
+-1 1
+.lincomb n650 n1078 n2162_int
+2 1
+.bootstrap n2162_int n2162
+0001
+.lincomb n2162 pi280 n2163_int
+2 1
+.bootstrap n2163_int n2163
+0101
+.lincomb n1208 n1648 n2164_int
+2 1
+.bootstrap n2164_int n2164
+0001
+.lincomb n2164 pi24 n2165_int
+2 1
+.bootstrap n2165_int n2165
+0101
+.lincomb n2163 n2165 n2166_int
+2 1
+.bootstrap n2166_int n2166
+0101
+.lincomb n2166 n2166_neg
+-1 1
+.lincomb n1209 n1648 n2167_int
+2 1
+.bootstrap n2167_int n2167
+0001
+.lincomb n2167 pi23 n2168_int
+2 1
+.bootstrap n2168_int n2168
+0101
+.lincomb n651 n1078 n2169_int
+2 1
+.bootstrap n2169_int n2169
+0001
+.lincomb n2169 pi279 n2170_int
+2 1
+.bootstrap n2170_int n2170
+0101
+.lincomb n2168 n2170 n2171_int
+2 1
+.bootstrap n2171_int n2171
+0101
+.lincomb n2171 n2171_neg
+-1 1
+.lincomb n1210 n1648 n2172_int
+2 1
+.bootstrap n2172_int n2172
+0001
+.lincomb n2172 pi22 n2173_int
+2 1
+.bootstrap n2173_int n2173
+0101
+.lincomb n652 n1078 n2174_int
+2 1
+.bootstrap n2174_int n2174
+0001
+.lincomb n2174 pi278 n2175_int
+2 1
+.bootstrap n2175_int n2175
+0101
+.lincomb n2173 n2175 n2176_int
+2 1
+.bootstrap n2176_int n2176
+0101
+.lincomb n2176 n2176_neg
+-1 1
+.lincomb n653 n1078 n2177_int
+2 1
+.bootstrap n2177_int n2177
+0001
+.lincomb n2177 pi277 n2178_int
+2 1
+.bootstrap n2178_int n2178
+0101
+.lincomb n1211 n1648 n2179_int
+2 1
+.bootstrap n2179_int n2179
+0001
+.lincomb n2179 pi21 n2180_int
+2 1
+.bootstrap n2180_int n2180
+0101
+.lincomb n2178 n2180 n2181_int
+2 1
+.bootstrap n2181_int n2181
+0101
+.lincomb n2181 n2181_neg
+-1 1
+.lincomb n1212 n1648 n2182_int
+2 1
+.bootstrap n2182_int n2182
+0001
+.lincomb n2182 pi20 n2183_int
+2 1
+.bootstrap n2183_int n2183
+0101
+.lincomb n654 n1078 n2184_int
+2 1
+.bootstrap n2184_int n2184
+0001
+.lincomb n2184 pi276 n2185_int
+2 1
+.bootstrap n2185_int n2185
+0101
+.lincomb n2183 n2185 n2186_int
+2 1
+.bootstrap n2186_int n2186
+0101
+.lincomb n2186 n2186_neg
+-1 1
+.lincomb n655 n1078 n2187_int
+2 1
+.bootstrap n2187_int n2187
+0001
+.lincomb n2187 pi275 n2188_int
+2 1
+.bootstrap n2188_int n2188
+0101
+.lincomb n1213 n1648 n2189_int
+2 1
+.bootstrap n2189_int n2189
+0001
+.lincomb n2189 pi19 n2190_int
+2 1
+.bootstrap n2190_int n2190
+0101
+.lincomb n2188 n2190 n2191_int
+2 1
+.bootstrap n2191_int n2191
+0101
+.lincomb n2191 n2191_neg
+-1 1
+.lincomb n656 n1078 n2192_int
+2 1
+.bootstrap n2192_int n2192
+0001
+.lincomb n2192 pi274 n2193_int
+2 1
+.bootstrap n2193_int n2193
+0101
+.lincomb n1214 n1648 n2194_int
+2 1
+.bootstrap n2194_int n2194
+0001
+.lincomb n2194 pi18 n2195_int
+2 1
+.bootstrap n2195_int n2195
+0101
+.lincomb n2193 n2195 n2196_int
+2 1
+.bootstrap n2196_int n2196
+0101
+.lincomb n2196 n2196_neg
+-1 1
+.lincomb n1215 n1648 n2197_int
+2 1
+.bootstrap n2197_int n2197
+0001
+.lincomb n2197 pi17 n2198_int
+2 1
+.bootstrap n2198_int n2198
+0101
+.lincomb n657 n1078 n2199_int
+2 1
+.bootstrap n2199_int n2199
+0001
+.lincomb n2199 pi273 n2200_int
+2 1
+.bootstrap n2200_int n2200
+0101
+.lincomb n2198 n2200 n2201_int
+2 1
+.bootstrap n2201_int n2201
+0101
+.lincomb n2201 n2201_neg
+-1 1
+.lincomb n658 n1078 n2202_int
+2 1
+.bootstrap n2202_int n2202
+0001
+.lincomb n2202 pi272 n2203_int
+2 1
+.bootstrap n2203_int n2203
+0101
+.lincomb n1216 n1648 n2204_int
+2 1
+.bootstrap n2204_int n2204
+0001
+.lincomb n2204 pi16 n2205_int
+2 1
+.bootstrap n2205_int n2205
+0101
+.lincomb n2203 n2205 n2206_int
+2 1
+.bootstrap n2206_int n2206
+0101
+.lincomb n2206 n2206_neg
+-1 1
+.lincomb n659 n1078 n2207_int
+2 1
+.bootstrap n2207_int n2207
+0001
+.lincomb n2207 pi271 n2208_int
+2 1
+.bootstrap n2208_int n2208
+0101
+.lincomb n1217 n1648 n2209_int
+2 1
+.bootstrap n2209_int n2209
+0001
+.lincomb n2209 pi15 n2210_int
+2 1
+.bootstrap n2210_int n2210
+0101
+.lincomb n2208 n2210 n2211_int
+2 1
+.bootstrap n2211_int n2211
+0101
+.lincomb n2211 n2211_neg
+-1 1
+.lincomb n1218 n1648 n2212_int
+2 1
+.bootstrap n2212_int n2212
+0001
+.lincomb n2212 pi14 n2213_int
+2 1
+.bootstrap n2213_int n2213
+0101
+.lincomb n660 n1078 n2214_int
+2 1
+.bootstrap n2214_int n2214
+0001
+.lincomb n2214 pi270 n2215_int
+2 1
+.bootstrap n2215_int n2215
+0101
+.lincomb n2213 n2215 n2216_int
+2 1
+.bootstrap n2216_int n2216
+0101
+.lincomb n2216 n2216_neg
+-1 1
+.lincomb n1219 n1648 n2217_int
+2 1
+.bootstrap n2217_int n2217
+0001
+.lincomb n2217 pi13 n2218_int
+2 1
+.bootstrap n2218_int n2218
+0101
+.lincomb n661 n1078 n2219_int
+2 1
+.bootstrap n2219_int n2219
+0001
+.lincomb n2219 pi269 n2220_int
+2 1
+.bootstrap n2220_int n2220
+0101
+.lincomb n2218 n2220 n2221_int
+2 1
+.bootstrap n2221_int n2221
+0101
+.lincomb n2221 n2221_neg
+-1 1
+.lincomb n662 n1078 n2222_int
+2 1
+.bootstrap n2222_int n2222
+0001
+.lincomb n2222 pi268 n2223_int
+2 1
+.bootstrap n2223_int n2223
+0101
+.lincomb n1220 n1648 n2224_int
+2 1
+.bootstrap n2224_int n2224
+0001
+.lincomb n2224 pi12 n2225_int
+2 1
+.bootstrap n2225_int n2225
+0101
+.lincomb n2223 n2225 n2226_int
+2 1
+.bootstrap n2226_int n2226
+0101
+.lincomb n2226 n2226_neg
+-1 1
+.lincomb n1221 n1648 n2227_int
+2 1
+.bootstrap n2227_int n2227
+0001
+.lincomb n2227 pi11 n2228_int
+2 1
+.bootstrap n2228_int n2228
+0101
+.lincomb n663 n1078 n2229_int
+2 1
+.bootstrap n2229_int n2229
+0001
+.lincomb n2229 pi267 n2230_int
+2 1
+.bootstrap n2230_int n2230
+0101
+.lincomb n2228 n2230 n2231_int
+2 1
+.bootstrap n2231_int n2231
+0101
+.lincomb n2231 n2231_neg
+-1 1
+.lincomb n1222 n1648 n2232_int
+2 1
+.bootstrap n2232_int n2232
+0001
+.lincomb n2232 pi10 n2233_int
+2 1
+.bootstrap n2233_int n2233
+0101
+.lincomb n664 n1078 n2234_int
+2 1
+.bootstrap n2234_int n2234
+0001
+.lincomb n2234 pi266 n2235_int
+2 1
+.bootstrap n2235_int n2235
+0101
+.lincomb n2233 n2235 n2236_int
+2 1
+.bootstrap n2236_int n2236
+0101
+.lincomb n2236 n2236_neg
+-1 1
+.lincomb n1223 n1648 n2237_int
+2 1
+.bootstrap n2237_int n2237
+0001
+.lincomb n2237 pi9 n2238_int
+2 1
+.bootstrap n2238_int n2238
+0101
+.lincomb n665 n1078 n2239_int
+2 1
+.bootstrap n2239_int n2239
+0001
+.lincomb n2239 pi265 n2240_int
+2 1
+.bootstrap n2240_int n2240
+0101
+.lincomb n2238 n2240 n2241_int
+2 1
+.bootstrap n2241_int n2241
+0101
+.lincomb n2241 n2241_neg
+-1 1
+.lincomb n666 n1078 n2242_int
+2 1
+.bootstrap n2242_int n2242
+0001
+.lincomb n2242 pi264 n2243_int
+2 1
+.bootstrap n2243_int n2243
+0101
+.lincomb n1224 n1648 n2244_int
+2 1
+.bootstrap n2244_int n2244
+0001
+.lincomb n2244 pi8 n2245_int
+2 1
+.bootstrap n2245_int n2245
+0101
+.lincomb n2243 n2245 n2246_int
+2 1
+.bootstrap n2246_int n2246
+0101
+.lincomb n2246 n2246_neg
+-1 1
+.lincomb n1225 n1648 n2247_int
+2 1
+.bootstrap n2247_int n2247
+0001
+.lincomb n2247 pi7 n2248_int
+2 1
+.bootstrap n2248_int n2248
+0101
+.lincomb n667 n1078 n2249_int
+2 1
+.bootstrap n2249_int n2249
+0001
+.lincomb n2249 pi263 n2250_int
+2 1
+.bootstrap n2250_int n2250
+0101
+.lincomb n2248 n2250 n2251_int
+2 1
+.bootstrap n2251_int n2251
+0101
+.lincomb n2251 n2251_neg
+-1 1
+.lincomb n668 n1078 n2252_int
+2 1
+.bootstrap n2252_int n2252
+0001
+.lincomb n2252 pi262 n2253_int
+2 1
+.bootstrap n2253_int n2253
+0101
+.lincomb n1226 n1648 n2254_int
+2 1
+.bootstrap n2254_int n2254
+0001
+.lincomb n2254 pi6 n2255_int
+2 1
+.bootstrap n2255_int n2255
+0101
+.lincomb n2253 n2255 n2256_int
+2 1
+.bootstrap n2256_int n2256
+0101
+.lincomb n2256 n2256_neg
+-1 1
+.lincomb n669 n1078 n2257_int
+2 1
+.bootstrap n2257_int n2257
+0001
+.lincomb n2257 pi261 n2258_int
+2 1
+.bootstrap n2258_int n2258
+0101
+.lincomb n1227 n1648 n2259_int
+2 1
+.bootstrap n2259_int n2259
+0001
+.lincomb n2259 pi5 n2260_int
+2 1
+.bootstrap n2260_int n2260
+0101
+.lincomb n2258 n2260 n2261_int
+2 1
+.bootstrap n2261_int n2261
+0101
+.lincomb n2261 n2261_neg
+-1 1
+.lincomb n670 n1078 n2262_int
+2 1
+.bootstrap n2262_int n2262
+0001
+.lincomb n2262 pi260 n2263_int
+2 1
+.bootstrap n2263_int n2263
+0101
+.lincomb n1228 n1648 n2264_int
+2 1
+.bootstrap n2264_int n2264
+0001
+.lincomb n2264 pi4 n2265_int
+2 1
+.bootstrap n2265_int n2265
+0101
+.lincomb n2263 n2265 n2266_int
+2 1
+.bootstrap n2266_int n2266
+0101
+.lincomb n2266 n2266_neg
+-1 1
+.lincomb n1229 n1648 n2267_int
+2 1
+.bootstrap n2267_int n2267
+0001
+.lincomb n2267 pi3 n2268_int
+2 1
+.bootstrap n2268_int n2268
+0101
+.lincomb n671 n1078 n2269_int
+2 1
+.bootstrap n2269_int n2269
+0001
+.lincomb n2269 pi259 n2270_int
+2 1
+.bootstrap n2270_int n2270
+0101
+.lincomb n2268 n2270 n2271_int
+2 1
+.bootstrap n2271_int n2271
+0101
+.lincomb n2271 n2271_neg
+-1 1
+.lincomb n1230 n1648 n2272_int
+2 1
+.bootstrap n2272_int n2272
+0001
+.lincomb n2272 pi2 n2273_int
+2 1
+.bootstrap n2273_int n2273
+0101
+.lincomb n672 n1078 n2274_int
+2 1
+.bootstrap n2274_int n2274
+0001
+.lincomb n2274 pi258 n2275_int
+2 1
+.bootstrap n2275_int n2275
+0101
+.lincomb n2273 n2275 n2276_int
+2 1
+.bootstrap n2276_int n2276
+0101
+.lincomb n2276 n2276_neg
+-1 1
+.lincomb pi385 pi257 n2277_int
+2 1
+.bootstrap n2277_int n2277
+0101
+.lincomb n1078 n2277 n2278_int
+2 1
+.bootstrap n2278_int n2278
+0001
+.lincomb n2278 pi257 n2279_int
+2 1
+.bootstrap n2279_int n2279
+0101
+.lincomb n2279 n2279_neg
+-1 1
+.lincomb pi129 pi1 n2280_int
+2 1
+.bootstrap n2280_int n2280
+0101
+.lincomb n1648 n2280 n2281_int
+2 1
+.bootstrap n2281_int n2281
+0001
+.lincomb n2281 pi1 n2282_int
+2 1
+.bootstrap n2282_int n2282
+0101
+.lincomb n2279_neg n2282 n2283_int
+2 1
+.bootstrap n2283_int n2283
+0001
+.lincomb n2283 n2273 n2284_int
+2 1
+.bootstrap n2284_int n2284
+0101
+.lincomb n2276_neg n2284 n2285_int
+2 1
+.bootstrap n2285_int n2285
+0001
+.lincomb n2285 n2273 n2286_int
+2 1
+.bootstrap n2286_int n2286
+0101
+.lincomb n2286 n2268 n2287_int
+2 1
+.bootstrap n2287_int n2287
+0101
+.lincomb n2271_neg n2287 n2288_int
+2 1
+.bootstrap n2288_int n2288
+0001
+.lincomb n2288 n2268 n2289_int
+2 1
+.bootstrap n2289_int n2289
+0101
+.lincomb n2289 n2265 n2290_int
+2 1
+.bootstrap n2290_int n2290
+0101
+.lincomb n2290 n2290_neg
+-1 1
+.lincomb n2266_neg n2290_neg n2291_int
+2 1
+.bootstrap n2291_int n2291
+0001
+.lincomb n2291 n2263 n2292_int
+2 1
+.bootstrap n2292_int n2292
+0101
+.lincomb n2292 n2258 n2293_int
+2 1
+.bootstrap n2293_int n2293
+0101
+.lincomb n2293 n2293_neg
+-1 1
+.lincomb n2261_neg n2293_neg n2294_int
+2 1
+.bootstrap n2294_int n2294
+0001
+.lincomb n2294 n2260 n2295_int
+2 1
+.bootstrap n2295_int n2295
+0101
+.lincomb n2295 n2253 n2296_int
+2 1
+.bootstrap n2296_int n2296
+0101
+.lincomb n2296 n2296_neg
+-1 1
+.lincomb n2256_neg n2296_neg n2297_int
+2 1
+.bootstrap n2297_int n2297
+0001
+.lincomb n2297 n2253 n2298_int
+2 1
+.bootstrap n2298_int n2298
+0101
+.lincomb n2298 n2248 n2299_int
+2 1
+.bootstrap n2299_int n2299
+0101
+.lincomb n2251_neg n2299 n2300_int
+2 1
+.bootstrap n2300_int n2300
+0001
+.lincomb n2300 n2250 n2301_int
+2 1
+.bootstrap n2301_int n2301
+0101
+.lincomb n2301 n2243 n2302_int
+2 1
+.bootstrap n2302_int n2302
+0101
+.lincomb n2302 n2302_neg
+-1 1
+.lincomb n2246_neg n2302_neg n2303_int
+2 1
+.bootstrap n2303_int n2303
+0001
+.lincomb n2303 n2245 n2304_int
+2 1
+.bootstrap n2304_int n2304
+0101
+.lincomb n2304 n2238 n2305_int
+2 1
+.bootstrap n2305_int n2305
+0101
+.lincomb n2241_neg n2305 n2306_int
+2 1
+.bootstrap n2306_int n2306
+0001
+.lincomb n2306 n2238 n2307_int
+2 1
+.bootstrap n2307_int n2307
+0101
+.lincomb n2307 n2233 n2308_int
+2 1
+.bootstrap n2308_int n2308
+0101
+.lincomb n2236_neg n2308 n2309_int
+2 1
+.bootstrap n2309_int n2309
+0001
+.lincomb n2309 n2233 n2310_int
+2 1
+.bootstrap n2310_int n2310
+0101
+.lincomb n2310 n2230 n2311_int
+2 1
+.bootstrap n2311_int n2311
+0101
+.lincomb n2311 n2311_neg
+-1 1
+.lincomb n2231_neg n2311_neg n2312_int
+2 1
+.bootstrap n2312_int n2312
+0001
+.lincomb n2312 n2230 n2313_int
+2 1
+.bootstrap n2313_int n2313
+0101
+.lincomb n2313 n2223 n2314_int
+2 1
+.bootstrap n2314_int n2314
+0101
+.lincomb n2226_neg n2314 n2315_int
+2 1
+.bootstrap n2315_int n2315
+0001
+.lincomb n2315 n2223 n2316_int
+2 1
+.bootstrap n2316_int n2316
+0101
+.lincomb n2316 n2220 n2317_int
+2 1
+.bootstrap n2317_int n2317
+0101
+.lincomb n2221_neg n2317 n2318_int
+2 1
+.bootstrap n2318_int n2318
+0001
+.lincomb n2318 n2220 n2319_int
+2 1
+.bootstrap n2319_int n2319
+0101
+.lincomb n2319 n2213 n2320_int
+2 1
+.bootstrap n2320_int n2320
+0101
+.lincomb n2320 n2320_neg
+-1 1
+.lincomb n2216_neg n2320_neg n2321_int
+2 1
+.bootstrap n2321_int n2321
+0001
+.lincomb n2321 n2213 n2322_int
+2 1
+.bootstrap n2322_int n2322
+0101
+.lincomb n2322 n2210 n2323_int
+2 1
+.bootstrap n2323_int n2323
+0101
+.lincomb n2323 n2323_neg
+-1 1
+.lincomb n2211_neg n2323_neg n2324_int
+2 1
+.bootstrap n2324_int n2324
+0001
+.lincomb n2324 n2208 n2325_int
+2 1
+.bootstrap n2325_int n2325
+0101
+.lincomb n2325 n2203 n2326_int
+2 1
+.bootstrap n2326_int n2326
+0101
+.lincomb n2326 n2326_neg
+-1 1
+.lincomb n2206_neg n2326_neg n2327_int
+2 1
+.bootstrap n2327_int n2327
+0001
+.lincomb n2327 n2205 n2328_int
+2 1
+.bootstrap n2328_int n2328
+0101
+.lincomb n2328 n2198 n2329_int
+2 1
+.bootstrap n2329_int n2329
+0101
+.lincomb n2201_neg n2329 n2330_int
+2 1
+.bootstrap n2330_int n2330
+0001
+.lincomb n2330 n2198 n2331_int
+2 1
+.bootstrap n2331_int n2331
+0101
+.lincomb n2331 n2193 n2332_int
+2 1
+.bootstrap n2332_int n2332
+0101
+.lincomb n2196_neg n2332 n2333_int
+2 1
+.bootstrap n2333_int n2333
+0001
+.lincomb n2333 n2195 n2334_int
+2 1
+.bootstrap n2334_int n2334
+0101
+.lincomb n2334 n2188 n2335_int
+2 1
+.bootstrap n2335_int n2335
+0101
+.lincomb n2335 n2335_neg
+-1 1
+.lincomb n2191_neg n2335_neg n2336_int
+2 1
+.bootstrap n2336_int n2336
+0001
+.lincomb n2336 n2188 n2337_int
+2 1
+.bootstrap n2337_int n2337
+0101
+.lincomb n2337 n2183 n2338_int
+2 1
+.bootstrap n2338_int n2338
+0101
+.lincomb n2186_neg n2338 n2339_int
+2 1
+.bootstrap n2339_int n2339
+0001
+.lincomb n2339 n2185 n2340_int
+2 1
+.bootstrap n2340_int n2340
+0101
+.lincomb n2340 n2178 n2341_int
+2 1
+.bootstrap n2341_int n2341
+0101
+.lincomb n2341 n2341_neg
+-1 1
+.lincomb n2181_neg n2341_neg n2342_int
+2 1
+.bootstrap n2342_int n2342
+0001
+.lincomb n2342 n2180 n2343_int
+2 1
+.bootstrap n2343_int n2343
+0101
+.lincomb n2343 n2173 n2344_int
+2 1
+.bootstrap n2344_int n2344
+0101
+.lincomb n2176_neg n2344 n2345_int
+2 1
+.bootstrap n2345_int n2345
+0001
+.lincomb n2345 n2173 n2346_int
+2 1
+.bootstrap n2346_int n2346
+0101
+.lincomb n2346 n2168 n2347_int
+2 1
+.bootstrap n2347_int n2347
+0101
+.lincomb n2171_neg n2347 n2348_int
+2 1
+.bootstrap n2348_int n2348
+0001
+.lincomb n2348 n2168 n2349_int
+2 1
+.bootstrap n2349_int n2349
+0101
+.lincomb n2349 n2165 n2350_int
+2 1
+.bootstrap n2350_int n2350
+0101
+.lincomb n2350 n2350_neg
+-1 1
+.lincomb n2166_neg n2350_neg n2351_int
+2 1
+.bootstrap n2351_int n2351
+0001
+.lincomb n2351 n2163 n2352_int
+2 1
+.bootstrap n2352_int n2352
+0101
+.lincomb n2352 n2158 n2353_int
+2 1
+.bootstrap n2353_int n2353
+0101
+.lincomb n2353 n2353_neg
+-1 1
+.lincomb n2161_neg n2353_neg n2354_int
+2 1
+.bootstrap n2354_int n2354
+0001
+.lincomb n2354 n2160 n2355_int
+2 1
+.bootstrap n2355_int n2355
+0101
+.lincomb n2355 n2153 n2356_int
+2 1
+.bootstrap n2356_int n2356
+0101
+.lincomb n2356 n2356_neg
+-1 1
+.lincomb n2156_neg n2356_neg n2357_int
+2 1
+.bootstrap n2357_int n2357
+0001
+.lincomb n2357 n2153 n2358_int
+2 1
+.bootstrap n2358_int n2358
+0101
+.lincomb n2358 n2148 n2359_int
+2 1
+.bootstrap n2359_int n2359
+0101
+.lincomb n2359 n2359_neg
+-1 1
+.lincomb n2151_neg n2359_neg n2360_int
+2 1
+.bootstrap n2360_int n2360
+0001
+.lincomb n2360 n2150 n2361_int
+2 1
+.bootstrap n2361_int n2361
+0101
+.lincomb n2361 n2143 n2362_int
+2 1
+.bootstrap n2362_int n2362
+0101
+.lincomb n2146_neg n2362 n2363_int
+2 1
+.bootstrap n2363_int n2363
+0001
+.lincomb n2363 n2143 n2364_int
+2 1
+.bootstrap n2364_int n2364
+0101
+.lincomb n2364 n2138 n2365_int
+2 1
+.bootstrap n2365_int n2365
+0101
+.lincomb n2141_neg n2365 n2366_int
+2 1
+.bootstrap n2366_int n2366
+0001
+.lincomb n2366 n2140 n2367_int
+2 1
+.bootstrap n2367_int n2367
+0101
+.lincomb n2367 n2133 n2368_int
+2 1
+.bootstrap n2368_int n2368
+0101
+.lincomb n2136_neg n2368 n2369_int
+2 1
+.bootstrap n2369_int n2369
+0001
+.lincomb n2369 n2135 n2370_int
+2 1
+.bootstrap n2370_int n2370
+0101
+.lincomb n2370 n2128 n2371_int
+2 1
+.bootstrap n2371_int n2371
+0101
+.lincomb n2131_neg n2371 n2372_int
+2 1
+.bootstrap n2372_int n2372
+0001
+.lincomb n2372 n2128 n2373_int
+2 1
+.bootstrap n2373_int n2373
+0101
+.lincomb n2373 n2123 n2374_int
+2 1
+.bootstrap n2374_int n2374
+0101
+.lincomb n2126_neg n2374 n2375_int
+2 1
+.bootstrap n2375_int n2375
+0001
+.lincomb n2375 n2125 n2376_int
+2 1
+.bootstrap n2376_int n2376
+0101
+.lincomb n2376 n2118 n2377_int
+2 1
+.bootstrap n2377_int n2377
+0101
+.lincomb n2377 n2377_neg
+-1 1
+.lincomb n2121_neg n2377_neg n2378_int
+2 1
+.bootstrap n2378_int n2378
+0001
+.lincomb n2378 n2118 n2379_int
+2 1
+.bootstrap n2379_int n2379
+0101
+.lincomb n2379 n2113 n2380_int
+2 1
+.bootstrap n2380_int n2380
+0101
+.lincomb n2380 n2380_neg
+-1 1
+.lincomb n2116_neg n2380_neg n2381_int
+2 1
+.bootstrap n2381_int n2381
+0001
+.lincomb n2381 n2115 n2382_int
+2 1
+.bootstrap n2382_int n2382
+0101
+.lincomb n2382 n2108 n2383_int
+2 1
+.bootstrap n2383_int n2383
+0101
+.lincomb n2111_neg n2383 n2384_int
+2 1
+.bootstrap n2384_int n2384
+0001
+.lincomb n2384 n2108 n2385_int
+2 1
+.bootstrap n2385_int n2385
+0101
+.lincomb n2385 n2105 n2386_int
+2 1
+.bootstrap n2386_int n2386
+0101
+.lincomb n2106_neg n2386 n2387_int
+2 1
+.bootstrap n2387_int n2387
+0001
+.lincomb n2387 n2103 n2388_int
+2 1
+.bootstrap n2388_int n2388
+0101
+.lincomb n2388 n2098 n2389_int
+2 1
+.bootstrap n2389_int n2389
+0101
+.lincomb n2101_neg n2389 n2390_int
+2 1
+.bootstrap n2390_int n2390
+0001
+.lincomb n2390 n2100 n2391_int
+2 1
+.bootstrap n2391_int n2391
+0101
+.lincomb n2391 n2093 n2392_int
+2 1
+.bootstrap n2392_int n2392
+0101
+.lincomb n2096_neg n2392 n2393_int
+2 1
+.bootstrap n2393_int n2393
+0001
+.lincomb n2393 n2093 n2394_int
+2 1
+.bootstrap n2394_int n2394
+0101
+.lincomb n2394 n2088 n2395_int
+2 1
+.bootstrap n2395_int n2395
+0101
+.lincomb n2091_neg n2395 n2396_int
+2 1
+.bootstrap n2396_int n2396
+0001
+.lincomb n2396 n2090 n2397_int
+2 1
+.bootstrap n2397_int n2397
+0101
+.lincomb n2397 n2083 n2398_int
+2 1
+.bootstrap n2398_int n2398
+0101
+.lincomb n2398 n2398_neg
+-1 1
+.lincomb n2086_neg n2398_neg n2399_int
+2 1
+.bootstrap n2399_int n2399
+0001
+.lincomb n2399 n2083 n2400_int
+2 1
+.bootstrap n2400_int n2400
+0101
+.lincomb n2400 n2078 n2401_int
+2 1
+.bootstrap n2401_int n2401
+0101
+.lincomb n2401 n2401_neg
+-1 1
+.lincomb n2081_neg n2401_neg n2402_int
+2 1
+.bootstrap n2402_int n2402
+0001
+.lincomb n2402 n2080 n2403_int
+2 1
+.bootstrap n2403_int n2403
+0101
+.lincomb n2403 n2073 n2404_int
+2 1
+.bootstrap n2404_int n2404
+0101
+.lincomb n2076_neg n2404 n2405_int
+2 1
+.bootstrap n2405_int n2405
+0001
+.lincomb n2405 n2075 n2406_int
+2 1
+.bootstrap n2406_int n2406
+0101
+.lincomb n2406 n2068 n2407_int
+2 1
+.bootstrap n2407_int n2407
+0101
+.lincomb n2407 n2407_neg
+-1 1
+.lincomb n2071_neg n2407_neg n2408_int
+2 1
+.bootstrap n2408_int n2408
+0001
+.lincomb n2408 n2068 n2409_int
+2 1
+.bootstrap n2409_int n2409
+0101
+.lincomb n2409 n2063 n2410_int
+2 1
+.bootstrap n2410_int n2410
+0101
+.lincomb n2410 n2410_neg
+-1 1
+.lincomb n2066_neg n2410_neg n2411_int
+2 1
+.bootstrap n2411_int n2411
+0001
+.lincomb n2411 n2063 n2412_int
+2 1
+.bootstrap n2412_int n2412
+0101
+.lincomb n2412 n2060 n2413_int
+2 1
+.bootstrap n2413_int n2413
+0101
+.lincomb n2413 n2413_neg
+-1 1
+.lincomb n2061_neg n2413_neg n2414_int
+2 1
+.bootstrap n2414_int n2414
+0001
+.lincomb n2414 n2058 n2415_int
+2 1
+.bootstrap n2415_int n2415
+0101
+.lincomb n2415 n2053 n2416_int
+2 1
+.bootstrap n2416_int n2416
+0101
+.lincomb n2416 n2416_neg
+-1 1
+.lincomb n2056_neg n2416_neg n2417_int
+2 1
+.bootstrap n2417_int n2417
+0001
+.lincomb n2417 n2055 n2418_int
+2 1
+.bootstrap n2418_int n2418
+0101
+.lincomb n2418 n2048 n2419_int
+2 1
+.bootstrap n2419_int n2419
+0101
+.lincomb n2419 n2419_neg
+-1 1
+.lincomb n2051_neg n2419_neg n2420_int
+2 1
+.bootstrap n2420_int n2420
+0001
+.lincomb n2420 n2048 n2421_int
+2 1
+.bootstrap n2421_int n2421
+0101
+.lincomb n2421 n2043 n2422_int
+2 1
+.bootstrap n2422_int n2422
+0101
+.lincomb n2422 n2422_neg
+-1 1
+.lincomb n2046_neg n2422_neg n2423_int
+2 1
+.bootstrap n2423_int n2423
+0001
+.lincomb n2423 n2045 n2424_int
+2 1
+.bootstrap n2424_int n2424
+0101
+.lincomb n2424 n2038 n2425_int
+2 1
+.bootstrap n2425_int n2425
+0101
+.lincomb n2041_neg n2425 n2426_int
+2 1
+.bootstrap n2426_int n2426
+0001
+.lincomb n2426 n2038 n2427_int
+2 1
+.bootstrap n2427_int n2427
+0101
+.lincomb n2427 n2033 n2428_int
+2 1
+.bootstrap n2428_int n2428
+0101
+.lincomb n2428 n2428_neg
+-1 1
+.lincomb n2036_neg n2428_neg n2429_int
+2 1
+.bootstrap n2429_int n2429
+0001
+.lincomb n2429 n2033 n2430_int
+2 1
+.bootstrap n2430_int n2430
+0101
+.lincomb n2430 n2030 n2431_int
+2 1
+.bootstrap n2431_int n2431
+0101
+.lincomb n2431 n2431_neg
+-1 1
+.lincomb n2031_neg n2431_neg n2432_int
+2 1
+.bootstrap n2432_int n2432
+0001
+.lincomb n2432 n2030 n2433_int
+2 1
+.bootstrap n2433_int n2433
+0101
+.lincomb n2433 n2023 n2434_int
+2 1
+.bootstrap n2434_int n2434
+0101
+.lincomb n2434 n2434_neg
+-1 1
+.lincomb n2026_neg n2434_neg n2435_int
+2 1
+.bootstrap n2435_int n2435
+0001
+.lincomb n2435 n2025 n2436_int
+2 1
+.bootstrap n2436_int n2436
+0101
+.lincomb n2436 n2018 n2437_int
+2 1
+.bootstrap n2437_int n2437
+0101
+.lincomb n2437 n2437_neg
+-1 1
+.lincomb n2021_neg n2437_neg n2438_int
+2 1
+.bootstrap n2438_int n2438
+0001
+.lincomb n2438 n2020 n2439_int
+2 1
+.bootstrap n2439_int n2439
+0101
+.lincomb n2439 n2013 n2440_int
+2 1
+.bootstrap n2440_int n2440
+0101
+.lincomb n2016_neg n2440 n2441_int
+2 1
+.bootstrap n2441_int n2441
+0001
+.lincomb n2441 n2013 n2442_int
+2 1
+.bootstrap n2442_int n2442
+0101
+.lincomb n2442 n2008 n2443_int
+2 1
+.bootstrap n2443_int n2443
+0101
+.lincomb n2443 n2443_neg
+-1 1
+.lincomb n2011_neg n2443_neg n2444_int
+2 1
+.bootstrap n2444_int n2444
+0001
+.lincomb n2444 n2008 n2445_int
+2 1
+.bootstrap n2445_int n2445
+0101
+.lincomb n2445 n2005 n2446_int
+2 1
+.bootstrap n2446_int n2446
+0101
+.lincomb n2006_neg n2446 n2447_int
+2 1
+.bootstrap n2447_int n2447
+0001
+.lincomb n2447 n2003 n2448_int
+2 1
+.bootstrap n2448_int n2448
+0101
+.lincomb n2448 n1998 n2449_int
+2 1
+.bootstrap n2449_int n2449
+0101
+.lincomb n2449 n2449_neg
+-1 1
+.lincomb n2001_neg n2449_neg n2450_int
+2 1
+.bootstrap n2450_int n2450
+0001
+.lincomb n2450 n2000 n2451_int
+2 1
+.bootstrap n2451_int n2451
+0101
+.lincomb n2451 n1993 n2452_int
+2 1
+.bootstrap n2452_int n2452
+0101
+.lincomb n1996_neg n2452 n2453_int
+2 1
+.bootstrap n2453_int n2453
+0001
+.lincomb n2453 n1993 n2454_int
+2 1
+.bootstrap n2454_int n2454
+0101
+.lincomb n2454 n1988 n2455_int
+2 1
+.bootstrap n2455_int n2455
+0101
+.lincomb n1991_neg n2455 n2456_int
+2 1
+.bootstrap n2456_int n2456
+0001
+.lincomb n2456 n1988 n2457_int
+2 1
+.bootstrap n2457_int n2457
+0101
+.lincomb n2457 n1985 n2458_int
+2 1
+.bootstrap n2458_int n2458
+0101
+.lincomb n1986_neg n2458 n2459_int
+2 1
+.bootstrap n2459_int n2459
+0001
+.lincomb n2459 n1985 n2460_int
+2 1
+.bootstrap n2460_int n2460
+0101
+.lincomb n2460 n1978 n2461_int
+2 1
+.bootstrap n2461_int n2461
+0101
+.lincomb n2461 n2461_neg
+-1 1
+.lincomb n1981_neg n2461_neg n2462_int
+2 1
+.bootstrap n2462_int n2462
+0001
+.lincomb n2462 n1978 n2463_int
+2 1
+.bootstrap n2463_int n2463
+0101
+.lincomb n2463 n1975 n2464_int
+2 1
+.bootstrap n2464_int n2464
+0101
+.lincomb n2464 n2464_neg
+-1 1
+.lincomb n1976_neg n2464_neg n2465_int
+2 1
+.bootstrap n2465_int n2465
+0001
+.lincomb n2465 n1975 n2466_int
+2 1
+.bootstrap n2466_int n2466
+0101
+.lincomb n2466 n1968 n2467_int
+2 1
+.bootstrap n2467_int n2467
+0101
+.lincomb n2467 n2467_neg
+-1 1
+.lincomb n1971_neg n2467_neg n2468_int
+2 1
+.bootstrap n2468_int n2468
+0001
+.lincomb n2468 n1968 n2469_int
+2 1
+.bootstrap n2469_int n2469
+0101
+.lincomb n2469 n1965 n2470_int
+2 1
+.bootstrap n2470_int n2470
+0101
+.lincomb n1966_neg n2470 n2471_int
+2 1
+.bootstrap n2471_int n2471
+0001
+.lincomb n2471 n1965 n2472_int
+2 1
+.bootstrap n2472_int n2472
+0101
+.lincomb n2472 n1958 n2473_int
+2 1
+.bootstrap n2473_int n2473
+0101
+.lincomb n1961_neg n2473 n2474_int
+2 1
+.bootstrap n2474_int n2474
+0001
+.lincomb n2474 n1958 n2475_int
+2 1
+.bootstrap n2475_int n2475
+0101
+.lincomb n2475 n1955 n2476_int
+2 1
+.bootstrap n2476_int n2476
+0101
+.lincomb n1956_neg n2476 n2477_int
+2 1
+.bootstrap n2477_int n2477
+0001
+.lincomb n2477 n1955 n2478_int
+2 1
+.bootstrap n2478_int n2478
+0101
+.lincomb n2478 n1948 n2479_int
+2 1
+.bootstrap n2479_int n2479
+0101
+.lincomb n2479 n2479_neg
+-1 1
+.lincomb n1951_neg n2479_neg n2480_int
+2 1
+.bootstrap n2480_int n2480
+0001
+.lincomb n2480 n1950 n2481_int
+2 1
+.bootstrap n2481_int n2481
+0101
+.lincomb n2481 n1943 n2482_int
+2 1
+.bootstrap n2482_int n2482
+0101
+.lincomb n1946_neg n2482 n2483_int
+2 1
+.bootstrap n2483_int n2483
+0001
+.lincomb n2483 n1945 n2484_int
+2 1
+.bootstrap n2484_int n2484
+0101
+.lincomb n2484 n1938 n2485_int
+2 1
+.bootstrap n2485_int n2485
+0101
+.lincomb n1941_neg n2485 n2486_int
+2 1
+.bootstrap n2486_int n2486
+0001
+.lincomb n2486 n1938 n2487_int
+2 1
+.bootstrap n2487_int n2487
+0101
+.lincomb n2487 n1933 n2488_int
+2 1
+.bootstrap n2488_int n2488
+0101
+.lincomb n2488 n2488_neg
+-1 1
+.lincomb n1936_neg n2488_neg n2489_int
+2 1
+.bootstrap n2489_int n2489
+0001
+.lincomb n2489 n1933 n2490_int
+2 1
+.bootstrap n2490_int n2490
+0101
+.lincomb n2490 n1930 n2491_int
+2 1
+.bootstrap n2491_int n2491
+0101
+.lincomb n2491 n2491_neg
+-1 1
+.lincomb n1931_neg n2491_neg n2492_int
+2 1
+.bootstrap n2492_int n2492
+0001
+.lincomb n2492 n1928 n2493_int
+2 1
+.bootstrap n2493_int n2493
+0101
+.lincomb n2493 n1923 n2494_int
+2 1
+.bootstrap n2494_int n2494
+0101
+.lincomb n1926_neg n2494 n2495_int
+2 1
+.bootstrap n2495_int n2495
+0001
+.lincomb n2495 n1925 n2496_int
+2 1
+.bootstrap n2496_int n2496
+0101
+.lincomb n2496 n1918 n2497_int
+2 1
+.bootstrap n2497_int n2497
+0101
+.lincomb n2497 n2497_neg
+-1 1
+.lincomb n1921_neg n2497_neg n2498_int
+2 1
+.bootstrap n2498_int n2498
+0001
+.lincomb n2498 n1918 n2499_int
+2 1
+.bootstrap n2499_int n2499
+0101
+.lincomb n2499 n1913 n2500_int
+2 1
+.bootstrap n2500_int n2500
+0101
+.lincomb n2500 n2500_neg
+-1 1
+.lincomb n1916_neg n2500_neg n2501_int
+2 1
+.bootstrap n2501_int n2501
+0001
+.lincomb n2501 n1913 n2502_int
+2 1
+.bootstrap n2502_int n2502
+0101
+.lincomb n2502 n1908 n2503_int
+2 1
+.bootstrap n2503_int n2503
+0101
+.lincomb n1911_neg n2503 n2504_int
+2 1
+.bootstrap n2504_int n2504
+0001
+.lincomb n2504 n1908 n2505_int
+2 1
+.bootstrap n2505_int n2505
+0101
+.lincomb n2505 n1905 n2506_int
+2 1
+.bootstrap n2506_int n2506
+0101
+.lincomb n2506 n2506_neg
+-1 1
+.lincomb n1906_neg n2506_neg n2507_int
+2 1
+.bootstrap n2507_int n2507
+0001
+.lincomb n2507 n1905 n2508_int
+2 1
+.bootstrap n2508_int n2508
+0101
+.lincomb n2508 n1898 n2509_int
+2 1
+.bootstrap n2509_int n2509
+0101
+.lincomb n2509 n2509_neg
+-1 1
+.lincomb n1901_neg n2509_neg n2510_int
+2 1
+.bootstrap n2510_int n2510
+0001
+.lincomb n2510 n1898 n2511_int
+2 1
+.bootstrap n2511_int n2511
+0101
+.lincomb n2511 n1895 n2512_int
+2 1
+.bootstrap n2512_int n2512
+0101
+.lincomb n2512 n2512_neg
+-1 1
+.lincomb n1896_neg n2512_neg n2513_int
+2 1
+.bootstrap n2513_int n2513
+0001
+.lincomb n2513 n1893 n2514_int
+2 1
+.bootstrap n2514_int n2514
+0101
+.lincomb n2514 n1888 n2515_int
+2 1
+.bootstrap n2515_int n2515
+0101
+.lincomb n1891_neg n2515 n2516_int
+2 1
+.bootstrap n2516_int n2516
+0001
+.lincomb n2516 n1890 n2517_int
+2 1
+.bootstrap n2517_int n2517
+0101
+.lincomb n2517 n1885 n2518_int
+2 1
+.bootstrap n2518_int n2518
+0101
+.lincomb n2518 n2518_neg
+-1 1
+.lincomb n1886_neg n2518_neg n2519_int
+2 1
+.bootstrap n2519_int n2519
+0001
+.lincomb n2519 n1885 n2520_int
+2 1
+.bootstrap n2520_int n2520
+0101
+.lincomb n2520 n1878 n2521_int
+2 1
+.bootstrap n2521_int n2521
+0101
+.lincomb n1881_neg n2521 n2522_int
+2 1
+.bootstrap n2522_int n2522
+0001
+.lincomb n2522 n1880 n2523_int
+2 1
+.bootstrap n2523_int n2523
+0101
+.lincomb n2523 n1873 n2524_int
+2 1
+.bootstrap n2524_int n2524
+0101
+.lincomb n1876_neg n2524 n2525_int
+2 1
+.bootstrap n2525_int n2525
+0001
+.lincomb n2525 n1875 n2526_int
+2 1
+.bootstrap n2526_int n2526
+0101
+.lincomb n2526 n1870 n2527_int
+2 1
+.bootstrap n2527_int n2527
+0101
+.lincomb n2527 n2527_neg
+-1 1
+.lincomb n1871_neg n2527_neg n2528_int
+2 1
+.bootstrap n2528_int n2528
+0001
+.lincomb n2528 n1870 n2529_int
+2 1
+.bootstrap n2529_int n2529
+0101
+.lincomb n2529 n1865 n2530_int
+2 1
+.bootstrap n2530_int n2530
+0101
+.lincomb n2530 n2530_neg
+-1 1
+.lincomb n1866_neg n2530_neg n2531_int
+2 1
+.bootstrap n2531_int n2531
+0001
+.lincomb n2531 n1865 n2532_int
+2 1
+.bootstrap n2532_int n2532
+0101
+.lincomb n2532 n1858 n2533_int
+2 1
+.bootstrap n2533_int n2533
+0101
+.lincomb n1861_neg n2533 n2534_int
+2 1
+.bootstrap n2534_int n2534
+0001
+.lincomb n2534 n1858 n2535_int
+2 1
+.bootstrap n2535_int n2535
+0101
+.lincomb n2535 n1855 n2536_int
+2 1
+.bootstrap n2536_int n2536
+0101
+.lincomb n1856_neg n2536 n2537_int
+2 1
+.bootstrap n2537_int n2537
+0001
+.lincomb n2537 n1855 n2538_int
+2 1
+.bootstrap n2538_int n2538
+0101
+.lincomb n2538 n1850 n2539_int
+2 1
+.bootstrap n2539_int n2539
+0101
+.lincomb n1851_neg n2539 n2540_int
+2 1
+.bootstrap n2540_int n2540
+0001
+.lincomb n2540 n1850 n2541_int
+2 1
+.bootstrap n2541_int n2541
+0101
+.lincomb n2541 n1845 n2542_int
+2 1
+.bootstrap n2542_int n2542
+0101
+.lincomb n1846_neg n2542 n2543_int
+2 1
+.bootstrap n2543_int n2543
+0001
+.lincomb n2543 n1845 n2544_int
+2 1
+.bootstrap n2544_int n2544
+0101
+.lincomb n2544 n1838 n2545_int
+2 1
+.bootstrap n2545_int n2545
+0101
+.lincomb n2545 n2545_neg
+-1 1
+.lincomb n1841_neg n2545_neg n2546_int
+2 1
+.bootstrap n2546_int n2546
+0001
+.lincomb n2546 n1838 n2547_int
+2 1
+.bootstrap n2547_int n2547
+0101
+.lincomb n2547 n1835 n2548_int
+2 1
+.bootstrap n2548_int n2548
+0101
+.lincomb n1836_neg n2548 n2549_int
+2 1
+.bootstrap n2549_int n2549
+0001
+.lincomb n2549 n1835 n2550_int
+2 1
+.bootstrap n2550_int n2550
+0101
+.lincomb n2550 n1828 n2551_int
+2 1
+.bootstrap n2551_int n2551
+0101
+.lincomb n1831_neg n2551 n2552_int
+2 1
+.bootstrap n2552_int n2552
+0001
+.lincomb n2552 n1828 n2553_int
+2 1
+.bootstrap n2553_int n2553
+0101
+.lincomb n2553 n1825 n2554_int
+2 1
+.bootstrap n2554_int n2554
+0101
+.lincomb n2554 n2554_neg
+-1 1
+.lincomb n1826_neg n2554_neg n2555_int
+2 1
+.bootstrap n2555_int n2555
+0001
+.lincomb n2555 n1825 n2556_int
+2 1
+.bootstrap n2556_int n2556
+0101
+.lincomb n2556 n1820 n2557_int
+2 1
+.bootstrap n2557_int n2557
+0101
+.lincomb n2557 n2557_neg
+-1 1
+.lincomb n1821_neg n2557_neg n2558_int
+2 1
+.bootstrap n2558_int n2558
+0001
+.lincomb n2558 n1818 n2559_int
+2 1
+.bootstrap n2559_int n2559
+0101
+.lincomb n2559 n1813 n2560_int
+2 1
+.bootstrap n2560_int n2560
+0101
+.lincomb n1816_neg n2560 n2561_int
+2 1
+.bootstrap n2561_int n2561
+0001
+.lincomb n2561 n1815 n2562_int
+2 1
+.bootstrap n2562_int n2562
+0101
+.lincomb n2562 n1810 n2563_int
+2 1
+.bootstrap n2563_int n2563
+0101
+.lincomb n1811_neg n2563 n2564_int
+2 1
+.bootstrap n2564_int n2564
+0001
+.lincomb n2564 n1810 n2565_int
+2 1
+.bootstrap n2565_int n2565
+0101
+.lincomb n2565 n1805 n2566_int
+2 1
+.bootstrap n2566_int n2566
+0101
+.lincomb n1806_neg n2566 n2567_int
+2 1
+.bootstrap n2567_int n2567
+0001
+.lincomb n2567 n1805 n2568_int
+2 1
+.bootstrap n2568_int n2568
+0101
+.lincomb n2568 n1800 n2569_int
+2 1
+.bootstrap n2569_int n2569
+0101
+.lincomb n2569 n2569_neg
+-1 1
+.lincomb n1801_neg n2569_neg n2570_int
+2 1
+.bootstrap n2570_int n2570
+0001
+.lincomb n2570 n1798 n2571_int
+2 1
+.bootstrap n2571_int n2571
+0101
+.lincomb n2571 n1793 n2572_int
+2 1
+.bootstrap n2572_int n2572
+0101
+.lincomb n1796_neg n2572 n2573_int
+2 1
+.bootstrap n2573_int n2573
+0001
+.lincomb n2573 n1795 n2574_int
+2 1
+.bootstrap n2574_int n2574
+0101
+.lincomb n2574 n1790 n2575_int
+2 1
+.bootstrap n2575_int n2575
+0101
+.lincomb n2575 n2575_neg
+-1 1
+.lincomb n1791_neg n2575_neg n2576_int
+2 1
+.bootstrap n2576_int n2576
+0001
+.lincomb n2576 n1790 n2577_int
+2 1
+.bootstrap n2577_int n2577
+0101
+.lincomb n2577 n1785 n2578_int
+2 1
+.bootstrap n2578_int n2578
+0101
+.lincomb n1786_neg n2578 n2579_int
+2 1
+.bootstrap n2579_int n2579
+0001
+.lincomb n2579 n1785 n2580_int
+2 1
+.bootstrap n2580_int n2580
+0101
+.lincomb n2580 n1778 n2581_int
+2 1
+.bootstrap n2581_int n2581
+0101
+.lincomb n2581 n2581_neg
+-1 1
+.lincomb n1781_neg n2581_neg n2582_int
+2 1
+.bootstrap n2582_int n2582
+0001
+.lincomb n2582 n1780 n2583_int
+2 1
+.bootstrap n2583_int n2583
+0101
+.lincomb n2583 n1773 n2584_int
+2 1
+.bootstrap n2584_int n2584
+0101
+.lincomb n1776_neg n2584 n2585_int
+2 1
+.bootstrap n2585_int n2585
+0001
+.lincomb n2585 n1775 n2586_int
+2 1
+.bootstrap n2586_int n2586
+0101
+.lincomb n2586 n1770 n2587_int
+2 1
+.bootstrap n2587_int n2587
+0101
+.lincomb n2587 n2587_neg
+-1 1
+.lincomb n1771_neg n2587_neg n2588_int
+2 1
+.bootstrap n2588_int n2588
+0001
+.lincomb n2588 n1770 n2589_int
+2 1
+.bootstrap n2589_int n2589
+0101
+.lincomb n2589 n1765 n2590_int
+2 1
+.bootstrap n2590_int n2590
+0101
+.lincomb n1766_neg n2590 n2591_int
+2 1
+.bootstrap n2591_int n2591
+0001
+.lincomb n2591 n1763 n2592_int
+2 1
+.bootstrap n2592_int n2592
+0101
+.lincomb n2592 n1758 n2593_int
+2 1
+.bootstrap n2593_int n2593
+0101
+.lincomb n2593 n2593_neg
+-1 1
+.lincomb n1761_neg n2593_neg n2594_int
+2 1
+.bootstrap n2594_int n2594
+0001
+.lincomb n2594 n1760 n2595_int
+2 1
+.bootstrap n2595_int n2595
+0101
+.lincomb n2595 n1755 n2596_int
+2 1
+.bootstrap n2596_int n2596
+0101
+.lincomb n2596 n2596_neg
+-1 1
+.lincomb n1756_neg n2596_neg n2597_int
+2 1
+.bootstrap n2597_int n2597
+0001
+.lincomb n2597 n1755 n2598_int
+2 1
+.bootstrap n2598_int n2598
+0101
+.lincomb n2598 n1748 n2599_int
+2 1
+.bootstrap n2599_int n2599
+0101
+.lincomb n1751_neg n2599 n2600_int
+2 1
+.bootstrap n2600_int n2600
+0001
+.lincomb n2600 n1750 n2601_int
+2 1
+.bootstrap n2601_int n2601
+0101
+.lincomb n2601 n1743 n2602_int
+2 1
+.bootstrap n2602_int n2602
+0101
+.lincomb n1746_neg n2602 n2603_int
+2 1
+.bootstrap n2603_int n2603
+0001
+.lincomb n2603 n1745 n2604_int
+2 1
+.bootstrap n2604_int n2604
+0101
+.lincomb n2604 n1738 n2605_int
+2 1
+.bootstrap n2605_int n2605
+0101
+.lincomb n1741_neg n2605 n2606_int
+2 1
+.bootstrap n2606_int n2606
+0001
+.lincomb n2606 n1738 n2607_int
+2 1
+.bootstrap n2607_int n2607
+0101
+.lincomb n2607 n1733 n2608_int
+2 1
+.bootstrap n2608_int n2608
+0101
+.lincomb n2608 n2608_neg
+-1 1
+.lincomb n1736_neg n2608_neg n2609_int
+2 1
+.bootstrap n2609_int n2609
+0001
+.lincomb n2609 n1735 n2610_int
+2 1
+.bootstrap n2610_int n2610
+0101
+.lincomb n2610 n1728 n2611_int
+2 1
+.bootstrap n2611_int n2611
+0101
+.lincomb n1731_neg n2611 n2612_int
+2 1
+.bootstrap n2612_int n2612
+0001
+.lincomb n2612 n1730 n2613_int
+2 1
+.bootstrap n2613_int n2613
+0101
+.lincomb n2613 n1725 n2614_int
+2 1
+.bootstrap n2614_int n2614
+0101
+.lincomb n2614 n2614_neg
+-1 1
+.lincomb n1726_neg n2614_neg n2615_int
+2 1
+.bootstrap n2615_int n2615
+0001
+.lincomb n2615 n1725 n2616_int
+2 1
+.bootstrap n2616_int n2616
+0101
+.lincomb n2616 n1720 n2617_int
+2 1
+.bootstrap n2617_int n2617
+0101
+.lincomb n1721_neg n2617 n2618_int
+2 1
+.bootstrap n2618_int n2618
+0001
+.lincomb n2618 n1720 n2619_int
+2 1
+.bootstrap n2619_int n2619
+0101
+.lincomb n2619 n1713 n2620_int
+2 1
+.bootstrap n2620_int n2620
+0101
+.lincomb n2620 n2620_neg
+-1 1
+.lincomb n1716_neg n2620_neg n2621_int
+2 1
+.bootstrap n2621_int n2621
+0001
+.lincomb n2621 n1713 n2622_int
+2 1
+.bootstrap n2622_int n2622
+0101
+.lincomb n2622 n1710 n2623_int
+2 1
+.bootstrap n2623_int n2623
+0101
+.lincomb n2623 n2623_neg
+-1 1
+.lincomb n1711_neg n2623_neg n2624_int
+2 1
+.bootstrap n2624_int n2624
+0001
+.lincomb n2624 n1710 n2625_int
+2 1
+.bootstrap n2625_int n2625
+0101
+.lincomb n2625 n1703 n2626_int
+2 1
+.bootstrap n2626_int n2626
+0101
+.lincomb n1706_neg n2626 n2627_int
+2 1
+.bootstrap n2627_int n2627
+0001
+.lincomb n2627 n1703 n2628_int
+2 1
+.bootstrap n2628_int n2628
+0101
+.lincomb n2628 n1700 n2629_int
+2 1
+.bootstrap n2629_int n2629
+0101
+.lincomb n2629 n2629_neg
+-1 1
+.lincomb n1701_neg n2629_neg n2630_int
+2 1
+.bootstrap n2630_int n2630
+0001
+.lincomb n2630 n1700 n2631_int
+2 1
+.bootstrap n2631_int n2631
+0101
+.lincomb n2631 n1693 n2632_int
+2 1
+.bootstrap n2632_int n2632
+0101
+.lincomb n1696_neg n2632 n2633_int
+2 1
+.bootstrap n2633_int n2633
+0001
+.lincomb n2633 n1693 n2634_int
+2 1
+.bootstrap n2634_int n2634
+0101
+.lincomb n2634 n1688 n2635_int
+2 1
+.bootstrap n2635_int n2635
+0101
+.lincomb n2635 n2635_neg
+-1 1
+.lincomb n1691_neg n2635_neg n2636_int
+2 1
+.bootstrap n2636_int n2636
+0001
+.lincomb n2636 n1690 n2637_int
+2 1
+.bootstrap n2637_int n2637
+0101
+.lincomb n2637 n1683 n2638_int
+2 1
+.bootstrap n2638_int n2638
+0101
+.lincomb n1686_neg n2638 n2639_int
+2 1
+.bootstrap n2639_int n2639
+0001
+.lincomb n2639 n1685 n2640_int
+2 1
+.bootstrap n2640_int n2640
+0101
+.lincomb n2640 n1678 n2641_int
+2 1
+.bootstrap n2641_int n2641
+0101
+.lincomb n1681_neg n2641 n2642_int
+2 1
+.bootstrap n2642_int n2642
+0001
+.lincomb n2642 n1678 n2643_int
+2 1
+.bootstrap n2643_int n2643
+0101
+.lincomb n2643 n1675 n2644_int
+2 1
+.bootstrap n2644_int n2644
+0101
+.lincomb n2644 n2644_neg
+-1 1
+.lincomb n1676_neg n2644_neg n2645_int
+2 1
+.bootstrap n2645_int n2645
+0001
+.lincomb n2645 n1673 n2646_int
+2 1
+.bootstrap n2646_int n2646
+0101
+.lincomb n2646 n1668 n2647_int
+2 1
+.bootstrap n2647_int n2647
+0101
+.lincomb n2647 n2647_neg
+-1 1
+.lincomb n1671_neg n2647_neg n2648_int
+2 1
+.bootstrap n2648_int n2648
+0001
+.lincomb n2648 n1670 n2649_int
+2 1
+.bootstrap n2649_int n2649
+0101
+.lincomb n2649 n1665 n2650_int
+2 1
+.bootstrap n2650_int n2650
+0101
+.lincomb n1666_neg n2650 n2651_int
+2 1
+.bootstrap n2651_int n2651
+0001
+.lincomb n2651 n1665 n2652_int
+2 1
+.bootstrap n2652_int n2652
+0101
+.lincomb n2652 n1660 n2653_int
+2 1
+.bootstrap n2653_int n2653
+0101
+.lincomb n1661_neg n2653 n2654_int
+2 1
+.bootstrap n2654_int n2654
+0001
+.lincomb n2654 n1660 n2655_int
+2 1
+.bootstrap n2655_int n2655
+0101
+.lincomb n2655 n1653 n2656_int
+2 1
+.bootstrap n2656_int n2656
+0101
+.lincomb n2656 n2656_neg
+-1 1
+.lincomb n1656_neg n2656_neg n2657_int
+2 1
+.bootstrap n2657_int n2657
+0001
+.lincomb n2657 n1653 n2658_int
+2 1
+.bootstrap n2658_int n2658
+0101
+.lincomb n2658 n1650 n2659_int
+2 1
+.bootstrap n2659_int n2659
+0101
+.lincomb n2659 n2659_neg
+-1 1
+.lincomb n1651_neg n2659_neg n2660_int
+2 1
+.bootstrap n2660_int n2660
+0001
+.lincomb n1081 n2660 n2661_int
+2 1
+.bootstrap n2661_int n2661
+0101
+.lincomb n515_neg n2661 n2662_int
+2 1
+.bootstrap n2662_int n2662
+0001
+.lincomb n2662 n514,n1083 n2663_int
+2 1
+.bootstrap n2663_int n2663
+0101
+.lincomb n2663 n2663_neg
+-1 1
+.lincomb n2282 n2279 n2664_int
+2 1
+.bootstrap n2664_int n2664
+0101
+.lincomb n2663_neg n2664 n2665_int
+2 1
+.bootstrap n2665_int n2665
+0001
+.lincomb n2665 n2279 n2666_int
+2 1
+.bootstrap n2666_int n2666
+0101
+.lincomb n2276 n2663_neg n2667_int
+2 1
+.bootstrap n2667_int n2667
+0001
+.lincomb n2667 n2275 n2668_int
+2 1
+.bootstrap n2668_int n2668
+0101
+.lincomb n2271 n2663_neg n2669_int
+2 1
+.bootstrap n2669_int n2669
+0001
+.lincomb n2669 n2270 n2670_int
+2 1
+.bootstrap n2670_int n2670
+0101
+.lincomb n2266 n2663_neg n2671_int
+2 1
+.bootstrap n2671_int n2671
+0001
+.lincomb n2671 n2263 n2672_int
+2 1
+.bootstrap n2672_int n2672
+0101
+.lincomb n2261 n2663 n2673_int
+2 1
+.bootstrap n2673_int n2673
+0001
+.lincomb n2673 n2260 n2674_int
+2 1
+.bootstrap n2674_int n2674
+0101
+.lincomb n2256 n2663 n2675_int
+2 1
+.bootstrap n2675_int n2675
+0001
+.lincomb n2675 n2255 n2676_int
+2 1
+.bootstrap n2676_int n2676
+0101
+.lincomb n2251 n2663_neg n2677_int
+2 1
+.bootstrap n2677_int n2677
+0001
+.lincomb n2677 n2250 n2678_int
+2 1
+.bootstrap n2678_int n2678
+0101
+.lincomb n2246 n2663 n2679_int
+2 1
+.bootstrap n2679_int n2679
+0001
+.lincomb n2679 n2245 n2680_int
+2 1
+.bootstrap n2680_int n2680
+0101
+.lincomb n2241 n2663_neg n2681_int
+2 1
+.bootstrap n2681_int n2681
+0001
+.lincomb n2681 n2240 n2682_int
+2 1
+.bootstrap n2682_int n2682
+0101
+.lincomb n2236 n2663_neg n2683_int
+2 1
+.bootstrap n2683_int n2683
+0001
+.lincomb n2683 n2235 n2684_int
+2 1
+.bootstrap n2684_int n2684
+0101
+.lincomb n2231 n2663 n2685_int
+2 1
+.bootstrap n2685_int n2685
+0001
+.lincomb n2685 n2228 n2686_int
+2 1
+.bootstrap n2686_int n2686
+0101
+.lincomb n2226 n2663 n2687_int
+2 1
+.bootstrap n2687_int n2687
+0001
+.lincomb n2687 n2225 n2688_int
+2 1
+.bootstrap n2688_int n2688
+0101
+.lincomb n2221 n2663 n2689_int
+2 1
+.bootstrap n2689_int n2689
+0001
+.lincomb n2689 n2218 n2690_int
+2 1
+.bootstrap n2690_int n2690
+0101
+.lincomb n2216 n2663_neg n2691_int
+2 1
+.bootstrap n2691_int n2691
+0001
+.lincomb n2691 n2215 n2692_int
+2 1
+.bootstrap n2692_int n2692
+0101
+.lincomb n2211 n2663_neg n2693_int
+2 1
+.bootstrap n2693_int n2693
+0001
+.lincomb n2693 n2208 n2694_int
+2 1
+.bootstrap n2694_int n2694
+0101
+.lincomb n2206 n2663 n2695_int
+2 1
+.bootstrap n2695_int n2695
+0001
+.lincomb n2695 n2205 n2696_int
+2 1
+.bootstrap n2696_int n2696
+0101
+.lincomb n2201 n2663_neg n2697_int
+2 1
+.bootstrap n2697_int n2697
+0001
+.lincomb n2697 n2200 n2698_int
+2 1
+.bootstrap n2698_int n2698
+0101
+.lincomb n2196 n2663 n2699_int
+2 1
+.bootstrap n2699_int n2699
+0001
+.lincomb n2699 n2195 n2700_int
+2 1
+.bootstrap n2700_int n2700
+0101
+.lincomb n2191 n2663 n2701_int
+2 1
+.bootstrap n2701_int n2701
+0001
+.lincomb n2701 n2190 n2702_int
+2 1
+.bootstrap n2702_int n2702
+0101
+.lincomb n2186 n2663_neg n2703_int
+2 1
+.bootstrap n2703_int n2703
+0001
+.lincomb n2703 n2185 n2704_int
+2 1
+.bootstrap n2704_int n2704
+0101
+.lincomb n2181 n2663 n2705_int
+2 1
+.bootstrap n2705_int n2705
+0001
+.lincomb n2705 n2180 n2706_int
+2 1
+.bootstrap n2706_int n2706
+0101
+.lincomb n2176 n2663_neg n2707_int
+2 1
+.bootstrap n2707_int n2707
+0001
+.lincomb n2707 n2175 n2708_int
+2 1
+.bootstrap n2708_int n2708
+0101
+.lincomb n2171 n2663_neg n2709_int
+2 1
+.bootstrap n2709_int n2709
+0001
+.lincomb n2709 n2170 n2710_int
+2 1
+.bootstrap n2710_int n2710
+0101
+.lincomb n2166 n2663_neg n2711_int
+2 1
+.bootstrap n2711_int n2711
+0001
+.lincomb n2711 n2163 n2712_int
+2 1
+.bootstrap n2712_int n2712
+0101
+.lincomb n2161 n2663 n2713_int
+2 1
+.bootstrap n2713_int n2713
+0001
+.lincomb n2713 n2160 n2714_int
+2 1
+.bootstrap n2714_int n2714
+0101
+.lincomb n2156 n2663 n2715_int
+2 1
+.bootstrap n2715_int n2715
+0001
+.lincomb n2715 n2155 n2716_int
+2 1
+.bootstrap n2716_int n2716
+0101
+.lincomb n2151 n2663 n2717_int
+2 1
+.bootstrap n2717_int n2717
+0001
+.lincomb n2717 n2150 n2718_int
+2 1
+.bootstrap n2718_int n2718
+0101
+.lincomb n2146 n2663_neg n2719_int
+2 1
+.bootstrap n2719_int n2719
+0001
+.lincomb n2719 n2145 n2720_int
+2 1
+.bootstrap n2720_int n2720
+0101
+.lincomb n2141 n2663 n2721_int
+2 1
+.bootstrap n2721_int n2721
+0001
+.lincomb n2721 n2140 n2722_int
+2 1
+.bootstrap n2722_int n2722
+0101
+.lincomb n2136 n2663 n2723_int
+2 1
+.bootstrap n2723_int n2723
+0001
+.lincomb n2723 n2135 n2724_int
+2 1
+.bootstrap n2724_int n2724
+0101
+.lincomb n2131 n2663_neg n2725_int
+2 1
+.bootstrap n2725_int n2725
+0001
+.lincomb n2725 n2130 n2726_int
+2 1
+.bootstrap n2726_int n2726
+0101
+.lincomb n2126 n2663 n2727_int
+2 1
+.bootstrap n2727_int n2727
+0001
+.lincomb n2727 n2125 n2728_int
+2 1
+.bootstrap n2728_int n2728
+0101
+.lincomb n2121 n2663 n2729_int
+2 1
+.bootstrap n2729_int n2729
+0001
+.lincomb n2729 n2120 n2730_int
+2 1
+.bootstrap n2730_int n2730
+0101
+.lincomb n2116 n2663 n2731_int
+2 1
+.bootstrap n2731_int n2731
+0001
+.lincomb n2731 n2115 n2732_int
+2 1
+.bootstrap n2732_int n2732
+0101
+.lincomb n2111 n2663_neg n2733_int
+2 1
+.bootstrap n2733_int n2733
+0001
+.lincomb n2733 n2110 n2734_int
+2 1
+.bootstrap n2734_int n2734
+0101
+.lincomb n2106 n2663 n2735_int
+2 1
+.bootstrap n2735_int n2735
+0001
+.lincomb n2735 n2103 n2736_int
+2 1
+.bootstrap n2736_int n2736
+0101
+.lincomb n2101 n2663 n2737_int
+2 1
+.bootstrap n2737_int n2737
+0001
+.lincomb n2737 n2100 n2738_int
+2 1
+.bootstrap n2738_int n2738
+0101
+.lincomb n2096 n2663_neg n2739_int
+2 1
+.bootstrap n2739_int n2739
+0001
+.lincomb n2739 n2095 n2740_int
+2 1
+.bootstrap n2740_int n2740
+0101
+.lincomb n2091 n2663 n2741_int
+2 1
+.bootstrap n2741_int n2741
+0001
+.lincomb n2741 n2090 n2742_int
+2 1
+.bootstrap n2742_int n2742
+0101
+.lincomb n2086 n2663 n2743_int
+2 1
+.bootstrap n2743_int n2743
+0001
+.lincomb n2743 n2085 n2744_int
+2 1
+.bootstrap n2744_int n2744
+0101
+.lincomb n2081 n2663 n2745_int
+2 1
+.bootstrap n2745_int n2745
+0001
+.lincomb n2745 n2080 n2746_int
+2 1
+.bootstrap n2746_int n2746
+0101
+.lincomb n2076 n2663 n2747_int
+2 1
+.bootstrap n2747_int n2747
+0001
+.lincomb n2747 n2075 n2748_int
+2 1
+.bootstrap n2748_int n2748
+0101
+.lincomb n2071 n2663 n2749_int
+2 1
+.bootstrap n2749_int n2749
+0001
+.lincomb n2749 n2070 n2750_int
+2 1
+.bootstrap n2750_int n2750
+0101
+.lincomb n2066 n2663_neg n2751_int
+2 1
+.bootstrap n2751_int n2751
+0001
+.lincomb n2751 n2065 n2752_int
+2 1
+.bootstrap n2752_int n2752
+0101
+.lincomb n2061 n2663_neg n2753_int
+2 1
+.bootstrap n2753_int n2753
+0001
+.lincomb n2753 n2058 n2754_int
+2 1
+.bootstrap n2754_int n2754
+0101
+.lincomb n2056 n2663 n2755_int
+2 1
+.bootstrap n2755_int n2755
+0001
+.lincomb n2755 n2055 n2756_int
+2 1
+.bootstrap n2756_int n2756
+0101
+.lincomb n2051 n2663 n2757_int
+2 1
+.bootstrap n2757_int n2757
+0001
+.lincomb n2757 n2050 n2758_int
+2 1
+.bootstrap n2758_int n2758
+0101
+.lincomb n2046 n2663 n2759_int
+2 1
+.bootstrap n2759_int n2759
+0001
+.lincomb n2759 n2045 n2760_int
+2 1
+.bootstrap n2760_int n2760
+0101
+.lincomb n2041 n2663_neg n2761_int
+2 1
+.bootstrap n2761_int n2761
+0001
+.lincomb n2761 n2040 n2762_int
+2 1
+.bootstrap n2762_int n2762
+0101
+.lincomb n2036 n2663 n2763_int
+2 1
+.bootstrap n2763_int n2763
+0001
+.lincomb n2763 n2035 n2764_int
+2 1
+.bootstrap n2764_int n2764
+0101
+.lincomb n2031 n2663_neg n2765_int
+2 1
+.bootstrap n2765_int n2765
+0001
+.lincomb n2765 n2028 n2766_int
+2 1
+.bootstrap n2766_int n2766
+0101
+.lincomb n2026 n2663_neg n2767_int
+2 1
+.bootstrap n2767_int n2767
+0001
+.lincomb n2767 n2025 n2768_int
+2 1
+.bootstrap n2768_int n2768
+0101
+.lincomb n2021 n2663 n2769_int
+2 1
+.bootstrap n2769_int n2769
+0001
+.lincomb n2769 n2020 n2770_int
+2 1
+.bootstrap n2770_int n2770
+0101
+.lincomb n2016 n2663_neg n2771_int
+2 1
+.bootstrap n2771_int n2771
+0001
+.lincomb n2771 n2015 n2772_int
+2 1
+.bootstrap n2772_int n2772
+0101
+.lincomb n2011 n2663 n2773_int
+2 1
+.bootstrap n2773_int n2773
+0001
+.lincomb n2773 n2010 n2774_int
+2 1
+.bootstrap n2774_int n2774
+0101
+.lincomb n2006 n2663_neg n2775_int
+2 1
+.bootstrap n2775_int n2775
+0001
+.lincomb n2775 n2003 n2776_int
+2 1
+.bootstrap n2776_int n2776
+0101
+.lincomb n2001 n2663 n2777_int
+2 1
+.bootstrap n2777_int n2777
+0001
+.lincomb n2777 n2000 n2778_int
+2 1
+.bootstrap n2778_int n2778
+0101
+.lincomb n1996 n2663_neg n2779_int
+2 1
+.bootstrap n2779_int n2779
+0001
+.lincomb n2779 n1995 n2780_int
+2 1
+.bootstrap n2780_int n2780
+0101
+.lincomb n1991 n2663_neg n2781_int
+2 1
+.bootstrap n2781_int n2781
+0001
+.lincomb n2781 n1990 n2782_int
+2 1
+.bootstrap n2782_int n2782
+0101
+.lincomb n1986 n2663_neg n2783_int
+2 1
+.bootstrap n2783_int n2783
+0001
+.lincomb n2783 n1983 n2784_int
+2 1
+.bootstrap n2784_int n2784
+0101
+.lincomb n1981 n2663 n2785_int
+2 1
+.bootstrap n2785_int n2785
+0001
+.lincomb n2785 n1980 n2786_int
+2 1
+.bootstrap n2786_int n2786
+0101
+.lincomb n1976 n2663_neg n2787_int
+2 1
+.bootstrap n2787_int n2787
+0001
+.lincomb n2787 n1973 n2788_int
+2 1
+.bootstrap n2788_int n2788
+0101
+.lincomb n1971 n2663 n2789_int
+2 1
+.bootstrap n2789_int n2789
+0001
+.lincomb n2789 n1970 n2790_int
+2 1
+.bootstrap n2790_int n2790
+0101
+.lincomb n1966 n2663 n2791_int
+2 1
+.bootstrap n2791_int n2791
+0001
+.lincomb n2791 n1963 n2792_int
+2 1
+.bootstrap n2792_int n2792
+0101
+.lincomb n1961 n2663 n2793_int
+2 1
+.bootstrap n2793_int n2793
+0001
+.lincomb n2793 n1960 n2794_int
+2 1
+.bootstrap n2794_int n2794
+0101
+.lincomb n1956 n2663 n2795_int
+2 1
+.bootstrap n2795_int n2795
+0001
+.lincomb n2795 n1953 n2796_int
+2 1
+.bootstrap n2796_int n2796
+0101
+.lincomb n1951 n2663 n2797_int
+2 1
+.bootstrap n2797_int n2797
+0001
+.lincomb n2797 n1950 n2798_int
+2 1
+.bootstrap n2798_int n2798
+0101
+.lincomb n1946 n2663 n2799_int
+2 1
+.bootstrap n2799_int n2799
+0001
+.lincomb n2799 n1945 n2800_int
+2 1
+.bootstrap n2800_int n2800
+0101
+.lincomb n1941 n2663_neg n2801_int
+2 1
+.bootstrap n2801_int n2801
+0001
+.lincomb n2801 n1940 n2802_int
+2 1
+.bootstrap n2802_int n2802
+0101
+.lincomb n1936 n2663 n2803_int
+2 1
+.bootstrap n2803_int n2803
+0001
+.lincomb n2803 n1935 n2804_int
+2 1
+.bootstrap n2804_int n2804
+0101
+.lincomb n1931 n2663 n2805_int
+2 1
+.bootstrap n2805_int n2805
+0001
+.lincomb n2805 n1928 n2806_int
+2 1
+.bootstrap n2806_int n2806
+0101
+.lincomb n1926 n2663 n2807_int
+2 1
+.bootstrap n2807_int n2807
+0001
+.lincomb n2807 n1925 n2808_int
+2 1
+.bootstrap n2808_int n2808
+0101
+.lincomb n1921 n2663 n2809_int
+2 1
+.bootstrap n2809_int n2809
+0001
+.lincomb n2809 n1920 n2810_int
+2 1
+.bootstrap n2810_int n2810
+0101
+.lincomb n1916 n2663_neg n2811_int
+2 1
+.bootstrap n2811_int n2811
+0001
+.lincomb n2811 n1915 n2812_int
+2 1
+.bootstrap n2812_int n2812
+0101
+.lincomb n1911 n2663 n2813_int
+2 1
+.bootstrap n2813_int n2813
+0001
+.lincomb n2813 n1908 n2814_int
+2 1
+.bootstrap n2814_int n2814
+0101
+.lincomb n1906 n2663_neg n2815_int
+2 1
+.bootstrap n2815_int n2815
+0001
+.lincomb n2815 n1905 n2816_int
+2 1
+.bootstrap n2816_int n2816
+0101
+.lincomb n1901 n2663 n2817_int
+2 1
+.bootstrap n2817_int n2817
+0001
+.lincomb n2817 n1898 n2818_int
+2 1
+.bootstrap n2818_int n2818
+0101
+.lincomb n1896 n2663_neg n2819_int
+2 1
+.bootstrap n2819_int n2819
+0001
+.lincomb n2819 n1893 n2820_int
+2 1
+.bootstrap n2820_int n2820
+0101
+.lincomb n1891 n2663_neg n2821_int
+2 1
+.bootstrap n2821_int n2821
+0001
+.lincomb n2821 n1890 n2822_int
+2 1
+.bootstrap n2822_int n2822
+0101
+.lincomb n1886 n2663 n2823_int
+2 1
+.bootstrap n2823_int n2823
+0001
+.lincomb n2823 n1885 n2824_int
+2 1
+.bootstrap n2824_int n2824
+0101
+.lincomb n1881 n2663 n2825_int
+2 1
+.bootstrap n2825_int n2825
+0001
+.lincomb n2825 n1880 n2826_int
+2 1
+.bootstrap n2826_int n2826
+0101
+.lincomb n1876 n2663 n2827_int
+2 1
+.bootstrap n2827_int n2827
+0001
+.lincomb n2827 n1875 n2828_int
+2 1
+.bootstrap n2828_int n2828
+0101
+.lincomb n1871 n2663_neg n2829_int
+2 1
+.bootstrap n2829_int n2829
+0001
+.lincomb n2829 n1870 n2830_int
+2 1
+.bootstrap n2830_int n2830
+0101
+.lincomb n1866 n2663 n2831_int
+2 1
+.bootstrap n2831_int n2831
+0001
+.lincomb n2831 n1865 n2832_int
+2 1
+.bootstrap n2832_int n2832
+0101
+.lincomb n1861 n2663 n2833_int
+2 1
+.bootstrap n2833_int n2833
+0001
+.lincomb n2833 n1858 n2834_int
+2 1
+.bootstrap n2834_int n2834
+0101
+.lincomb n1856 n2663 n2835_int
+2 1
+.bootstrap n2835_int n2835
+0001
+.lincomb n2835 n1855 n2836_int
+2 1
+.bootstrap n2836_int n2836
+0101
+.lincomb n1851 n2663_neg n2837_int
+2 1
+.bootstrap n2837_int n2837
+0001
+.lincomb n2837 n1848 n2838_int
+2 1
+.bootstrap n2838_int n2838
+0101
+.lincomb n1846 n2663 n2839_int
+2 1
+.bootstrap n2839_int n2839
+0001
+.lincomb n2839 n1845 n2840_int
+2 1
+.bootstrap n2840_int n2840
+0101
+.lincomb n1841 n2663_neg n2841_int
+2 1
+.bootstrap n2841_int n2841
+0001
+.lincomb n2841 n1838 n2842_int
+2 1
+.bootstrap n2842_int n2842
+0101
+.lincomb n1836 n2663_neg n2843_int
+2 1
+.bootstrap n2843_int n2843
+0001
+.lincomb n2843 n1835 n2844_int
+2 1
+.bootstrap n2844_int n2844
+0101
+.lincomb n1831 n2663_neg n2845_int
+2 1
+.bootstrap n2845_int n2845
+0001
+.lincomb n2845 n1828 n2846_int
+2 1
+.bootstrap n2846_int n2846
+0101
+.lincomb n1826 n2663 n2847_int
+2 1
+.bootstrap n2847_int n2847
+0001
+.lincomb n2847 n1825 n2848_int
+2 1
+.bootstrap n2848_int n2848
+0101
+.lincomb n1821 n2663_neg n2849_int
+2 1
+.bootstrap n2849_int n2849
+0001
+.lincomb n2849 n1818 n2850_int
+2 1
+.bootstrap n2850_int n2850
+0101
+.lincomb n1816 n2663_neg n2851_int
+2 1
+.bootstrap n2851_int n2851
+0001
+.lincomb n2851 n1815 n2852_int
+2 1
+.bootstrap n2852_int n2852
+0101
+.lincomb n1811 n2663_neg n2853_int
+2 1
+.bootstrap n2853_int n2853
+0001
+.lincomb n2853 n1810 n2854_int
+2 1
+.bootstrap n2854_int n2854
+0101
+.lincomb n1806 n2663_neg n2855_int
+2 1
+.bootstrap n2855_int n2855
+0001
+.lincomb n2855 n1805 n2856_int
+2 1
+.bootstrap n2856_int n2856
+0101
+.lincomb n1801 n2663 n2857_int
+2 1
+.bootstrap n2857_int n2857
+0001
+.lincomb n2857 n1798 n2858_int
+2 1
+.bootstrap n2858_int n2858
+0101
+.lincomb n1796 n2663 n2859_int
+2 1
+.bootstrap n2859_int n2859
+0001
+.lincomb n2859 n1795 n2860_int
+2 1
+.bootstrap n2860_int n2860
+0101
+.lincomb n1791 n2663_neg n2861_int
+2 1
+.bootstrap n2861_int n2861
+0001
+.lincomb n2861 n1790 n2862_int
+2 1
+.bootstrap n2862_int n2862
+0101
+.lincomb n1786 n2663_neg n2863_int
+2 1
+.bootstrap n2863_int n2863
+0001
+.lincomb n2863 n1785 n2864_int
+2 1
+.bootstrap n2864_int n2864
+0101
+.lincomb n1781 n2663 n2865_int
+2 1
+.bootstrap n2865_int n2865
+0001
+.lincomb n2865 n1780 n2866_int
+2 1
+.bootstrap n2866_int n2866
+0101
+.lincomb n1776 n2663 n2867_int
+2 1
+.bootstrap n2867_int n2867
+0001
+.lincomb n2867 n1775 n2868_int
+2 1
+.bootstrap n2868_int n2868
+0101
+.lincomb n1771 n2663_neg n2869_int
+2 1
+.bootstrap n2869_int n2869
+0001
+.lincomb n2869 n1770 n2870_int
+2 1
+.bootstrap n2870_int n2870
+0101
+.lincomb n1766 n2663_neg n2871_int
+2 1
+.bootstrap n2871_int n2871
+0001
+.lincomb n2871 n1763 n2872_int
+2 1
+.bootstrap n2872_int n2872
+0101
+.lincomb n1761 n2663 n2873_int
+2 1
+.bootstrap n2873_int n2873
+0001
+.lincomb n2873 n1760 n2874_int
+2 1
+.bootstrap n2874_int n2874
+0101
+.lincomb n1756 n2663_neg n2875_int
+2 1
+.bootstrap n2875_int n2875
+0001
+.lincomb n2875 n1755 n2876_int
+2 1
+.bootstrap n2876_int n2876
+0101
+.lincomb n1751 n2663_neg n2877_int
+2 1
+.bootstrap n2877_int n2877
+0001
+.lincomb n2877 n1750 n2878_int
+2 1
+.bootstrap n2878_int n2878
+0101
+.lincomb n1746 n2663_neg n2879_int
+2 1
+.bootstrap n2879_int n2879
+0001
+.lincomb n2879 n1745 n2880_int
+2 1
+.bootstrap n2880_int n2880
+0101
+.lincomb n1741 n2663 n2881_int
+2 1
+.bootstrap n2881_int n2881
+0001
+.lincomb n2881 n1740 n2882_int
+2 1
+.bootstrap n2882_int n2882
+0101
+.lincomb n1736 n2663 n2883_int
+2 1
+.bootstrap n2883_int n2883
+0001
+.lincomb n2883 n1735 n2884_int
+2 1
+.bootstrap n2884_int n2884
+0101
+.lincomb n1731 n2663 n2885_int
+2 1
+.bootstrap n2885_int n2885
+0001
+.lincomb n2885 n1730 n2886_int
+2 1
+.bootstrap n2886_int n2886
+0101
+.lincomb n1726 n2663_neg n2887_int
+2 1
+.bootstrap n2887_int n2887
+0001
+.lincomb n2887 n1725 n2888_int
+2 1
+.bootstrap n2888_int n2888
+0101
+.lincomb n1721 n2663_neg n2889_int
+2 1
+.bootstrap n2889_int n2889
+0001
+.lincomb n2889 n1720 n2890_int
+2 1
+.bootstrap n2890_int n2890
+0101
+.lincomb n1716 n2663 n2891_int
+2 1
+.bootstrap n2891_int n2891
+0001
+.lincomb n2891 n1713 n2892_int
+2 1
+.bootstrap n2892_int n2892
+0101
+.lincomb n1711 n2663_neg n2893_int
+2 1
+.bootstrap n2893_int n2893
+0001
+.lincomb n2893 n1710 n2894_int
+2 1
+.bootstrap n2894_int n2894
+0101
+.lincomb n1706 n2663_neg n2895_int
+2 1
+.bootstrap n2895_int n2895
+0001
+.lincomb n2895 n1703 n2896_int
+2 1
+.bootstrap n2896_int n2896
+0101
+.lincomb n1701 n2663 n2897_int
+2 1
+.bootstrap n2897_int n2897
+0001
+.lincomb n2897 n1700 n2898_int
+2 1
+.bootstrap n2898_int n2898
+0101
+.lincomb n1696 n2663 n2899_int
+2 1
+.bootstrap n2899_int n2899
+0001
+.lincomb n2899 n1693 n2900_int
+2 1
+.bootstrap n2900_int n2900
+0101
+.lincomb n1691 n2663_neg n2901_int
+2 1
+.bootstrap n2901_int n2901
+0001
+.lincomb n2901 n1690 n2902_int
+2 1
+.bootstrap n2902_int n2902
+0101
+.lincomb n1686 n2663_neg n2903_int
+2 1
+.bootstrap n2903_int n2903
+0001
+.lincomb n2903 n1685 n2904_int
+2 1
+.bootstrap n2904_int n2904
+0101
+.lincomb n1681 n2663 n2905_int
+2 1
+.bootstrap n2905_int n2905
+0001
+.lincomb n2905 n1680 n2906_int
+2 1
+.bootstrap n2906_int n2906
+0101
+.lincomb n1676 n2663 n2907_int
+2 1
+.bootstrap n2907_int n2907
+0001
+.lincomb n2907 n1673 n2908_int
+2 1
+.bootstrap n2908_int n2908
+0101
+.lincomb n1671 n2663_neg n2909_int
+2 1
+.bootstrap n2909_int n2909
+0001
+.lincomb n2909 n1670 n2910_int
+2 1
+.bootstrap n2910_int n2910
+0101
+.lincomb n1666 n2663_neg n2911_int
+2 1
+.bootstrap n2911_int n2911
+0001
+.lincomb n2911 n1665 n2912_int
+2 1
+.bootstrap n2912_int n2912
+0101
+.lincomb n1661 n2663_neg n2913_int
+2 1
+.bootstrap n2913_int n2913
+0001
+.lincomb n2913 n1660 n2914_int
+2 1
+.bootstrap n2914_int n2914
+0101
+.lincomb n1656 n2663 n2915_int
+2 1
+.bootstrap n2915_int n2915
+0001
+.lincomb n2915 n1653 n2916_int
+2 1
+.bootstrap n2916_int n2916
+0101
+.lincomb n1651 n2663_neg n2917_int
+2 1
+.bootstrap n2917_int n2917
+0001
+.lincomb n2917 n1080 n2918_int
+2 1
+.bootstrap n2918_int n2918
+0101
+.lincomb n1078 n1648 n2920_int
+2 1
+.bootstrap n2920_int n2920
+0101
+.lincomb n2663_neg n2920 n2921_int
+2 1
+.bootstrap n2921_int n2921
+0001
+.lincomb n2921 n1078 n2922_int
+2 1
+.bootstrap n2922_int n2922
+0101
+.end
