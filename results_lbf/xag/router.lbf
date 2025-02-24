@@ -337,11 +337,11 @@
 .lincomb pi31 pi1 n118_int
 2 1
 .bootstrap n118_int n118
-0101
+0110
 .lincomb n117 n118 n119_int
 2 1
 .bootstrap n119_int n119
-0101
+0110
 .lincomb n116 n119 n120_int
 2 1
 .bootstrap n120_int n120
@@ -350,22 +350,22 @@
 2 1
 .bootstrap n121_int n121 n122
 0001
-0101
+0110
 .lincomb n121,n122 n121,n122 n123_int
 2 1
 .bootstrap n123_int n123
-0101
+0110
 .lincomb n123 n123_neg
 -1 1
 .lincomb pi35 pi36 n124_int
 2 1
 .bootstrap n124_int n124 n125
 0001
-0101
+0110
 .lincomb n124,n125 n124,n125 n126_int
 2 1
 .bootstrap n126_int n126
-0101
+0110
 .lincomb n126 n126_neg
 -1 1
 .lincomb n123_neg n126_neg n127_int

@@ -2721,7 +2721,7 @@
 .lincomb n671 n670 n672_int
 2 1
 .bootstrap n672_int n672
-0101
+0110
 .lincomb n672 n672_neg
 -1 1
 .lincomb pi7_neg n671_neg n673_int
@@ -2739,7 +2739,7 @@
 .lincomb n674 n673 n675_int
 2 1
 .bootstrap n675_int n675
-0101
+0110
 .lincomb n675 n675_neg
 -1 1
 .lincomb pi8_neg n674_neg n676_int
@@ -2757,7 +2757,7 @@
 .lincomb n677 n676 n678_int
 2 1
 .bootstrap n678_int n678
-0101
+0110
 .lincomb n678 n678_neg
 -1 1
 .lincomb pi9_neg n677_neg n679_int
@@ -6171,7 +6171,7 @@
 .lincomb n1307 n1306 n1308_int
 2 1
 .bootstrap n1308_int n1308
-0101
+0110
 .lincomb n1308 n1308_neg
 -1 1
 .lincomb pi103_neg n1307_neg n1309_int
@@ -6205,7 +6205,7 @@
 .lincomb n1313 n1312 n1314_int
 2 1
 .bootstrap n1314_int n1314
-0101
+0110
 .lincomb n1314 n1314_neg
 -1 1
 .lincomb pi105_neg n1313_neg n1315_int
@@ -6351,7 +6351,7 @@
 .lincomb n1340 n1339 n1341_int
 2 1
 .bootstrap n1341_int n1341
-0101
+0110
 .lincomb n1341 n1341_neg
 -1 1
 .lincomb pi112_neg n1340_neg n1342_int
@@ -6795,7 +6795,7 @@
 .lincomb n1423 n1422 n1424_int
 2 1
 .bootstrap n1424_int n1424
-0101
+0110
 .lincomb n1424 n1424_neg
 -1 1
 .lincomb pi126_neg n1423_neg n1425_int
