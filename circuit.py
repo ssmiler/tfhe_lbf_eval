@@ -48,15 +48,25 @@ class LbfCircuit:
         self.predecessors = dict()  # successors ids by node id
         self.node_by_id = dict()    # Node object by node id
 
-    def _add_edge(self, u, v):
-        self.predecessors[v].append(u)
-        self.successors[u].append(v)
+    def _add_edges(self, us, vs):
+        for u in us:
+            for v in vs:
+                self.predecessors[v].append(u)
+                self.successors[u].append(v)
 
     def _add_node(self, node: Node):
+        assert(node.name not in self.node_by_id)
         self.node_by_id[node.name] = node
         self.node_ids.append(node.name)
         self.predecessors[node.name] = list()
         self.successors[node.name] = list()
+
+    def _add_node_multi_out(self, node: Node):
+        self.node_by_id[node.name] = node
+        self.node_ids.append(node.name)
+        for v in node.outs:
+            self.predecessors[v] = list()
+            self.successors[v] = list()
 
     def add_input(self, out: str):
         self._add_node(LbfCircuit.Input(out))
@@ -71,16 +81,15 @@ class LbfCircuit:
                     const_coef: int = 0):
         node = LbfCircuit.Lincomb(out, inps, coefs, const_coef)
         self._add_node(node)
-        for inp in inps:
-            self._add_edge(inp, node.name)
+        self._add_edges(inps, [node.name])
 
     def add_bootstrap(self,
                       outs: List[str],
                       inp: str,
                       tables: List[List[int]]):
         node = LbfCircuit.Bootstrap(outs, inp, tables)
-        self._add_node(node)
-        self._add_edge(inp, node.name)
+        self._add_node_multi_out(node)
+        self._add_edges([inp], outs)
 
     def add_output(self, out: str):
         self.out_ids.append(out)

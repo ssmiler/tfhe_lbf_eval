@@ -61,15 +61,16 @@ def find_circuit_params(circuit: LbfCircuit):
                 node_depth[name] = 0
             case LbfCircuit.Lincomb(name=name, inps=inps):
                 node_depth[name] = max(map(lambda inp: node_depth[inp], inps))
-            case LbfCircuit.Bootstrap(name=name):
-                node_depth[name] = 1 + \
-                    max(map(lambda inp: node_depth[inp], inps))
+            case LbfCircuit.Bootstrap(outs=outs):
+                d = 1 + max(map(lambda inp: node_depth[inp], inps))
+                for out in outs:
+                    node_depth[out] = d
                 nb_bootstrappings += 1
     return nb_bootstrappings, max(node_depth.values())
 
 
 def estimated_boot_cost(fbs_size, sq_norm2, opt_path):
-    output = subprocess.check_output([opt_path, f"--precision={fbs_size}", f"--sq-norm2={sq_norm2}"])
+    output = subprocess.check_output([opt_path, f"--precision={fbs_size}", f"--sq-norm2={sq_norm2}"], stderr=subprocess.DEVNULL)
     return int(output.decode().split(",")[-2].strip())
 
 
@@ -117,6 +118,7 @@ if __name__ == '__main__':
     print(f"Estimated bootstrapping cost: {bootstrap_cost}")
 
     nb_bootstrappings, depth = find_circuit_params(circuit)
+    print(f"Number of bootstrappings: {nb_bootstrappings}")
 
     total_cost = bootstrap_cost * \
         max(int(np.ceil(nb_bootstrappings / args.nb_cores)), depth)
