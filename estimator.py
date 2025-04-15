@@ -9,42 +9,48 @@ OPTIMIZER_DEFAULT_PATH = "./concrete/compilers/concrete-optimizer/optimizer"
 
 
 def find_min_fbs_params(circuit: LbfCircuit, strict_fbs_size):
-    min_fbs_size = 0
+    max_table_size = 0
     min_sq_norm2 = 0
+    multi_output_fbs = False
+    valid_fbs_sizes = dict()
     for name in circuit.node_ids:
         node = circuit.node_by_id[name]
         match node:
-
             case LbfCircuit.Bootstrap(tables=tables, inp=inp):
-                min_fbs_size_local = min_fbs_size
-                if strict_fbs_size:
-                    size = max(map(len, tables))
-                    min_fbs_size_local = max(min_fbs_size_local, size)
-                else:
-                    for table in tables:
-                        min_fbs_size_local = max(
-                            min_fbs_size_local, len(table)//2)
-                        while min_fbs_size_local < len(table):
-                            delta = len(table) - min_fbs_size_local
-                            p1 = np.array(table[-delta:])
-                            p2 = np.array(table[:delta])
-                            if np.all(p1 != p2):
-                                break
-                            min_fbs_size_local += 1
-                min_fbs_size = max(min_fbs_size_local, min_fbs_size)
+                for table in tables:
+                    n = len(table)
+                    max_table_size = max(max_table_size, n)
+                    min_pos_fbs_size = n//2 + n%2
+                    for k in range(1, min_pos_fbs_size):
+                        valid_fbs_sizes[k] = False
+                    for k in range(min_pos_fbs_size, n):
+                        delta = n - k
+                        p1 = np.array(table[-delta:])
+                        p2 = np.array(table[:delta])
+                        is_valid = np.all(p1 != p2) or (np.all(p1 == p2) and np.all(p1 == 0)) or (np.all(p1 == p2) and np.all(p1 == 1))
+                        valid_fbs_sizes.setdefault(k, True)
+                        valid_fbs_sizes[k] &= is_valid
 
                 match circuit.node_by_id[inp]:
                     case LbfCircuit.Lincomb(coefs=coefs):
                         sq_norm2 = sum(map(lambda coef: coef*coef, coefs))
                     case _:
                         assert(False), "expected lincomb as bootstrapping input"
+                min_sq_norm2 = max(sq_norm2, min_sq_norm2)
 
                 # account for multi-output FBS
                 if len(tables) > 1:
-                    # sq_norm2 *= min_fbs_size_local * min_fbs_size_local # original CIM19 noise estimate
-                    sq_norm2 *= min_fbs_size_local # optimized noise from GBA21
+                    multi_output_fbs = True
 
-                min_sq_norm2 = max(sq_norm2, min_sq_norm2)
+    if strict_fbs_size:
+        min_fbs_size = max_table_size
+    else:
+        valid_fbs_sizes[max_table_size] = True
+        min_fbs_size = min(map(lambda e: e[0], filter(lambda e: e[1], valid_fbs_sizes.items())))
+
+    if multi_output_fbs:
+        # sq_norm2 *= min_fbs_size * min_fbs_size # original CIM19 noise estimate
+        sq_norm2 *= min_fbs_size  # optimized noise from GBA21
 
     return min_fbs_size, min_sq_norm2
 
