@@ -35,9 +35,15 @@ class LbfParser:
             line, idx = self._strip_comments(lines[idx]), idx + 1
             match line.split():
                 case[".inputs", *inps]:
+                    while inps[-1] == "\\":
+                        line, idx = self._strip_comments(lines[idx]), idx + 1
+                        inps = inps[:-1] + line.split()
                     self.inputs_callback(inps)  # TODO: support multi-line
 
                 case[".outputs", *outs]:
+                    while outs[-1] == "\\":
+                        line, idx = self._strip_comments(lines[idx]), idx + 1
+                        outs = outs[:-1] + line.split()
                     self.outputs_callback(outs)  # TODO: support multi-line
 
                 case[".lincomb", *inps, out]:
