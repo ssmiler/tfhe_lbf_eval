@@ -41,12 +41,13 @@ class LbfCircuit:
             self.inp = inp
             self.tables = tables
 
-    def __init__(self):
+    def __init__(self, old_format=False):
         self.node_ids = list()      # node ids in topological order
         self.out_ids = list()       # node ids which are circuit output
         self.successors = dict()    # predecessors ids by node id
         self.predecessors = dict()  # successors ids by node id
         self.node_by_id = dict()    # Node object by node id
+        self.old_format = old_format
 
     def _add_edges(self, us, vs):
         for u in us:
@@ -88,8 +89,12 @@ class LbfCircuit:
                       inp: str,
                       tables: List[List[int]]):
         node = LbfCircuit.Bootstrap(outs, inp, tables)
-        self._add_node_multi_out(node)
-        self._add_edges([inp], outs)
+        if self.old_format:
+            self._add_node(node)
+            self._add_edges([inp], [node.name])
+        else:
+            self._add_node_multi_out(node)
+            self._add_edges([inp], outs)
 
     def add_output(self, out: str):
         self.out_ids.append(out)
@@ -102,16 +107,16 @@ class LbfCircuitParser:
     def __init__(self):
         pass
 
-    def parse_file(filename: str):
+    def parse_file(filename: str, old_format=False):
         with open(filename, "r") as fs:
-            return LbfCircuitParser.parse_stream(fs)
+            return LbfCircuitParser.parse_stream(fs, old_format)
 
-    def parse_stream(fs: TextIO):
+    def parse_stream(fs: TextIO, old_format=False):
         lines = fs.readlines()
-        return LbfCircuitParser.parse_lines(lines)
+        return LbfCircuitParser.parse_lines(lines, old_format)
 
-    def parse_lines(lines: List[str]):
-        circuit = LbfCircuit()
+    def parse_lines(lines: List[str], old_format=False):
+        circuit = LbfCircuit(old_format=old_format)
 
         def inputs_callback(inps):
             for inp in inps:
